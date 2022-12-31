@@ -1,0 +1,9 @@
+The following procedure will be used:
+1. Add all code from local storage.
+2. Add all code (one file at a time I guess) from the Google App Engine debug console. The process will be time consuming but finite.
+3. As each file is added from the debug console, understand and document differences.
+4. Maintain a pointer to the latest file that's been added.
+
+There are issues to be aware of:
+
+- The jscript directory appears to be only local.
