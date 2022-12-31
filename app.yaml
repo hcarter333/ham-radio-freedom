@@ -1,0 +1,35 @@
+runtime: python27
+api_version: 1
+threadsafe: false
+
+handlers:
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+- url: /jscript
+  static_dir: jscript
+- url: /geochrono/js
+  static_dir: geochrono/js
+- url: /img
+  static_dir: img
+- url: /examhelp
+  static_dir: examhelp
+- url: /fcall
+  static_dir: fcall  
+- url: /fbapps/img
+  static_dir: fbapps/img
+- url: /fbapps/examhelp
+  static_dir: fbapps/examhelp
+- url: /sitemap.xml
+  static_files: sitemap.xml
+  upload: sitemap.xml
+- url: /fbapps/smapmyfriends
+  script: main.py
+  secure: always
+- url: /fbapps/stechtest
+  script: main.py
+  secure: always
+
+- url: .*
+  script: main.py
+
