@@ -1,0 +1,1480 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<!-- Update your html tag to include the itemscope and itemtype attributes. -->
+<html itemscope itemtype="http://schema.org/Thing">
+<!-- Add the following three tags inside head. -->
+<meta itemprop="name" content="KD0FNR APRS Tours on Google Erth">
+<meta itemprop="description" content="APRS Trajectory and Google Earth Tour">
+<meta itemprop="image" src="http://copaseticflows.appspot.com/img/aprslogo.JPG">
+
+<title>APRS Flight Path</title> 
+    <meta name="KEYWORDS" content="APRS, amateur radio, ham radio, GPS"> 
+    <meta name="DESCRIPTION" content="APRS coordinate tracks on Google Earth"> 
+<script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client:plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+    </script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1414453-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+  <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAxA4KfHbJOx5n7ISnjtWoORSk1yabMBTVKczv7l6oYTWc2Pb9NBTSCbfB9wfQBQDTFCTdHNLce6jrOg"></script> 
+  <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAxA4KfHbJOx5n7ISnjtWoORSk1yabMBTVKczv7l6oYTWc2Pb9NBTSCbfB9wfQBQDTFCTdHNLce6jrOg"></script> 
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAxA4KfHbJOx5n7ISnjtWoORSk1yabMBTVKczv7l6oYTWc2Pb9NBTSCbfB9wfQBQDTFCTdHNLce6jrOg" type="text/javascript"></script>
+  <script src="http://earth-api-samples.googlecode.com/svn/trunk/lib/kmldomwalk.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/jscript/main_bang19.js"></script> 
+  <script type="text/javascript" src="/jscript/sat_bang2.js"></script> 
+  <script type="text/javascript" src="/jscript/utils.js"></script> 
+  <script type="text/javascript" src="/jscript/sdg4sdp4.js"></script> 
+  <script type="text/javascript" src="/jscript/extensions-0.2.1.js"></script>
+  <script type="text/javascript"> 
+  //<![CDATA[
+    google.load('earth', '1', {'other_params': 'sensor=false' });
+    var ge = null;
+    var gel = null;
+    var ger = null;
+    var sat_test_string = '{{sats}}';
+
+ 
+    function init()
+    {
+
+      resize();
+      window.onresize = resize;
+      google.earth.createInstance("map3d", initCB, null);
+      //google.earth.createInstance("map3dl", initCBl, null);
+      //google.earth.createInstance("map3dr", initCBr, null);
+    }
+
+    var earth_init = false;
+    var curr_callsign = '';
+    
+    //google.earth.addEventListener(placemark, 'click', function(event) {
+   // 	test = 3;
+    //});
+
+
+    function initCB(object)
+    {
+      ge = object;
+      //Instead of starting here, call my_sat_test to substitue in the test data
+      //getFile('grabTLE.php?tle=iridium-33-debris,cosmos-2251-debris');
+      my_aprs_test();
+      //bang_begin();
+      //ge.getLayerRoot().enableLayerById(ge.LAYER_BORDERS, true);
+      //ge.getLayerRoot().enableLayerById(ge.LAYER_ROADS, true);
+      //ge.getLayerRoot().enableLayerById(ge.LAYER_TERRAIN, true);
+      //ge.getLayerRoot().enableLayerById(ge.LAYER_BUILDINGS, true);    
+      //ge.getOptions().setScaleLegendVisibility(true);
+      //ge.getNavigationControl().setVisibility(ge.VISIBILITY_SHOW);
+      //ge.getOptions().setStatusBarVisibility(true);
+
+      //If you get here before ther is a user then don't init the user canon yet
+      earth_init = true;
+      //if(user_location != ''){
+    //	  set_cannon(user_location);
+    //  }
+      
+      //Now add the aprs path data
+         //var href = 'http://code.google.com/apis/earth/documentation/samples/kml_example.kml'
+         //link.setHref(href);
+      //addKmlFromUrl('http://aprs.fi/aprsupdate.kml?units=metric&units_temp=C&call=ON3PZ-9');
+      //addKmlFromUrl('http://aprs.fi/aprsupdate.kml?units=metric&units_temp=C&call=N0FVG');
+      //addKmlFromUrl('http://code.google.com/apis/earth/documentation/samples/kml_example.kml');
+      
+      //If this is a saved tour, then place the tour on the map and move to it.
+      if(rtrackpos != ''){
+    	  //if the drivemode is stored, then set it correctly
+    	  if(rdrivemode != 'None'){
+    		  if(rdrivemode == 'true'){
+    		    el('drivemode').checked = true;
+    		  }else{
+    			el('drivemode').checked = false;
+    		  }
+    	  }
+    	  if(rtourangle != 'None'){
+    		  el('camtilt').value = rtourangle;
+    	  }
+    	  if(rpointdelay != 'None'){
+    		  el('pointdelay').value = rpointdelay;
+    	  }
+    	  //The following flag will cause the code to zoom the view to the 
+    	  //first point on the track when the track is not retrieved from a 
+    	  //network link.  In other words when a saved track is used
+    	  saved_view = true;
+    	  curr_callsign = rcallsign;
+    	  build_saved_tour();
+    	  //Now add the track to the map as the current kml object 
+    	  //and then call al the existing functions on the kml object
+    	  addKmlFromString(saved_tour);
+      }
+      
+      //Add all the other returned stations
+      build_station_kml(rstations);
+    }
+    
+    function getoldtour(){
+    	//call the python function to retrieve old tours
+ 	   
+ 	   var track_params = "oldtour=" + encodeURIComponent('oldtour') +
+ 	             "&callsign=" + encodeURIComponent(curr_callsign);
+ 	   //alert('url is ' + url);
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            req = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            req = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        
+        req.open("POST", '/aprsdotfly', true);
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        req.setRequestHeader("Content-length", track_params.length);
+        req.setRequestHeader("Connection", "close");
+
+        req.onreadystatechange = getoldtour_cb;
+        req.send(track_params);
+
+ 	//in the receive code, present the keyed link to the user so they can send it to others
+ 	//who can replay the shot
+ 	
+ 	
+    }
+    
+    function getoldtour_cb(){
+    	//build the tour from the retreived tour string
+        if (req.readyState == 4) {
+            if (req.status == 200) {
+                  //alert('Entered et_cb with ' + req.responseText);
+                  //Setup the tour from the returned data string
+             	  //The following flag will cause the code to zoom the view to the 
+    	     	  //first point on the track when the track is not retrieved from a 
+    	     	  //network link.  In other words when a saved track is used
+    	     	  rtrackpos = req.responseText;
+                  rcallsign = curr_callsign;
+    	     	  saved_view = false;
+    	       	  build_saved_tour();
+    	       	  //Now add the track to the map as the current kml object 
+    	     	  //and then call al the existing functions on the kml object
+    	     	  addKmlFromString(saved_tour);
+            }
+            else{
+              //alert('storetour reqeust failed ' + req.status + ' ' + req.responseText);
+              alert('Sorry, could not locate station on server');
+            }
+        }
+    }
+    
+    function track_station(){
+    	callsign = el('elev1').value;
+    	curr_callsign = callsign;
+        urltrack = 'http://aprs.fi/aprsupdate.kml?units=metric&units_temp=C&call=' + callsign;
+    	
+    	//addKmlFromUrl('http://aprs.fi/aprsupdate.kml?units=metric&units_temp=C&call=N0FVG');
+    	addKmlFromUrl(urltrack);
+    	
+    }
+    
+    var saved_tour = '';
+    function build_saved_tour(){
+    	saved_tour = savetourheader;
+    	//Now add the callsign
+    	saved_tour += rcallsign;
+    	saved_tour += '</name><description></description><styleUrl>#t1158403</styleUrl>';
+    	saved_tour += '<MultiGeometry><Point><altitudeMode>absolute</altitudeMode><coordinates>';
+    	//Split the rtrackpos string and get the first point of the track
+    	rpoints = rtrackpos.split(' ');
+    	rfirstpoint = rpoints[0].split(',');
+    	saved_tour += rfirstpoint[0] + ',' + rfirstpoint[1];
+    	saved_tour += '</coordinates></Point><LineString><tessellate>1</tessellate><extrude>1</extrude>';
+    	saved_tour += '<altitudeMode>absolute</altitudeMode><coordinates>';
+    	//Add all the saved points for the track
+    	saved_tour += rtrackpos;
+    	saved_tour += '</coordinates></LineString></MultiGeometry>';
+    	saved_tour += savetourfooter;
+    	
+    }
+    
+    function track_station_in_link(){
+    	track_station_link(el('elev1').value, '00:11:00:00');
+    }
+    
+    function track_station_link(callsign, lastupdate){
+    	//delete other tracks from the map
+    	//RemoveAllFeatures();
+    	ge.setBalloon(null);
+    	curr_callsign = callsign; 
+        
+    	//check the time since the last update
+    	times = lastupdate.split(':');
+    	if(times[1] != '00'){
+    		//get an old tour
+    		getoldtour();
+    	}else{
+        	urltrack = 'http://aprs.fi/aprsupdate.kml?units=metric&units_temp=C&call=' + callsign;
+        	
+        	//addKmlFromUrl('http://aprs.fi/aprsupdate.kml?units=metric&units_temp=C&call=N0FVG');
+        	addKmlFromUrl(urltrack);
+    		
+    	}
+    	
+    }
+
+    function addKmlFromUrl(kmlUrl) {
+    	  var link = ge.createLink('');
+    	  link.setHref(kmlUrl);
+
+    	  var networkLink = ge.createNetworkLink('');
+    	  networkLink.setLink(link);
+    	  networkLink.setFlyToView(true);
+
+    	  ge.getFeatures().appendChild(networkLink);
+    	  
+    	  
+    	  
+    	  //also get the KML via fetch and look at it
+    	  //newUrl = 'http://aprs.fi/aprsupdate.kml?units=metric&units_temp=C&call=ON3PZ-9';
+    	  google.earth.fetchKml(ge, kmlUrl, fetchKMLCB);
+    	}    
+    
+    var built_track;
+    var startlat;
+    var startlng;
+    function addKmlFromString(kmlString) {
+  	  //var link = ge.createLink('');
+  	  //link.setHref(kmlUrl);
+
+  	  //var networkLink = ge.createNetworkLink('');
+  	  //networkLink.setLink(link);
+  	  //networkLink.setFlyToView(true);
+      built_track = ge.parseKml(kmlString);
+      ge.getFeatures().appendChild(built_track);
+
+  	  //Now let the existing code for kml objects handle the rest
+  	  fetchKMLCB(built_track);
+  	  
+  	  
+  	  //also get the KML via fetch and look at it
+  	  //newUrl = 'http://aprs.fi/aprsupdate.kml?units=metric&units_temp=C&call=ON3PZ-9';
+  	  //google.earth.fetchKml(ge, kmlUrl, fetchKMLCB);
+
+  	//if(saved_view){
+		// Get the current view.
+		var lookAt = ge.getView().copyAsLookAt(ge.ALTITUDE_RELATIVE_TO_GROUND);
+
+		// Set new latitude and longitude values.
+		lookAt.setLatitude(startlat);
+		lookAt.setLongitude(startlng);
+		lookAt.setRange(15000);
+		lookAt.setTilt(45);
+
+		if(saved_view){
+		//Setup the share buttons
+		    share_tour('http://copaseticflows.appspot.com/aprsdotfly?tour=' + rtourid);
+	  		el("save_tour").disabled = true;
+	  		//el("g_actbutton").disabled = true;
+		}
+
+		//Setup the play controls for the tour
+		    //ge.getTourPlayer().setTour(baretour);
+		ge.getView().setAbstractView(lookAt);
+	        
+		if(saved_view){
+			saved_view = false;
+			fly_station();
+		}
+
+		// Update the view in Google Earth.
+		
+		//Disable the Save Tour button
+		
+		
+		
+	//}
+    
+    
+    }    
+  
+    var tourstring = '';
+    var toursave = '';
+	var baretour;
+	var kmlHold;
+	var saved_view = false;
+	var saved_firstlat = 0;
+	var saved_firstlng = 0;
+	var saved_alt = 5000;
+	
+    function fetchKMLCB(kmlObject){
+    	//alert('drivemode ' + el('drivemode').value)
+    	ge.getTourPlayer().setTour(null);
+    	el('aimheader').innerHTML = 'APRS trajectory for ' + curr_callsign + '<input id="fly_passes2" type="button" disabled="disabled" value="Fly" onclick="fly_station()"></input>';
+    	el('elev1').value = curr_callsign;
+    	//if drivemode is on, then switch the angle to 80
+    	var coordarray;
+    	if(kmlObject){
+    		y = 3;
+    		kmlHold = kmlObject;
+      	  //walk the kml tree and find the coordinates
+    	    walkKmlDom(kmlObject, function() {
+    	        y = 2;
+    	        //KmlMultiGeometry
+    	    	if (this.getType() == 'KmlLineString') {
+        	        coordarray = this.getCoordinates();
+        	        //coordarray.reverse();
+    	    		coords = 0;
+    	    		coords = coordarray.getLength();
+    	    		
+    	        //alert('found linestring ' + coords);
+    	        //Get all the coordinates
+    	        var coordlist = '';
+    	        
+    	        //build the tour string
+    	        //Add the tour header
+    	        tourstring = tourheader;
+    	        toursave = '';
+    	        //add the tour points
+    	        //tourstring += buildTrackHover(coordarray.get(0));
+    	        startlat = coordarray.get(0).getLatitude();
+    	        startlng = coordarray.get(0).getLongitude();
+    	        for(var i=0; i<coords - 1; i+=1){
+    	        	//Get the coordinate and write it to the screen
+    	        	coord = coordarray.get(i);
+    	        	nextcoord = coordarray.get(i+1);
+    	        	//clat = coord.getLatitude();
+    	        	//clong = coord.getLongitude();
+    	        	//calt = coord.getAltitude();
+    	        	//coordlist += '<br>' + clat + ' ' + clong + ' ' + calt;
+    	        	tourstring += buildFlyTo(coord, nextcoord, el("camtilt").value, el("pointdelay").value, el('drivemode').checked);
+    	        	
+    	        	
+    	        	//build the savable tour at the same time
+    	        	toursave += buildFlySave(coord, nextcoord);
+    	        }
+    	        //add the tour footer
+    	        tourstring += tourfooter;
+	        	//el('testout').value = tourstring;
+    	        return false;
+    	      }
+    	    }, {features: true, geometries: true});
+
+      	  //parse in the kml tour
+      	  if(tourstring != ''){
+      		var kmlTour = ge.parseKml(tourstring);
+      		ge.getFeatures().appendChild(kmlTour);
+      		
+      		//Now get the tour from the kml object
+    	    walkKmlDom(kmlTour, function() {
+    	    	if (this.getType() == 'KmlTour') {
+    	    		baretour = this;
+    	    		el("fly_passes").disabled = false;
+    	    		el("fly_passes2").disabled = false;
+    	    		el("save_tour").disabled = false;
+    	    		//el("g_actbutton").disabled = false;
+    	    	}
+    	    }, {features: true, geometries: true});
+            
+      		if(baretour){
+     		    //alert('should be a new tour');
+      			//ge.getTourPlayer().setTour(null);
+     		    //ge.getTourPlayer().setTour(baretour);
+            }    	    
+        	//If this is a pre-saved tour, then save the first coordinate to setup the view
+          }//if tourstring
+      		
+      		  
+      	  
+      	  
+      	  y = 2;  //just a place to put a breakpoint
+    	    if ('getFeatures' in kmlObject) {
+    	      fl = kmlObject.getFeatures().toString();
+    	      mg = kmlObject.getElementsByType('name').valueOf();
+    	      y = 3;
+    	    
+    	    }
+    	}
+  	  //ge.getFeatures().appendChild(kmlObject);
+    	
+    }
+    
+
+    
+    function save_tour(){
+    	//Save the basics of the hit so the shot can be recreated
+    	   //alert('Setting up request');
+    	   //Remove all mapped calls before indices change
+    	   var drivemodestring = '';
+    	   if(el('drivemode').checked){
+    	     drivemodestring = 'true';
+    	   }else{
+    		   drivemodestring = 'false';
+    	   }
+    	   
+    	   var track_params = "op=" + encodeURIComponent('save') +
+    	             "&callsign=" + encodeURIComponent(curr_callsign) +
+    	             "&trackpos=" + encodeURIComponent(toursave) + 
+    	             "&angle=" + encodeURIComponent(el('camtilt').value) + 
+    	             "&altitude=" + encodeURIComponent('15') + 
+    	             "&drivemode=" + encodeURIComponent(drivemodestring) + 
+    	             "&delay=" + encodeURIComponent(el('pointdelay').value);
+    	   //alert('url is ' + url);
+           //Now send the scores to the db
+           if (typeof XMLHttpRequest != "undefined") {
+               req = new XMLHttpRequest();
+           } else if (window.ActiveXObject) {
+               req = new ActiveXObject("Microsoft.XMLHTTP");
+           }
+           
+           req.open("POST", '/aprsdotfly', true);
+           req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+           req.setRequestHeader("Content-length", track_params.length);
+           req.setRequestHeader("Connection", "close");
+
+           req.onreadystatechange = storetour_cb;
+           req.send(track_params);
+
+    	//in the receive code, present the keyed link to the user so they can send it to others
+    	//who can replay the shot
+    	
+    	
+    }
+
+    function share_tour(tour_link){
+        sh_url = tour_link;
+        sh_title = 'APRS trajectory and tour for ' + curr_callsign;
+        sh_description = 'Send the tour you just watched to your friends';
+        
+     var tbx = document.getElementById("addthis_tb"),
+         svcs = {twitter: 'Twitter', facebook: 'Facebook', google_plusone: 'GooglePlusOne', expanded: 'More'};
+
+     tbx.innerHTML = '';
+     for (var s in svcs) {
+         tbx.innerHTML += '<a class="addthis_button_'+s+'">'+'</a>';
+     }
+     el('addthisprefix').innerHTML = 'Share the saved tour with your friends'
+     addthis.toolbox("#addthis_tb", {}, {url: tour_link, description: sh_title, name: sh_title, title: sh_title});
+     el('addthispostfix').innerHTML += '<br><a href="' + tour_link + '">or Follow this link to saved tour</a>';
+
+     if(gplus_present){
+       el("actbutton").disabled = false;
+
+      var options = {
+    		    contenturl: 'http://copaseticflows.appspot.com/aprsdotfly',
+    		    contentdeeplinkid: '',
+    		    clientid: '659592594119.apps.googleusercontent.com',
+    		    cookiepolicy: 'single_host_origin',
+    		    prefilltext: sh_title,
+    		    calltoactionlabel: 'WATCH',
+    		    calltoactionurl: tour_link,
+    		    calltoactiondeeplinkid: '',
+    		    requestvisibleactions: 'http://schemas.google.com/AddActivity'
+    		  };
+    		  // Call the render method when appropriate within your app to display
+    		  // the button.
+      gapi.interactivepost.render('actbutton', options);
+
+     //Record the tour to the users G+ account
+		 var postUrl = tour_link;
+		 var postImage = 'http://copaseticflows.appspot.com/img/aprslogo.JPG';
+		 var payload={
+		    'type': 'https://schemas.google.com/AddActivity',
+		    'target': {'url':postUrl}
+		    //'thumbnailUrl': postImage
+		 };
+		 
+		   // var moment  = {
+		   //  'type':'http://schemas.google.com/AddActivity',
+		   //  'target':{
+		   //   'url':postUrl,
+		   //   'description': sh_title
+		   //  },
+		   //  'thumbnailUrl': postImage
+		  //};
+		 
+		 var args = {
+		  'path': '/plus/v1/people/me/moments/vault',
+		  'method': 'POST',
+		  'body': JSON.stringify(payload),
+		  'callback': function(response) {
+		   console.log(response);
+		  }
+		    };
+		 gapi.client.request(args);
+
+     
+     }
+     
+    }
+    
+
+    
+    
+    function storetour_cb(){
+        if (req.readyState == 4) {
+            if (req.status == 200) {
+                  //alert('Entered et_cb with ' + req.responseText);
+            	  var tour_base = 'http://copaseticflows.appspot.com/aprsdotfly?tour=';
+            	  tour_link = tour_base + req.responseText;
+            	  //alert(tour_link);
+                  el('munitions').innerHTML = 'Saved tour link:<br><a href="' + tour_base + 
+                                               req.responseText + '">' + tour_base + req.responseText + '</a>';
+              	//hit_fb(game_link);
+                  //Setup the sharing buttons
+                  share_tour(tour_link);
+     	    
+
+            }
+            else{
+              alert('storetour reqeust failed ' + req.status + ' ' + req.responseText);
+            }
+        }
+            
+    }
+
+    function getCallType(calltype){
+    	if(calltype == 'cars'){
+    		el('drivemode').checked = true;
+    		el('camtilt').value = '80';
+    		el('pointdelay').value = '15';
+    	}
+    	RemoveAllFeatures();
+    	   var track_params = calltype + '=' + encodeURIComponent(calltype);
+
+           //Now send the scores to the db
+           if (typeof XMLHttpRequest != "undefined") {
+               req = new XMLHttpRequest();
+           } else if (window.ActiveXObject) {
+               req = new ActiveXObject("Microsoft.XMLHTTP");
+           }
+           
+           req.open("POST", '/aprsdotfly', true);
+           req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+           req.setRequestHeader("Content-length", track_params.length);
+           req.setRequestHeader("Connection", "close");
+
+           req.onreadystatechange = getCars_cb;
+           req.send(track_params);
+
+    	//in the receive code, present the keyed link to the user so they can send it to others
+    	//who can replay the shot
+    	
+    	
+    }
+
+    function RemoveAllFeatures()
+    {
+      var features = ge.getFeatures();
+      while (features.getLastChild() != null)
+      {
+        features.removeChild(features.getLastChild());
+      }
+    }
+    
+    var point_kml = null;
+    //var planekml = null;
+    
+    function RemoveCarsPlanes(){
+    	if(point_kml != null){
+            ge.getFeatures().removeChild(point_kml);
+    	}
+    }
+
+    
+    
+    function getCars_cb(){
+        if (req.readyState == 4) {
+            if (req.status == 200) {
+                  //alert('Entered et_cb with ' + req.responseText);
+                  //create the table of cars that will be placed in the tracks div
+                  //First separate the different portions of the response
+                  //Clear any existing station
+                  RemoveCarsPlanes();
+                  
+                  
+                  rtable = '';
+                  rparts = req.responseText.split('|');
+                  rtable = rparts[0];
+                  
+                  cartable = '<table><tr><th>callsign</th><th>last seen</th></tr>';
+                  //cartable += req.responseText;
+                  cartable += rtable;
+                  cartable += '</table>';
+            	  //alert(tour_link);
+                  el('tracks').innerHTML = cartable;
+                  el('track_label').innerHTML = 'Recent Car Tracks';
+                  
+                  //build the map of all stations
+                  build_station_kml(rparts[1]);
+                  
+                  //build_station_pm(rparts[1]);
+     	    
+            }
+            else{
+              alert('storetour reqeust failed ' + req.status + ' ' + req.responseText);
+            }
+        }
+            
+    }
+    
+    function setup_gprofile(){
+ 	   var request = gapi.client.plus.people.get( {'userId' : 'me'} );
+ 	   request.execute(function(profile){
+ 		   el('gprofile').innerHTML = '<img src=\"' + profile.image.url + '\">';
+ 		   //$('gprofile').innerHTML += '<p>Hello ' + profile.displayName + '</p>'; 
+            login_user = profile.id;
+            login_name = profile.displayName; 
+
+ 	   });
+ 	}
+
+    
+    var gplus_present = false;
+    function signinCallback(authResult) {
+    	  if (authResult['access_token']) {
+    	    // Successfully authorized
+    	    document.getElementById('signinButton').setAttribute('style', 'display: none');
+            //document.getElementById('fblogin').innerHTML = '';
+    	    gapi.client.load('plus','v1', function(){ 
+    	    	// once we get this call back, gapi.client.plus.* will exist
+    	    	setup_gprofile();
+    	    	gplus_present = true;
+    	    	});
+    	    
+
+    	  } else if (authResult['error']) {
+    	    // There was an error.
+    	    // Possible error codes:
+    	    //   "access_denied" - User denied access to your app
+    	    //   "immediate_failed" - Could not automatially log in the user
+    	    // console.log('There was an error: ' + authResult['error']);
+    	  }
+    	}
+    	
+    	
+    function disconnectUser(access_token) {
+    	  var revokeUrl = 'https://accounts.google.com/o/oauth2/revoke?token=' +
+    	      access_token;
+
+    	  // Perform an asynchronous GET request.
+    	  $.ajax({
+    	    type: 'GET',
+    	    url: revokeUrl,
+    	    async: false,
+    	    contentType: "application/json",
+    	    dataType: 'jsonp',
+    	    success: function(nullResponse) {
+    	      // Do something now that user is disconnected
+    	      // The response is always undefined.
+    	    },
+    	    error: function(e) {
+    	      // Handle the error
+    	      // console.log(e);
+    	      // You could point users to manually disconnect if unsuccessful
+    	      // https://plus.google.com/apps
+    	    }
+    	  });
+    	}
+    	// Could trigger the disconnect on a button click
+    	//$('#revokeButton').click(disconnectUser);
+
+    	function station_style(callsign, lat, lng){
+   	 style = '<Style id="station' + callsign + '"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>';
+   	 style += '</Icon><scale>4.0</scale></IconStyle>';
+   	 style += '<BalloonStyle><bgColor>00000000</bgColor><description><![CDATA[<p color="#0000ff"><a color="#0000ff" href="javascript:void(0)">';
+   	 style += callsign + ' ' + lat + ' ' + lng + '</a></p>]]></description></BalloonStyle>';
+   	                       
+   	 style += '</Style>';
+   	 return style;
+    }
+
+    function station_placemark(call, lat, lng){
+   	 var place = '';
+   	   //latlng = friend_locs[index]; 
+   	   place = '<Placemark><name></name><description></description><styleUrl>#station' + call + '</styleUrl>';
+   	   place += '<ExtendedData><Data name=\'Click to track\'><value><![CDATA[<p color="#0000ff"><a color="#0000ff" href="javascript:void(0);"';
+   	   place += ' onClick="track_station_link(\'' + call + '\', \'00:11:00:00\')">' + call + '</a>]]></value></Data></ExtendedData>'
+   	   place += '<MultiGeometry><Point><altitudeMode>absolute</altitudeMode><coordinates>';
+   	   place += lng + ',' + lat + '</coordinates></Point></MultiGeometry></Placemark>';
+   	 return place;
+    }
+    
+
+    function build_station_pm(stations){
+    	stlist = stations.split(' ');
+	    for(var i = 0; i < stlist.length; i += 1){
+	    	stcall = '';
+	    	stcall = stlist[i].split(',')[0];
+	    	stlat = stlist[i].split(',')[1];
+	    	stlng = stlist[i].split(',')[2];
+
+	    	if(stcall != ''){
+		    	var placemark = ge.createPlacemark('station' + stcall + i);
+		    	var point = ge.createPoint('stationpoint' + stcall + i);
+		    	point.setLatitude(parseFloat(stlat));
+		    	point.setLongitude(parseFloat(stlng));
+		    	placemark.setGeometry(point);
+		    	var bcontent = '<a color="#0000ff" href="javascript:void(0)"';
+		    	bcontent += 'onClick="track_station_link(\'' + stcall + '\',\'00:11:00:00\'' + ')">' + stcall + '</a>';
+		    	placemark.setDescription(bcontent);
+		    	
+
+		    	
+		    	
+		    	ge.getFeatures().appendChild(placemark);
+		    	
+	    	    google.earth.addEventListener(placemark, 'click', function(event) {
+		    	      //alert('click on placemark');
+		    	      // Prevent the default balloon from appearing.
+		    	      event.preventDefault();
+
+		    	      var content = placemark.getDescription();
+		    	      //alert(placemark.getStyleUrl());
+		    	      var balloon = ge.createHtmlStringBalloon('');
+		    	      balloon.setFeature(placemark);
+		    	      balloon.setContentString(content);
+		    	      ge.setBalloon(balloon);	    	    });
+		    	
+		    	//Now build the balloon for the placemark
+		    	//var balloon = ge.createHtmlStringBalloon('stationb' + stcall + i);
+		    	//balloon.setFeature(placemark);
+		    	//balloon.setContentString(bcontent);
+		    	//ge.setBalloon(balloon);
+	    	}
+	    }
+    }
+    
+    function setup_balloons_l(kmlObject){
+    	
+    	  //walk the kml tree and find the coordinates
+	    walkKmlDom(kmlObject, function() {
+	        y = 2;
+	        //KmlMultiGeometry
+	    	if (this.getType() == 'KmlPlacemark') {
+	    		var placemark = this;
+	    	    google.earth.addEventListener(placemark, 'click', function(event) {
+	    	      //alert('click on placemark');
+	    	      // Prevent the default balloon from appearing.
+	    	      event.preventDefault();
+
+	    	      var content = placemark.getDescription();
+	    	      //alert(placemark.getBalloonHtmlUnsafe());
+	    	      //placemark.setDescription('<a href="javascript:void(0)">test</a>');
+	    	      var balloon = ge.createHtmlStringBalloon('');
+	    	      balloon.setFeature(placemark);
+	    	      balloon.setContentString(placemark.getBalloonHtmlUnsafe());
+	    	      balloon.setBackgroundColor("#000000");
+	    	      balloon.setForegroundColor("#ffffff");
+	    	      ge.setBalloon(balloon);	    	    
+	    	      });
+	    		
+	        //alert('found linestring ' + coords);
+	        //Get all the coordinates
+	        //return false;
+	      }
+	    }, {features: true, geometries: true});
+    	
+    }
+    
+    function build_station_kml(stations){
+		    var mapheader = '<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2" ';
+		    mapheader += 'xmlns:gx="http://www.google.com/kml/ext/2.2">';
+		    mapheader += '<Document><name>Friend locations</name>';
+		    
+		    //first build all the styles for the friend icons
+         	//separate the stations
+	    	stlist = stations.split(' ');
+		    for(var i = 0; i < stlist.length; i += 1){
+		    	stcall = '';
+		    	stcall = stlist[i].split(',')[0];
+		    	stlat = stlist[i].split(',')[1];
+		    	stlng = stlist[i].split(',')[2];
+		    	if(stcall != ''){
+			    	mapheader += station_style(stcall, stlat, stlng);
+		    	}
+		    }
+		    
+		    //Now add all the placemarks
+		    //and build the list of friends
+		    friend_list_count = 0;
+		    for(var k = 0; k < stlist.length; k += 1){
+		    	st_info = stlist[k].split(',');
+		    	if(st_info[0] != ''){
+	    	    	mapheader += station_placemark(st_info[0], st_info[1], st_info[2]);
+		    	}
+		    }
+		 
+		    mapheader += '</Document></kml>';
+		    
+	        built_track = ge.parseKml(mapheader);
+	        ge.getFeatures().appendChild(built_track);
+	        point_kml = built_track;
+	        setup_balloons_l(built_track);
+      }
+    
+    
+  //Setup the replay variables here
+    var rcallsign = '{{tour.callsign}}';
+    var rtrackpos = '{{tour.trackpos}}';
+    var rtourid = '{{tourid}}';
+    var rtourangle = '{{tour.angle}}';
+    var raltitude = '{{tour.altitude}}';
+    var rdrivemode = '{{tour.drivemode}}';
+    var rpointdelay = '{{tour.delay}}';
+    var rstations = '{{stations}}';
+    
+    
+    
+    function fly_station(){
+	    //Now start the tour
+        if (!baretour) {
+            alert('No tour found!');
+            return;
+         }
+         ge.getTourPlayer().setTour(baretour);
+         ge.getTourPlayer().play();
+    	
+    }
+    
+    function initCBl(object)
+    {
+      gel = object;
+      //Instead of starting here, call my_sat_test to substitue in the test data
+      //getFile('grabTLE.php?tle=iridium-33-debris,cosmos-2251-debris');
+      my_sat_test_l();
+      //bang_begin();
+    }
+
+    function initCBr(object)
+    {
+      ger = object;
+      //Instead of starting here, call my_sat_test to substitue in the test data
+      //getFile('grabTLE.php?tle=iridium-33-debris,cosmos-2251-debris');
+      my_sat_test_r();
+      //bang_begin();
+    }
+    
+    
+    
+    function resize(){
+      var windowheight = document.body.clientHeight;  // IE 7 & 8
+      var windowwidth = document.body.clientWidth;  // IE 7 & 8
+      if (window.innerHeight){windowheight = window.innerHeight} // Firefox
+      if (window.innerWidth){windowwidth = window.innerWidth} // Firefox
+      if (windowheight < 3026)  el("map3d_container").style.height = (windowheight-(25+90+90))+"px";
+      if (windowheight < 3026)  el("map3d").style.height = (windowheight-(25+90+90))+"px";
+      if (windowheight < 3026)  el("map3dl").style.height = (windowheight-(25+90+90))+"px";
+      //if (windowheight < 3026)  el("map3dr").style.height = (windowheight-(25+90+90))+"px";
+      //if (windowheight < 3026)  el("passes_container").style.height = (windowheight-(25+90+90))+"px";
+      //if (windowwidth < 3026)  el("map3d_container").style.width = (windowwidth-450)+"px";
+    }
+ 
+    var tourname = 'APRS test tour';
+    var tourheader = '<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2" ';
+    tourheader += 'xmlns:gx="http://www.google.com/kml/ext/2.2">';
+    tourheader += '<Document><name>A tour and some features</name><open>1</open>';
+    tourheader += '<gx:Tour><name>' + tourname + '</name><gx:Playlist>';
+    
+    var tourfooter = '</gx:Playlist></gx:Tour></Document></kml>';
+    
+    var savetourheader = '<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2" ';
+    savetourheader += 'xmlns:gx="http://www.google.com/kml/ext/2.2">';
+    savetourheader += '<Document><name>APRS tack</name>';
+    savetourheader += '<Style id="t1158403"><LabelStyle><color>ffa8ff00</color><scale>0.75</scale></LabelStyle>';
+    savetourheader += '<IconStyle><Icon><href>http://d1dhsh1i77j8ju.cloudfront.net/s0/f16/p27p27.png</href>';
+    savetourheader += '</Icon><scale>0.75</scale></IconStyle>';
+    savetourheader += '<LineStyle><color>ff00ff00</color><colorMode>normal</colorMode><width>2</width>';
+    savetourheader += '</LineStyle><PolyStyle><color>7f00ff00</color></PolyStyle></Style><Placemark><name>';
+    
+    var savetourfooter = '</Placemark></Document></kml>';
+
+    function buildFlySave(firstpoint){
+    	var flysave = '';
+    	//This is formatted to be loaded into a KML coordinates string
+    	flysave = firstpoint.getLongitude() + ',' + firstpoint.getLatitude() + ',' + firstpoint.getAltitude() + ' ';
+    	return flysave;
+    	
+    }
+
+    function buildTrackHover(firstpoint){
+    	//Setup the gx:FlyTo header
+    	//duration is always 3 seconds for the moment
+    	var flyto = '<gx:FlyTo><gx:duration>' + 5.0 + '</gx:duration><gx:flyToMode>smooth</gx:flyToMode><Camera>'
+    	
+	    //Add the longitude
+	    flyto += '<longitude>' + firstpoint.getLongitude() + '</longitude>';
+	    flyto += '<latitude>' + firstpoint.getLatitude() + '</latitude>';
+    	flyto += '<altitude>' + 15000 + '</altitude>';
+    	flyto += '<tilt>' + 0 + '</tilt>';
+    	//Setup the gx:FlyTo footer
+    	flyto += '</Camera></gx:FlyTo>';
+    	
+    	return flyto;
+
+    }
+     
+    var drivemode = false;
+    function setDriveMode(){
+    	drivemode = !drivemode;
+    }
+    
+    function buildFlyTo(firstpoint, secondpoint, tilt, delay, ground){
+    	//Setup the gx:FlyTo header
+    	//duration is always 3 seconds for the moment
+    	var flyto = '<gx:FlyTo><gx:duration>' + delay + '</gx:duration><gx:flyToMode>smooth</gx:flyToMode><Camera>'
+        //get the heading between the two points
+        secondlat = secondpoint.getLatitude();
+    	secondlong = secondpoint.getLongitude();
+ 	    var p1 = new geo.Point(firstpoint.getLatitude(), firstpoint.getLongitude());
+	    var p2 = new geo.Point(secondlat, secondlong);
+	    var viewh = geo.math.heading(p1, p2);
+    	
+	    //Add the longitude
+	    flyto += '<longitude>' + secondlong + '</longitude>';
+	    flyto += '<latitude>' + secondlat + '</latitude>';
+	    if(!ground){
+    	  flyto += '<altitude>' + secondpoint.getAltitude() + '</altitude>';
+    	  if(!el('altmode').checked){
+    	    flyto += '<altitudeMode>absolute</altitudeMode>';
+    	  }
+	    }else{
+	    	flyto += '<altitude>' + 10 + '</altitude><altitudeMode>relativeToGround</altitudeMode>';
+	    }
+    	flyto += '<heading>' + viewh + '</heading>';
+    	flyto += '<tilt>' + tilt + '</tilt>';
+    	//Setup the gx:FlyTo footer
+    	flyto += '</Camera></gx:FlyTo>';
+    	
+    	return flyto;
+
+    }
+
+    var reqpos;
+    function getposit(  ){                      
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+        	reqpos = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+        	reqpos = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        var comm_params = '?call=' + 'N38YX' + '&start=24&length=24&comma=1&time=1';
+        
+        
+        reqpos.onreadystatechange = posit_cb;
+        reqpos.open("GET", 'http://www.findu.com/cgi-bin/posit.cgi' + comm_params, true);
+        reqpos.setRequestHeader("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)");
+        //reqpos.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        //reqpos.setRequestHeader("Content-length", comm_params.length);
+        //reqpos.setRequestHeader("Connection", "close");
+
+        
+        reqpos.send(null);
+}
+
+function posit_cb(){
+    if (reqpos.readyState == 4) {
+        if (reqpos.status == 200) {
+              //alert('Entered et_cb with ' + req.responseText);
+        	  //var game_base = 'http://copaseticflows.appspot.com/gebang?game=';
+        	  //game_link = game_base + req.responseText;
+              //el('munitions').innerHTML = 'Saved game link:<br><a href="' + game_base + 
+              //                             req.responseText + '">' + game_base + req.responseText + '</a>';
+          	//hit_fb(game_link);
+	        el('testout').value = reqpos.responseText;
+        }
+        else{
+          alert('posit reqeust failed ' + reqpos.status + ' ' + reqpos.responseText);
+        }
+    }
+}
+
+    
+ 
+ 
+  //]]>
+  </script> 
+ 
+  <style type="text/css"> 
+    html, body, form {margin:0px;padding:0px;border:0px;height:100%;color:white;line-height: 140%;overflow:hidden;}
+    #gad {height:93px;}
+    #info {height:25px;background-color:#202020;}
+    #map3d_container {height: 395px; width: 100%; float:right}
+    #map3d {height: 500px; width: 800px;postion:relative;}
+    #map3dl {height: 500px; width: 300px;postion:relative;background:#333333; overflow-y:auto}
+    #map3dr {height: 500px; width: 300px;postion:relative;background:#333333; overflow-y:auto}
+    #date {float: left; padding: 2px 0 0 10px;}
+    #pass_button {float: left; padding: 2px 0 0 10px;}
+    #about {float: left; padding: 2px 10px 0 10px;}
+    #options {float:right; padding-top: 1px;}
+    #balloon {color:black;}
+    .checkboxes label{    display: block;    float: left;    padding-right: 10px;    white-space: nowrap;}
+    .checkboxes input{    vertical-align: middle;}
+    .checkboxes label span{    vertical-align: middle;}
+ 
+    a {color:#d0d0d0;}
+  </style> 
+
+
+
+<style type="text/css" media="screen">     
+.tableinput{border: 0px solid #666666; background-color: #ffff00; color: #000000;}    
+img{}
+table.quiz td{font-size:14px;}
+    #tabs{
+        margin-left: 4px;
+        padding: 0;
+        background: transparent;
+        voice-family: "\"}\"";
+        voice-family: inherit;
+        padding-left: 5px;
+    }
+    #tabs ul{
+        font: bold 11px Arial, Verdana, sans-serif;
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+    #tabs li{
+        display:inline;
+        margin:0 2px 0 0;
+        padding:0;
+        text-transform:uppercase;
+    }
+    #tabs a{
+        float:left;
+        background:#888888 url(images/tabs_left.gif) no-repeat left top;
+        margin:0 2px 0 0;
+        padding:0 0 1px 3px;
+        text-decoration:none;
+    }
+    #tabs a span{
+        float:left;
+        display:block;
+        background: transparent url(images/tabs_right.gif) no-repeat right top;
+        padding:4px 9px 2px 6px;
+    }
+    #tabs a span{float:none;}
+    #tabs a:hover{background-color: #666666;color: white;}
+    #tabs a:hover span{background-color: #666666;}
+    #tabHeaderActive span, #tabHeaderActive a { background-color: #666666; color:#ffffff;}
+    .tabContent {
+        clear:none;
+        border:2px solid #42577B;
+        padding-top:2px;
+        background-color:#FFF;
+    }
+
+    .qslgadget{
+       overflow-y:auto;
+       overflow-x:auto;
+       color:#DDDDDD;
+     }  
+
+
+    #htabs{
+        margin-left: 4px;
+        padding: 0;
+        background: transparent;
+        voice-family: "\"}\"";
+        voice-family: inherit;
+        padding-left: 5px;
+    }
+    #htabs ul{
+        font: bold 11px Arial, Verdana, sans-serif;
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+    #htabs li{
+        display:inline;
+        margin:0 2px 0 0;
+        padding:0;
+        text-transform:uppercase;
+    }
+    #htabs a{
+        float:left;
+        background:#888888 url(images/tabs_left.gif) no-repeat left top;
+        margin:0 2px 0 0;
+        padding:0 0 1px 3px;
+        text-decoration:none;
+    }
+    #htabs a span{
+        float:left;
+        display:block;
+        background: transparent url(images/tabs_right.gif) no-repeat right top;
+        padding:4px 9px 2px 6px;
+    }
+    #htabs a span{float:none;}
+    #htabs a:hover{background-color: #666666;color: white;}
+    #htabs a:hover span{background-color: #666666;}
+    #htabHeaderActive span, #htabHeaderActive a { background-color: #666666; color:#ffffff;}
+
+a:link {color:#DDDDDD;}      /* unvisited link */
+a:visited {color:#DDDDDD;}  /* visited link */
+a:hover {color:#DDDDDD;}  /* mouse over link */
+a:active {color:#DDDDDD;}  /* selected link */
+a.helpimg:link {color:#FFFFFF}
+a.helpimg:visited {color:#FFFFFF}
+a.examhlink:link {color:#0000FF}
+a.examhlink:visited {color:#0000FF}
+
+
+#entries
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+#entries td, #entries th 
+{
+font-size:.8em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;
+}
+#entries th 
+{
+font-size:.9em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;
+}
+#entries tr.alt td 
+{
+color:#000000;
+background-color:#EAF2D3;
+}
+#entries tr.notalt td 
+{
+color:#000000;
+background-color:#ffffff;
+}
+
+
+</style>
+
+</head> 
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=hcarter333"></script>
+ 
+<body id='body' onload='init()'  onunload='//google.earth.removeEventListener(ge, "frameend", tick);' style="background-color:#111111; padding-right:50px ; padding-left:50px; y-overflow:auto"> 
+<link type="text/css" rel="stylesheet" href="/jscript/headerhelp.css" />
+<div id='header-wrapper'>
+<div class='header' id='header'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='http://copaseticflows.appspot.com/'>Copasetic Flows</a>
+</h1>
+</div>
+</div>
+</div>
+</div>
+
+
+    <div id='gad'>
+        <script type="text/javascript"><!--
+google_ad_client = "ca-pub-6583317371769852";
+/* SatTrack */
+google_ad_slot = "4399438041";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    </div>
+    <div id='info'> 
+        <div id='about'><a href='http://copaseticflows.appspot.com/examhelp/acf.html'>about</a>
+        </div> 
+                <div class="fb-like" data-href="http://copaseticflows.appspot.com/aprsdotfly" data-send="true" data-layout="button_count" data-width="250" data-show-faces="false" data-colorscheme="dark"></div>
+<g:plusone size="small" annotation="inline" width="120"></g:plusone>
+Questions or Comments? Contact <a href="mailto:hcarter333@gmail.com">KD0FNR</a>
+        <div id='date'></div>
+        <div id='pass_button'></div> 
+        <form id='options' action=''> 
+		<div class="checkboxes"> 
+		
+		<label for="x"><input type="hidden" onclick='updateOptions()' name='altitude' checked="true" id="x" /> </label> 
+		 
+		<!-- <label for="y"><input type="checkbox" onclick='updateOptions()' name='borders' id="y" /> <span>Places</span></label> --> 
+        </div></form> 
+    </div> 
+
+
+
+  <div id='map3d_container'> 
+    <table style="width:100%">
+    <!--  <tr><td><div id=currenttrack></div></td></tr> -->
+    <tr align="center">
+    <td align="center" valign="top">
+
+    <div id='map3dl'>
+        <div id="hitresult"></div>
+    <div id="aiming">
+    <div id="aimheader"></div>
+
+    <p align="left">
+    Click on one of the station locations on the map to the right, or click on one of the callsigns from the list below,
+    or enter an APRS callsign from <a target="_blank" href="http://www.aprs.fi/moving/">aprs.fi</a> and 
+    click 'Track' to view the 3-D track of the station on Google Earth.  Click on 'Fly' to travel along the path</br>
+    Callsign<br><input id="elev1" type="text"></input>
+    <input id="get_passes" type="button" value="Track" onclick="track_station_in_link()"></input>
+    <input id="fly_passes" type="button" disabled="disabled" value="Fly" onclick="fly_station()"></input>
+    <input id="save_tour" type="button" disabled="disabled" value="Save Tour" onclick="save_tour()"></input>
+
+    <div id="googleplus" style="float:left">
+  <span id="signinButton">
+  <button class="g-signin"      
+        data-scope="https://www.googleapis.com/auth/plus.login"
+        data-clientid="659592594119.apps.googleusercontent.com"
+        data-callback="signinCallback"
+        data-theme="dark"
+        data-cookiepolicy="single_host_origin"
+        data-requestvisibleactions="http://schemas.google.com/AddActivity"
+        data-width="wide">
+    </button>
+    </span>
+    <span id="gprofile">
+    </span>
+<button id="actbutton" disabled="disabled" 
+  class="g-interactivepost"
+  data-contenturl="http://copaseticflows.appspot.com/aprsdotfly"
+  data-contentdeeplinkid="/aprsdotfly"
+  data-clientid="659592594119.apps.googleusercontent.com"
+  data-cookiepolicy="single_host_origin"
+  data-prefilltext="Engage your users today, create a Google+ page for your business."
+  data-calltoactionlabel="WATCH"
+  data-calltoactionurl="http://copaseticflows.appspot.com/aprsdotfly"
+  data-calltoactiondeeplinkid="/aprsdotfly">
+  Share APRS Tour on G+
+</button>    
+    </div>
+    <div id="addthisprefix"></div>
+    <div id="addthis_tb" class="addthis_toolbox addthis_32x32_style addthis_default_style"></div></p>
+    <div id="addthispostfix"></div>
+    
+    </br><!--  <input id="rawdata" type="button" value="TestRaw" onclick="getposit()"></input> -->
+    <p align="left">
+    Edit the the flight path:<br>
+    Camera tilt<input id="camtilt" type="text" value="80" size="4"></input><br>
+    Travel time between points<input id="pointdelay" type="text" value="5" size="5"></input></br>
+    <input id="drivemode" type="checkbox" value="" onclick=""></input>Driving Mode
+    <input id="altmode" type="checkbox" checked="checked" onclick=""></input>2x Altitude</br>
+    <!-- <input id="pathmode" type="checkbox" value="" onclick=""></input>Hide Path</br> -->
+    <input id="editflight" type="button" value="Edit Flight" onclick="fetchKMLCB(kmlHold)"></input>
+    </p>
+     
+<div id=track_control>
+  <input id="plane_tracks" type="button" value="Planes" onclick="getCallType('planes')"></input>
+  <input id="car_tracks" type="button" value="Cars" onclick="getCallType('cars')"></input>
+  <p id=track_label>Recent plane tracks</p>
+</div>        
+<div id=tracks>
+<table>
+<tr><th>callsign</th><th>last seen</th></tr>
+{% for call in calltimes %}
+{{call}}
+{% endfor %}
+</table>
+</div>
+
+    <p align="left">
+    APRS, the Automatic Packet Reporting System, is an amateur radio based system that allows 
+    operators to report real-time position and other types of data.  Particuarly interesting 
+    are position streams from high altitude balloons and other aeronautical projects.  If you zoom 
+    in on a track, you can use the maps perspective control to see its change in altitude as well as position.  
+    To see a list of APRS stations that are moving, go to <a target="_blank" href="http://aprs.fi/moving/">aprs.fi/moving</a><br>
+    </p>
+
+    <div id="points"></div>
+    <!--  <textarea id="testout" rows="400" cols="80"></textarea> -->
+    <!--  <input id="get_passes" type="button" value="Countdown" onclick="countdown()"></input> -->
+    <!--  <input id="get_passes" type="button" value="Serial" onclick="getserial()"></input> -->
+    
+    <!--  <iframe src="http://aprs.fi/moving/"></iframe> -->
+    </div>
+    <div id="targeting">
+    </div><br>
+    <div id="targetmap"></div>
+    <div id="munitions"></div>
+    </div>
+
+    </td>
+    
+    
+    
+    <td align="center" >
+
+    <div id='map3d'></div> 
+    </td>
+
+    </tr>
+    </table>
+    
+  </div> 
+ 
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script src="/jscript/fbcomm.js" type="text/javascript"></script>
+
+<script>
+//var reqfb;
+
+
+//FB.init({appId: '208101259244089', status: true, cookie: true,
+//    xfbml: true});
+//Listen for the user to login and then customize
+FB.Event.subscribe('auth.login', function(response) {
+  // do something with response
+  fb_setup();
+});
+
+//If the user is already logged in and connected, then get rid of the login button
+FB.getLoginStatus(function(response) {
+  if (response.authResponse) {
+    // logged in and connected user, someone you know
+    fb_setup();
+    
+  } else {
+    // no user session available, someone you dont know
+  }
+}, true);
+
+
+
+
+function logComm( commentxid ){                      
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            reqfb = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            reqfb = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        var comm_params = "xid=" +
+                      encodeURIComponent(commentxid);
+        
+        reqfb.open("POST", '/fbcomm', true);
+        reqfb.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        reqfb.setRequestHeader("Content-length", comm_params.length);
+        reqfb.setRequestHeader("Connection", "close");
+
+        
+        reqfb.onreadystatechange = comm_cb;
+        reqfb.send(comm_params);
+}
+
+function comm_cb(){
+
+}
+
+
+         
+var user_location = '';        
+         function fb_setup(){
+           FB.api('/me', function(user) {
+             if(user != null) {
+                //document.getElementById('fblogin').innerHTML = '';
+                //alert(user.name);
+                var image = document.getElementById('fbimage');
+                //image.src = 'http://graph.facebook.com/' + user.id + '/picture';
+                //image.innerHTML = '<img src="http://graph.facebook.com/' + user.id + '/picture' + '">';
+                //var name = document.getElementById('fbname');
+                //name.innerHTML = user.name
+                login_user = user.id;
+                login_name = user.name;
+                if(user.location.name != null){
+                	//set_cannon(user.location.name);
+                	user_location = user.location.name;
+                	//If you arrive here after the map is initialized, then setup the user canon
+                	if(earth_init){
+                	  set_cannon(user_location);
+                	}
+                }
+                friend_targets();
+             }
+           });
+         }
+         
+         function friend_targets(){
+        	 FB.api('/me/friends', friends_back);        	 
+        	 
+         }
+         
+         function friends_back(response){
+        	 //walk list of friends.  print picture, name, and location
+        	 //alert('Landed in list of friends ', response);
+        	 //sort the friend list
+        	 response.data.sort(name_sort);
+        	 html_list = 'Choose which friend to target';
+        	 html_list += '<table>';
+        	 for(var i = 0; i < response.data.length; i += 1){
+        		 html_list += '<tr><td><img src="http://graph.facebook.com/' + response.data[i].id + '/picture' + '">';
+        		 html_list += '<a href="javascript:void(0)" onClick="begin_locate_friend(' + response.data[i].id + ')">';
+        		 html_list += response.data[i].name + '</a></td></tr>';
+        	 }
+        	 html_list += '</table>';
+        	 //write the friend list to the div
+        	 //el('flist').innerHTML = html_list;
+         }
+         
+         function begin_locate_friend( userid ){
+        	 //ask for the friends location
+        	 FB.api('/' + userid, end_locate_friend);        	 
+         }
+         
+         function end_locate_friend(response){
+        	 if(response.location == null){
+        		 alert('Sorry, there is no location for this user');
+        	 }
+        	 if(response.location.name == null){
+        		 alert('Sorry, there is no location for this user');
+        	 }
+        	 else{
+        		 //set the second placemarker at the user's location
+        		 set_target(response.location.name, response.id, response.name);
+        	 }
+        	 //alert('landed in end_locate_friend');
+         }
+         
+         function name_sort(a,b){
+             //[sindex, sname, pindex, startdate, enddate, elev, first_step, last_step]
+             var nameA=a.name.toLowerCase();
+             var nameB=b.name.toLowerCase();
+              if (nameA < nameB){ //sort string ascending
+                  return -1 ;
+              }
+                  if (nameA > nameB){
+                      return 1;
+                  }
+                  return 0; //default return value (no sorting)         	return b.name - a.name;
+         }
+         
+</script> 
+</body> 
+</html>
