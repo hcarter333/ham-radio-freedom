@@ -1,0 +1,706 @@
+
+A-007-01-05 (3) What is a pi-network?
+1. An antenna matching network that is isolated from ground
+2. A network consisting of four inductors or four capacitors
+3. A network consisting of one inductor and two capacitors or two inductors and one capacitor
+4. A power incidence network
+> The "Pi" configuration, usually an input shunt capacitor, a series inductor and an output shunt capacitor, resembles two L networks back-to-back.  The Pi has greater impedance transformation range than the L network.
+
+A-007-01-06 (3) Which type of network offers the greatest transformation ratio?
+1. Chebyshev
+2. Butterworth
+3. Pi-network
+4. L-network
+> With only two variables components, an "L" network has a limited range of impedance transformation.  The "Pi" configuration, usually an input shunt capacitor, a series inductor and an output shunt capacitor, resembles two L networks back-to-back.  The Pi has greater impedance transformation range than the L network.  The "Pi-L" network, where the Pi output capacitor doubles as an input capacitor to a subsequent L section, provides even more harmonic suppression and a greater transformation ratio.
+
+A-007-01-07 (2) Why is an L-network of limited utility in impedance matching?
+1. It is thermally unstable
+2. It matches only a small impedance range
+3. It is prone to self-resonance
+4. It has limited power handling capability
+> With only two variables components, an "L" network has a limited range of impedance transformation.  The "Pi" configuration, usually an input shunt capacitor, a series inductor and an output shunt capacitor, resembles two L networks back-to-back.  The Pi has greater impedance transformation range than the L network.  The "Pi-L" network, where the Pi output capacitor doubles as an input capacitor to a subsequent L section, provides even more harmonic suppression and a greater transformation ratio.
+
+A-007-01-08 (3) How does a network transform one impedance to another?
+1. It produces transconductance to cancel the reactive part of an impedance
+2. It introduces negative resistance to cancel the resistive part of an impedance
+3. It cancels the reactive part of an impedance and changes the resistive part
+4. Network resistances substitute for load resistances
+> Within the context of matching the line to a transmitter, the goal is to present a suitable resistive impedance to the final amplifier.  Impedance comprises a reactive value and a resistive value.  To achieve matching, reactance must be cancelled and resistance transformed.
+
+A-007-01-09 (1) What advantage does a pi-L network have over a pi-network for impedance matching between a vacuum tube linear amplifier and a multiband antenna?
+1. Greater harmonic suppression
+2. Higher efficiency
+3. Lower losses
+4. Greater transformation range
+> key words:  MULTIBAND ANTENNA.  Such an antenna may radiate harmonics more readily.  The added harmonic suppression of the "Pi-L" network is advantageous.
+
+A-007-01-10 (3) Which type of network provides the greatest harmonic suppression?
+1. Inverse pi-network
+2. Pi-network
+3. Pi-L network
+4. L-network
+> With only two variables components, an "L" network has a limited range of impedance transformation.  The "Pi" configuration, usually an input shunt capacitor, a series inductor and an output shunt capacitor, resembles two L networks back-to-back.  The Pi has greater impedance transformation range than the L network.  The "Pi-L" network, where the Pi output capacitor doubles as an input capacitor to a subsequent L section, provides even more harmonic suppression and a greater transformation ratio.
+
+A-007-01-11 (3) Which three types of networks are most commonly used to match an RF power amplifier to a transmission line?
+1. T, M and Q
+2. M, pi and T
+3. L, pi and pi-L
+4. L, M and C
+> With only two variables components, an "L" network has a limited range of impedance transformation.  The "Pi" configuration, usually an input shunt capacitor, a series inductor and an output shunt capacitor, resembles two L networks back-to-back.  The Pi has greater impedance transformation range than the L network.  The "Pi-L" network, where the Pi output capacitor doubles as an input capacitor to a subsequent L section, provides even more harmonic suppression and a greater transformation ratio.
+
+
+A-007-02-01 (3) What kind of impedance does a quarter wavelength transmission line present to the source when the line is shorted at the far end?
+1. The same as the characteristic impedance of the transmission line
+2. The same as the output impedance of the source
+3. A very high impedance
+4. A very low impedance
+> Line lengths that are multiples of a half-wavelength replicate the load impedance at the input regardless of the Characteristic Impedance:  i.e., the input impedance equals the load impedance.  Line lengths that are odd multiples of a quarter-wavelength behave as impedance transformers.  Quarter-wavelength line sections are said to invert impedance:  an open is reflected as a short and vice-versa.  When used for matching right at the antenna, a quarter-wavelength line section is called a "Q Section" or "Quarter-Wave Transformer".
+
+A-007-02-02 (4) What kind of impedance does a quarter wavelength transmission line present to the source if the line is open at the far end?
+1. A very high impedance
+2. The same as the output impedance of the source
+3. The same as the characteristic impedance of the transmission line
+4. A very low impedance
+> Line lengths that are multiples of a half-wavelength replicate the load impedance at the input regardless of the Characteristic Impedance:  i.e., the input impedance equals the load impedance.  Line lengths that are odd multiples of a quarter-wavelength behave as impedance transformers.  Quarter-wavelength line sections are said to invert impedance:  an open is reflected as a short and vice-versa.  When used for matching right at the antenna, a quarter-wavelength line section is called a "Q Section" or "Quarter-Wave Transformer".
+
+A-007-02-03 (3) What kind of impedance does a half wavelength transmission line present to the source when the line is open at the far end?
+1. The same as the characteristic impedance of the transmission line
+2. The same as the output impedance of the source
+3. A very high impedance
+4. A very low impedance
+> Line lengths that are multiples of a half-wavelength replicate the load impedance at the input regardless of the Characteristic Impedance:  i.e., the input impedance equals the load impedance.  Line lengths that are odd multiples of a quarter-wavelength behave as impedance transformers.  Quarter-wavelength line sections are said to invert impedance:  an open is reflected as a short and vice-versa.  When used for matching right at the antenna, a quarter-wavelength line section is called a "Q Section" or "Quarter-Wave Transformer".
+
+A-007-02-04 (3) What kind of impedance does a half wavelength transmission line present to the source when the line is shorted at the far end?
+1. A very high impedance
+2. The same as the characteristic impedance of the transmission line
+3. A very low impedance
+4. The same as the output impedance of the source
+> Line lengths that are multiples of a half-wavelength replicate the load impedance at the input regardless of the Characteristic Impedance:  i.e., the input impedance equals the load impedance.  Line lengths that are odd multiples of a quarter-wavelength behave as impedance transformers.  Quarter-wavelength line sections are said to invert impedance:  an open is reflected as a short and vice-versa.  When used for matching right at the antenna, a quarter-wavelength line section is called a "Q Section" or "Quarter-Wave Transformer".
+
+A-007-02-05 (3) What is the velocity factor of a transmission line?
+1. The velocity of the wave on the transmission line multiplied by the velocity of light in a vacuum
+2. The index of shielding for coaxial cable
+3. The velocity of the wave on the transmission line divided by the velocity of light
+4. The ratio of the characteristic impedance of the line to the terminating impedance
+> Velocity Factor is a ratio of wave travel speed on a transmission line with respect to wave speed in vacuum.  It is expressed as a percentage or a decimal fraction because waves travel slower on lines than in space.  The dielectric constant of the insulator between the conductors determines the Velocity Factor per this formula:  1 over the square root of the dielectric constant.  Lines using polyethylene have a Velocity Factor of 66%, foam polyethylene brings it above 80%.  Actual Velocity Factor can vary by as much as plus or minus 10%.  Because of that delay in propagation, a given physical length will always seem longer electrically.
+
+A-007-02-06 (4) What is the term for the ratio of the actual velocity at which a signal travels through a transmission line to the speed of light in a vacuum?
+1. Characteristic impedance
+2. Surge impedance
+3. Standing wave ratio
+4. Velocity factor
+> Velocity Factor is a ratio of wave travel speed on a transmission line with respect to wave speed in vacuum.  It is expressed as a percentage or a decimal fraction because waves travel slower on lines than in space.  The dielectric constant of the insulator between the conductors determines the Velocity Factor per this formula:  1 over the square root of the dielectric constant.  Lines using polyethylene have a Velocity Factor of 66%, foam polyethylene brings it above 80%.  Actual Velocity Factor can vary by as much as plus or minus 10%.  Because of that delay in propagation, a given physical length will always seem longer electrically.
+
+A-007-02-07 (2) What is a typical velocity factor for coaxial cable with polyethylene dielectric?
+1.   0.33
+2.   0.66
+3.   0.1
+4.   2.7
+> Velocity Factor is a ratio of wave travel speed on a transmission line with respect to wave speed in vacuum.  It is expressed as a percentage or a decimal fraction because waves travel slower on lines than in space.  The dielectric constant of the insulator between the conductors determines the Velocity Factor per this formula:  1 over the square root of the dielectric constant.  Lines using polyethylene have a Velocity Factor of 66%, foam polyethylene brings it above 80%.  Actual Velocity Factor can vary by as much as plus or minus 10%.  Because of that delay in propagation, a given physical length will always seem longer electrically.
+
+A-007-02-08 (4) What determines the velocity factor in a transmission line?
+1. The line length
+2. The centre conductor resistivity
+3. The terminal impedance
+4. Dielectrics in the line
+> Velocity Factor is a ratio of wave travel speed on a transmission line with respect to wave speed in vacuum.  It is expressed as a percentage or a decimal fraction because waves travel slower on lines than in space.  The dielectric constant of the insulator between the conductors determines the Velocity Factor per this formula:  1 over the square root of the dielectric constant.  Lines using polyethylene have a Velocity Factor of 66%, foam polyethylene brings it above 80%.  Actual Velocity Factor can vary by as much as plus or minus 10%.  Because of that delay in propagation, a given physical length will always seem longer electrically.
+
+A-007-02-09 (4) Why is the physical length of a coaxial cable shorter than its electrical length?
+1. The surge impedance is higher in the parallel feed line
+2. Skin effect is less pronounced in the coaxial cable
+3. The characteristic impedance is higher in a parallel feed line
+4. RF energy moves slower along the coaxial cable than in air
+> Velocity Factor is a ratio of wave travel speed on a transmission line with respect to wave speed in vacuum.  It is expressed as a percentage or a decimal fraction because waves travel slower on lines than in space.  The dielectric constant of the insulator between the conductors determines the Velocity Factor per this formula:  1 over the square root of the dielectric constant.  Lines using polyethylene have a Velocity Factor of 66%, foam polyethylene brings it above 80%.  Actual Velocity Factor can vary by as much as plus or minus 10%.  Because of that delay in propagation, a given physical length will always seem longer electrically.
+
+A-007-02-10 (1) The reciprocal of the square root of the dielectric constant of the material used to separate the conductors in a transmission line gives the ____________ of the line:
+1. velocity factor
+2. VSWR
+3. impedance
+4. hermetic losses
+> Velocity Factor is a ratio of wave travel speed on a transmission line with respect to wave speed in vacuum.  It is expressed as a percentage or a decimal fraction because waves travel slower on lines than in space.  The dielectric constant of the insulator between the conductors determines the Velocity Factor per this formula:  1 over the square root of the dielectric constant.  Lines using polyethylene have a Velocity Factor of 66%, foam polyethylene brings it above 80%.  Actual Velocity Factor can vary by as much as plus or minus 10%.  Because of that delay in propagation, a given physical length will always seem longer electrically.
+
+A-007-02-11 (1) The velocity factor of a transmission line is the:
+1. ratio of the velocity of propagation in the transmission line to the velocity of propagation in free space
+2. impedance of the line, e.g. 50 ohm, 75 ohm, etc.
+3. speed at which the signal travels in free space
+4. speed to which the standing waves are reflected back to the transmitter
+> Velocity Factor is a ratio of wave travel speed on a transmission line with respect to wave speed in vacuum.  It is expressed as a percentage or a decimal fraction because waves travel slower on lines than in space.  The dielectric constant of the insulator between the conductors determines the Velocity Factor per this formula:  1 over the square root of the dielectric constant.  Lines using polyethylene have a Velocity Factor of 66%, foam polyethylene brings it above 80%.  Actual Velocity Factor can vary by as much as plus or minus 10%.  Because of that delay in propagation, a given physical length will always seem longer electrically.
+
+' --  --  --  --
+
+A-007-09-01 (2) Waveguide is typically used:
+1. at frequencies above 2 MHz
+2. at frequencies above 1500 MHz
+3. at frequencies below 150 MHz
+4. at frequencies below 1500 MHz
+> Waveguides, used as transmission lines, are hollow pipes through which signals propagate as waves.  The width or diameter of the waveguide must be slightly larger than a half-wavelength at the operating frequency.  Below one gigahertz, dimensions become prohibitive.  Signals with wavelengths too large for the physical size of the waveguide are attenuated:  waveguides behave like high-pass filters, in other words, attenuation below the cutoff frequency.  Waveguides do not suffer the conduction, dielectric or radiation losses that normal transmission lines present at microwave frequencies.
+
+A-007-09-02 (3) Which of the following is NOT CORRECT? Waveguide is an efficient transmission medium because it features :
+1. low radiation loss
+2. low dielectric loss
+3. low hysteresis loss
+4. low copper loss
+> Waveguides, used as transmission lines, are hollow pipes through which signals propagate as waves.  The width or diameter of the waveguide must be slightly larger than a half-wavelength at the operating frequency.  Below one gigahertz, dimensions become prohibitive.  Signals with wavelengths too large for the physical size of the waveguide are attenuated:  waveguides behave like high-pass filters, in other words, attenuation below the cutoff frequency.  Waveguides do not suffer the conduction, dielectric or radiation losses that normal transmission lines present at microwave frequencies.
+
+A-007-09-03 (2) Which of the following is an advantage of waveguide as a transmission line?
+1. Frequency sensitive based on dimensions
+2. Low loss
+3. Expensive
+4. Heavy and difficult to install
+> Waveguides, used as transmission lines, are hollow pipes through which signals propagate as waves.  The width or diameter of the waveguide must be slightly larger than a half-wavelength at the operating frequency.  Below one gigahertz, dimensions become prohibitive.  Signals with wavelengths too large for the physical size of the waveguide are attenuated:  waveguides behave like high-pass filters, in other words, attenuation below the cutoff frequency.  Waveguides do not suffer the conduction, dielectric or radiation losses that normal transmission lines present at microwave frequencies.
+
+A-007-09-04 (3) For rectangular waveguide to transfer energy, the cross-section should be at least:
+1. three-eighths wavelength
+2. one-eighth wavelength
+3. one-half wavelength
+4. one-quarter wavelength
+> Waveguides, used as transmission lines, are hollow pipes through which signals propagate as waves.  The width or diameter of the waveguide must be slightly larger than a half-wavelength at the operating frequency.  Below one gigahertz, dimensions become prohibitive.  Signals with wavelengths too large for the physical size of the waveguide are attenuated:  waveguides behave like high-pass filters, in other words, attenuation below the cutoff frequency.  Waveguides do not suffer the conduction, dielectric or radiation losses that normal transmission lines present at microwave frequencies.
+
+A-007-09-05 (2) Which of the following statements about waveguide IS NOT correct?
+1. In the transverse electric mode, a component of the magnetic field is in the direction of propagation
+2. Waveguide has high loss at high frequencies, but low loss below cutoff frequency
+3. In the transverse magnetic mode, a component of the electric field is in the direction of propagation
+4. Waveguide has low loss at high frequencies, but high loss below cutoff frequency
+> Signals with wavelengths too large for the physical size of the waveguide are attenuated:  waveguides behave like high-pass filters, in other words, attenuation below the cutoff frequency.  In free space, waves are known as transverse-electromagnetic: the electric field, the magnetic field and the direction of travel are all perpendicular to one another.  In a waveguide, waves bounce from wall to wall thus travelling in a zigzag manner.  Only one of the electric or magnetic field can be truly perpendicular with the length of the waveguide;  the mode, transverse electric or transverse magnetic, describes which field is purely perpendicular.
+
+A-007-09-06 (3) Which of the following is a major advantage of waveguide over coaxial cable for use at microwave frequencies?
+1. Frequency response from 1.8 MHz to 24 GHz
+2. Easy to install
+3. Very low losses
+4. Inexpensive to install
+> Waveguides, used as transmission lines, are hollow pipes through which signals propagate as waves.  The width or diameter of the waveguide must be slightly larger than a half-wavelength at the operating frequency.  Below one gigahertz, dimensions become prohibitive.  Signals with wavelengths too large for the physical size of the waveguide are attenuated:  waveguides behave like high-pass filters, in other words, attenuation below the cutoff frequency.  Waveguides do not suffer the conduction, dielectric or radiation losses that normal transmission lines present at microwave frequencies.
+
+A-007-09-07 (2) What is printed circuit transmission line called?
+1. Dielectric substrate
+2. Microstripline
+3. Dielectric imprinting
+4. Ground plane
+> A Microstrip transmission line is a type of line consisting of a thin and flat strip of conductive material separated from a ground plane by a dielectric.  A double-sided printed circuit board lends itself to the construction of microstrip lines:  traces on top with a ground plane underneath.  Characteristic Impedance is determined by trace width, dielectric thickness and dielectric constant.  One side of the line is exposed to air, external shielding may be required when high isolation is required.  [ Stripline uses a similar thin and flat conductor but sandwiched between two parallel ground planes. ]
+
+A-007-09-08 (1) Compared with coaxial cable, microstripline:
+1. has poorer shielding
+2. has superior shielding
+3. must have much lower characteristic impedance
+4. must have much higher characteristic impedance
+> A Microstrip transmission line is a type of line consisting of a thin and flat strip of conductive material separated from a ground plane by a dielectric.  A double-sided printed circuit board lends itself to the construction of microstrip lines:  traces on top with a ground plane underneath.  Characteristic Impedance is determined by trace width, dielectric thickness and dielectric constant.  One side of the line is exposed to air, external shielding may be required when high isolation is required.  [ Stripline uses a similar thin and flat conductor but sandwiched between two parallel ground planes. ]
+
+A-007-09-09 (4) A section of waveguide:
+1. operates like a low-pass filter
+2. operates like a band-stop filter
+3. is lightweight and easy to install
+4. operates like a high-pass filter
+> Waveguides, used as transmission lines, are hollow pipes through which signals propagate as waves.  The width or diameter of the waveguide must be slightly larger than a half-wavelength at the operating frequency.  Below one gigahertz, dimensions become prohibitive.  Signals with wavelengths too large for the physical size of the waveguide are attenuated:  waveguides behave like high-pass filters, in other words, attenuation below the cutoff frequency.  Waveguides do not suffer the conduction, dielectric or radiation losses that normal transmission lines present at microwave frequencies.
+
+A-007-09-10 (4) Microstripline is:
+1. a small semiconductor family
+2. a high power microwave antenna
+3. a family of fluids for removing coatings from small parts
+4. printed circuit transmission line
+> A Microstrip transmission line is a type of line consisting of a thin and flat strip of conductive material separated from a ground plane by a dielectric.  A double-sided printed circuit board lends itself to the construction of microstrip lines:  traces on top with a ground plane underneath.  Characteristic Impedance is determined by trace width, dielectric thickness and dielectric constant.  External shielding may be required when high isolation is required.  [ Stripline uses a similar thin and flat conductor but sandwiched between two parallel ground planes. ]
+
+A-007-09-11 (2) What precautions should you take before beginning repairs on a microwave feed horn or waveguide?
+1. Be sure the weather is dry and sunny
+2. Be sure the transmitter is turned off and the power source is disconnected
+3. Be sure propagation conditions are unfavorable for tropospheric ducting
+4. Be sure to wear tight-fitting clothes and gloves to protect your body and hands from sharp edges
+> With the possibility of shorter wavelengths to reach deeper into the body or to produce resonances in smaller structures, such as the eye, be extra careful not to expose anyone to microwave radiation.  The significant gain available from physically small antennas also turn low power levels into definite risks.  Heating is one known effect of RF on body tissues, other effects are possible.
+
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+{L15} Antennas
+
+A-007-03-01 (4) What term describes a method used to match a high-impedance transmission line to a lower impedance antenna by connecting the line to the driven element in two places, spaced a fraction of a wavelength on each side of the driven element centre?
+1. The gamma match
+2. The omega match
+3. The stub match
+4. The T match
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+A-007-03-02 (2) What term describes an unbalanced feed system in which the driven element of an antenna is fed both at the centre and a fraction of a wavelength to one side of centre?
+1. The omega match
+2. The gamma match
+3. The stub match
+4. The T match
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+A-007-03-03 (1) What term describes a method of antenna impedance matching that uses a short section of transmission line connected to the antenna feed line near the antenna and perpendicular to the feed line?
+1. The stub match
+2. The omega match
+3. The delta match
+4. The gamma match
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+A-007-03-04 (4) What would be the physical length of a typical coaxial stub that is electrically one quarter wavelength long at 14.1 MHz? (Assume a velocity factor of 0.66)
+1.   20 metres (65.6 feet)
+2.   2.33 metres (7.64 feet)
+3.   0.25 metre (0.82 foot)
+4.   3.51 metres (11.5 feet)
+> An electrical quarter wavelength can be computed in metres as one fourth of 300 divided by frequency in megahertz.  The physical length equals the electrical length times the Velocity Factor.  In this example, 300 divided by 14.1 divided by 4 times 0.66 = 3.51 metre.
+
+A-007-03-05 (1) The driven element of a Yagi antenna is connected to a coaxial transmission line. The coax braid is connected to the centre of the driven element and the centre conductor is connected to a variable capacitor in series with an adjustable mechanical arrangement on one side of the driven element. The type of matching is:
+1. gamma match
+2. lambda match
+3. "T" match
+4. zeta match
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+A-007-03-06 (3) A quarter-wave stub, for use at 15 MHz, is made from a coaxial cable having a velocity factor of 0.8. Its physical length will be:
+1.   12 metres (39.4 ft)
+2.   8 metres (26.2 ft)
+3.   4 metres (13.1 ft)
+4.   7.5 metres (24.6 ft)
+> An electrical quarter wavelength can be computed in metres as one fourth of 300 divided by frequency in megahertz.  The physical length equals the electrical length times the Velocity Factor.  In this example, 300 divided by 15 divided by 4 times 0.80 = 4 metres.
+
+A-007-03-07 (1) The matching of a driven element with a single adjustable mechanical and capacitive arrangement is descriptive of:
+1. a "gamma" match
+2. a "T" match
+3. an "omega" match
+4. a "Y" match
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+A-007-03-08 (1) A Yagi antenna uses a gamma match. The coaxial braid connects to:
+1. the centre of the driven element
+2. the variable capacitor
+3. the adjustable gamma rod
+4. the centre of the reflector
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+A-007-03-09 (1) A Yagi antenna uses a gamma match. The centre of the driven element connects to:
+1. the coaxial line braid
+2. the coaxial line centre conductor
+3. the adjustable gamma rod
+4. a variable capacitor
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+A-007-03-10 (2) A Yagi antenna uses a gamma match. The adjustable gamma rod connects to:
+1. the coaxial line centre conductor
+2. the variable capacitor
+3. an adjustable point on the reflector
+4. the centre of the driven element
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+A-007-03-11 (4) A Yagi antenna uses a gamma match. The variable capacitor connects to the:
+1. an adjustable point on the director
+2. center of the driven element
+3. coaxial line braid
+4. adjustable gamma rod
+> Gamma match: an unbalanced feed system, the coaxial braid attaches to the centre of the radiating element, the centre conductor connects via a series capacitor further along the radiating element.  This second connection is done with an adjustable rod parallel to the radiating element.  T match: a balanced feed system, can be thought as two mirrored gamma matches, the feed line is brought via conductors parallel to the radiating element at points further along the element.  A Matching Stub is a short section of line, open or shorted, connected across the transmission line at a specific distance from the antenna feedpoint.
+
+
+A-007-04-01 (4) In a half-wave dipole, the distribution of _______ is highest at each end.
+1. current
+2. inductance
+3. capacitance
+4. voltage
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-02 (4) In a half-wave dipole, the distribution of _______ is lowest at each end.
+1. voltage
+2. inductance
+3. capacitance
+4. current
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-03 (2) The feed point in a centre-fed half-wave antenna is at the point of:
+1. minimum current
+2. maximum current
+3. minimum voltage and current
+4. maximum voltage
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-04 (4) In a half-wave dipole, the lowest distribution of _________ occurs at the middle.
+1. capacity
+2. inductance
+3. current
+4. voltage
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-05 (3) In a half-wave dipole, the highest distribution of ________ occurs at the middle.
+1. inductance
+2. voltage
+3. current
+4. capacity
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-06 (1) A half-wave dipole antenna is normally fed at the point where:
+1. the current is maximum
+2. the voltage is maximum
+3. the resistance is maximum
+4. the antenna is resonant
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-07 (4) At the ends of a half-wave dipole:
+1. voltage and current are both high
+2. voltage and current are both low
+3. voltage is low and current is high
+4. voltage is high and current is low
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-08 (3) The impedance of a half-wave antenna at its centre is low, because at this point:
+1. voltage and current are both high
+2. voltage and current are both low
+3. voltage is low and current is high
+4. voltage is high and current is low
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-09 (3) In a half-wave dipole, where does minimum voltage occur?
+1. At the right end
+2. It is equal at all points
+3. The centre
+4. Both ends
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-10 (1) In a half-wave dipole, where does the minimum current occur?
+1. At both ends
+2. At the centre
+3. It is equal at all points
+4. At the right end
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+A-007-04-11 (2) In a half-wave dipole, where does the minimum impedance occur?
+1. It is the same at all points
+2. At the centre
+3. At the right end
+4. At both ends
+> On a centre-fed resonant half-wave dipole, current is high and voltage low at the feedpoint, the ends exhibit high voltage and low current.  Low voltage and high current at the centre make for low impedance ( Z = E divided I ).
+
+
+A-007-05-01 (4) What is meant by circularly polarized electromagnetic waves?
+1. Waves with an electric field bent into circular shape
+2. Waves that circle the earth
+3. Waves produced by a circular loop antenna
+4. Waves with a rotating electric field
+> The polarization of an electromagnetic radio wave corresponds to the position of the electrical field with respect to the surface of the Earth:  horizontal when the E field is parallel to ground and vertical when perpendicular to ground.  The magnetic field is at 90 degrees (perpendicular) to the electrical field.  Dipoles and Yagis are linearly polarized antennas (i.e., the electrical field has a constant orientation).  Circular polarization, where the polarization rotates, can be obtained from helical beam antennas or with crossed linear antennas fed with the correct phase difference.  "Sense" refers to the direction of the rotation:  clockwise polarization for a receding wave is termed right-hand.
+
+A-007-05-02 (3) What is the polarization of an electromagnetic wave if its magnetic field is parallel to the surface of the Earth?
+1. Elliptical
+2. Circular
+3. Vertical
+4. Horizontal
+> key words:  MAGNETIC FIELD.  The polarization of an electromagnetic radio wave corresponds to the position of the electrical field with respect to the surface of the Earth:  horizontal when the E field is parallel to ground and vertical when perpendicular to ground.  The magnetic field is at 90 degrees (perpendicular) to the electrical field.  Dipoles and Yagis are linearly polarized antennas (i.e., the electrical field has a constant orientation).  Circular polarization, where the polarization rotates, can be obtained from helical beam antennas or with crossed linear antennas fed with the correct phase difference.  "Sense" refers to the direction of the rotation:  clockwise polarization for a receding wave is termed right-hand.
+
+A-007-05-03 (4) What is the polarization of an electromagnetic wave if its magnetic field is perpendicular to the surface of the Earth?
+1. Vertical
+2. Circular
+3. Elliptical
+4. Horizontal
+> key words:  MAGNETIC FIELD.  The polarization of an electromagnetic radio wave corresponds to the position of the electrical field with respect to the surface of the Earth:  horizontal when the E field is parallel to ground and vertical when perpendicular to ground.  The magnetic field is at 90 degrees (perpendicular) to the electrical field.  Dipoles and Yagis are linearly polarized antennas (i.e., the electrical field has a constant orientation).  Circular polarization, where the polarization rotates, can be obtained from helical beam antennas or with crossed linear antennas fed with the correct phase difference.  "Sense" refers to the direction of the rotation:  clockwise polarization for a receding wave is termed right-hand.
+
+A-007-05-04 (2) The polarization of a radio wave is taken as the direction of the lines of force in the _______ field:
+1. force
+2. electric
+3. magnetic
+4. electromagnetic
+> The polarization of an electromagnetic radio wave corresponds to the position of the electrical field with respect to the surface of the Earth:  horizontal when the E field is parallel to ground and vertical when perpendicular to ground.  The magnetic field is at 90 degrees (perpendicular) to the electrical field.  Dipoles and Yagis are linearly polarized antennas (i.e., the electrical field has a constant orientation).  Circular polarization, where the polarization rotates, can be obtained from helical beam antennas or with crossed linear antennas fed with the correct phase difference.  "Sense" refers to the direction of the rotation:  clockwise polarization for a receding wave is termed right-hand.
+
+A-007-05-05 (1) A transmitted wave is vertically polarized when:
+1. its electrical component is vertical
+2. the antenna is pointing north in the northern hemisphere
+3. the antenna is parallel to the ground
+4. its magnetic component is vertical
+> The polarization of an electromagnetic radio wave corresponds to the position of the electrical field with respect to the surface of the Earth:  horizontal when the E field is parallel to ground and vertical when perpendicular to ground.  The magnetic field is at 90 degrees (perpendicular) to the electrical field.  Dipoles and Yagis are linearly polarized antennas (i.e., the electrical field has a constant orientation).  Circular polarization, where the polarization rotates, can be obtained from helical beam antennas or with crossed linear antennas fed with the correct phase difference.  "Sense" refers to the direction of the rotation:  clockwise polarization for a receding wave is termed right-hand.
+
+A-007-05-06 (4) The polarisation of an antenna is the :
+1. orientation of its radiated magnetic field
+2. length of the radiating element
+3. radiation angle
+4. orientation of its radiated electric field
+> The polarization of an electromagnetic radio wave corresponds to the position of the electrical field with respect to the surface of the Earth:  horizontal when the E field is parallel to ground and vertical when perpendicular to ground.  The magnetic field is at 90 degrees (perpendicular) to the electrical field.  Dipoles and Yagis are linearly polarized antennas (i.e., the electrical field has a constant orientation).  Circular polarization, where the polarization rotates, can be obtained from helical beam antennas or with crossed linear antennas fed with the correct phase difference.  "Sense" refers to the direction of the rotation:  clockwise polarization for a receding wave is termed right-hand.
+
+A-007-05-07 (4) A parabolic antenna is very efficient because:
+1. a dipole antenna can be used to pick up the received energy
+2. no impedance matching is required
+3. a horn-type radiator can be used to trap the received energy
+4. all the received energy is focused to a point where the pick-up antenna is located
+> A parabolic reflector dish provides significant gain because energy striking any point of the parabola is reflected to the focal point with the correct phase.  On transmit, the inverse process takes place:  all energy directed at the parabola from the feed antenna is reflected forward with the correct phase.  High gain antennas used on UHF or microwave frequencies present a real risk to living tissues:  never stand in front of a transmitting antenna.
+
+A-007-05-08 (1) A helical-beam antenna with right-hand polarization will best receive signals with:
+1. right-hand polarization
+2. left-hand polarization
+3. vertical polarization only
+4. horizontal polarization
+> The helical beam antenna is circularly polarized.  Although it will respond to horizontally or vertically polarized waves, the full gain of the antenna can only be realized with a circularly polarized wave of the same "sense".
+
+A-007-05-09 (1) One antenna which will respond simultaneously to vertically- and horizontally-polarized signals is the:
+1. helical-beam antenna
+2. folded dipole antenna
+3. ground-plane antenna
+4. quad antenna
+> The dipole, ground-plane and quad are all linearly polarized and thus respond optimally to waves polarized in a single given direction, horizontal or vertical as the case may be.  Unless proper alignment is assured, a significant loss is incurred.  The helical beam antenna is circularly polarized, it can deal with the rotating fields of a wave with circular polarization.  Consequently, it can deal with any single polarization at any given angle.
+
+A-007-05-10 (1) What precaution should you take whenever you make adjustments to the feed system of a parabolic dish antenna?
+1. Be sure no one can activate the transmitter
+2. Disconnect the antenna-positioning mechanism
+3. Point the dish away from the sun so it doesn't concentrate solar energy on you
+4. Be sure you and the antenna structure are properly grounded
+> A parabolic reflector dish provides significant gain because energy striking any point of the parabola is reflected to the focal point with the correct phase.  On transmit, the inverse process takes place:  all energy directed at the parabola from the feed antenna is reflected forward with the correct phase.  High gain antennas used on UHF or microwave frequencies present a real risk to living tissues:  never stand in front of a transmitting antenna.
+
+A-007-05-11 (1) Why should a protective fence be placed around the base of a ground-mounted parabolic dish transmitting antenna?
+1. To reduce the possibility of persons being harmed by RF energy during transmissions
+2. To reduce the possibility that animals will damage the antenna
+3. To increase the property value through increased security awareness
+4. To protect the antenna from lightning damage and provide a good ground system for the installation
+> A parabolic reflector dish provides significant gain because energy striking any point of the parabola is reflected to the focal point with the correct phase.  On transmit, the inverse process takes place:  all energy directed at the parabola from the feed antenna is reflected forward with the correct phase.  High gain antennas used on UHF or microwave frequencies present a real risk to living tissues:  never stand in front of a transmitting antenna.
+
+A-007-06-01 (2) A transmitter has an output of 100 watts. The cable and connectors have a composite loss of 3 dB, and the antenna has a gain of 6 dB. What is the Effective Radiated Power?
+1.   350 watts
+2.   200 watts
+3.   400 watts
+4.   300 watts
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, minus 3 dB plus 6 dB yields a net increase of 3 dB or twice the power.
+
+A-007-06-02 (4) As standing wave ratio rises, so does the loss in the transmission line. This is caused by:
+1. high antenna currents
+2. high antenna voltage
+3. leakage to ground through the dielectric
+4. dielectric and conductor heat losses
+> Voltage peaks on the standing wave increase losses through the dielectric ( P = E squared divided by R ), current peaks on the standing wave increase conductor losses ( P = I squared times R ).
+
+A-007-06-03 (4) What is the Effective Radiated Power of an amateur transmitter, if the transmitter output power is 200 watts, the transmission line loss is 5 watts, and the antenna power gain is 3 dB?
+1.   197 watts
+2.   228 watts
+3.   178 watts
+4.   390 watts
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, minus 5 watts plus 3 dB yields a net increase of 3 dB or twice the remaining power of 195 Watts.
+
+A-007-06-04 (1) Effective Radiated Power means the:
+1. transmitter output power, minus line losses, plus antenna gain
+2. power supplied to the antenna before the modulation of the carrier
+3. power supplied to the feedline plus antenna gain
+4. ratio of signal output power to signal input power
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.
+
+A-007-06-05 (3) A transmitter has an output power of 200 watts. The coaxial and connector losses are 3 dB in total, and the antenna gain is 9 dB. What is the approximate Effective Radiated Power of this system?
+1.   3200 watts
+2.   1600 watts
+3.   800 watts
+4.   400 watts
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, minus 3 dB plus 9 dB yields a net increase of 6 dB or four times the power.
+
+A-007-06-06 (3) A transmitter has a power output of 100 watts. There is a loss of 1.30 dB in the transmission line, a loss of 0.2 dB through the transmatch, and a gain of 4.50 dB in the antenna. The Effective Radiated Power (ERP) is:
+1.   800 watts
+2.   400 watts
+3.   200 watts
+4.   100 watts
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, minus 1.5 dB plus 4.5 dB yields a net increase of 3 dB or twice the power.
+
+A-007-06-07 (3) If the overall gain of an amateur station is increased by 3 dB the ERP (Effective Radiated Power) will:
+1. decrease by 3 watts
+2. remain the same
+3. double
+4. be cut in half
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, a net gain of 3 dB yields twice the power.
+
+A-007-06-08 (4) A transmitter has a power output of 125 watts. There is a loss of 0.8 dB in the transmission line, 0.2 dB in the transmatch, and a gain of 10 dB in the antenna. The Effective Radiated Power (ERP) is:
+1.   1250
+2.   1125
+3.   134
+4.   1000
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, minus 1 dB plus 10 dB yields a net increase of 9 dB or eight times the power.
+
+A-007-06-09 (2) If a 3 dB gain antenna is replaced with a 9 dB gain antenna, with no other changes, the Effective Radiated Power (ERP) will increase by:
+1.   6
+2.   4
+3.   1.5
+4.   2
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, an added 6 dB yields four times the power.
+
+A-007-06-10 (4) A transmitter has an output of 2000 watts PEP. The transmission line, connectors and transmatch have a composite loss of 1 dB, and the gain from the stacked Yagi antenna is 10 dB. What is the Effective Radiated Power (ERP) in watts PEP?
+1.   18 000
+2.   20 000
+3.   2009
+4.   16 000
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, minus 1 dB plus 10 dB yields a net increase of 9 dB or eight times the power.
+
+A-007-06-11 (3) A transmitter has an output of 1000 watts PEP. The coaxial cable, connectors and transmatch have a composite loss of 1 dB, and the antenna gain is 10 dB. What is the Effective Radiated Power (ERP) in watts PEP?
+1.   1009
+2.   10 000
+3.   8000
+4.   9000
+> Effective Radiated Power (ERP) equals transmitter power minus line losses plus antenna gain.  In this example, minus 1 dB plus 10 dB yields a net increase of 9 dB or eight times the power.
+
+A-007-07-01 (1) For a 3-element Yagi antenna with horizontally mounted elements, how does the main lobe takeoff angle vary with height above flat ground?
+1. It decreases with increasing height
+2. It increases with increasing height
+3. It does not vary with height
+4. It depends on E-region height, not antenna height
+> Greater antenna heights tend to lower the main radiation lobe where ground reflections end up in phase with direct radiation from the antenna.
+
+A-007-07-02 (3) Most simple horizontally polarized antennas do not exhibit any directivity unless they are:
+1. an eighth of a wavelength above the ground
+2. a quarter wavelength above the ground
+3. a half wavelength or more above the ground
+4. three-eighths of a wavelength above the ground
+> Below one half-wavelength in antenna height, there is little point in selecting a given broadside direction:  for example, choosing a north-south orientation to favour east-west radiation will not pay significant dividends for antennas close to ground.
+
+A-007-07-03 (2) The plane from which ground reflections can be considered to take place, or the effective ground plane for an antenna is:
+1. as much as 6 cm below ground depending upon soil conditions
+2. several centimetres to as much as 2 meters below ground, depending upon soil conditions
+3. as much as a meter above ground
+4. at ground level exactly
+> Current penetration around an antenna depends first on frequency and then on soil conductivity and dielectric constant.  At HF frequencies over salt water, penetration ranges from 5 to 18 centimetres.  Over poor ground, penetration can exceed 10 metres.
+
+A-007-07-04 (2) Why is a ground-mounted vertical quarter-wave antenna in reasonably open surroundings better for long distance contacts than a half-wave dipole at a quarter wavelength above ground?
+1. The radiation resistance is lower
+2. The vertical radiation angle is lower
+3. It has an omnidirectional characteristic
+4. It uses vertical polarization
+> key words:  DIPOLE AT A QUARTER WAVELENGTH HEIGHT.  At heights below three eights of a wavelength, ground reflections cause horizontal dipoles to direct more energy straight up.  At a height of one half-wavelength, radiation at 90 degrees is minimized and two lobes form at 30 degrees.  In this comparison, the ground-mounted vertical undoubtedly exhibits a lower radiation angle as it cannot possibly radiate upwards.
+
+A-007-07-05 (4) When a half-wave dipole antenna is installed one-half wavelength above ground, the:
+1. radiation pattern changes to produce side lobes at 15 and 50 degrees
+2. side lobe radiation is cancelled
+3. radiation pattern is unaffected
+4. vertical or upward radiation is cancelled
+> At heights below three eights of a wavelength, ground reflections cause horizontal dipoles to direct more energy straight up.  At a height of one half-wavelength, radiation at 90 degrees is minimized and two lobes form at 30 degrees.
+
+A-007-07-06 (2) How does antenna height affect the horizontal (azimuthal) radiation pattern of a horizontal dipole HF antenna?
+1. Antenna height has no effect on the pattern
+2. If the antenna is less than one-half wavelength high, reflected radio waves from the ground significantly distort the pattern
+3. If the antenna is less than one-half wavelength high, radiation off the ends of the wire is eliminated
+4. If the antenna is too high, the pattern becomes unpredictable
+> Below one half-wavelength in antenna height, there is little point in selecting a given broadside direction:  for example, choosing a north-south orientation to favour east-west radiation will not pay significant dividends for antennas close to ground.
+
+A-007-07-07 (2) For long distance propagation, the vertical radiation angle of the energy from the antenna should be:
+1. more than 45 degrees but less than 90 degrees
+2. less than 30 degrees
+3. 90 degrees
+4. more than 30 degrees but less than 45 degrees
+> Depending on band (for example, 10, 15 and 20 metre) and distance, preferred radiation angles range from 1 to 25 degrees for long distance communication.  A low radiation angle permits hitting the ionosphere at a greater distance for longer skip distances.
+
+A-007-07-08 (2) Greater distance can be covered with multiple-hop transmissions by decreasing the:
+1. power applied to the antenna
+2. vertical radiation angle of the antenna
+3. main height of the antenna
+4. length of the antenna
+> Depending on band (for example, 10, 15 and 20 metre) and distance, preferred radiation angles range from 1 to 25 degrees for long distance communication.  A low radiation angle permits hitting the ionosphere at a greater distance for longer skip distances.
+
+A-007-07-09 (1) The impedance at the centre of a dipole antenna more than 3 wavelengths above ground would be nearest to:
+1.   75 ohms
+2.   25 ohms
+3.   300 ohms
+4.   600 ohms
+> The impedance of a dipole in free space is known as 73 ohms.  Below a height of a half-wavelength, impedance is greatly affected by ground proximity.  At one wavelength and up, impedance begins to track the free-space value more closely.
+
+A-007-07-10 (2) What is the main reason why so many VHF base and mobile antennas are 5/8 of a wavelength?
+1. The angle of radiation is high giving excellent local coverage
+2. Most of the energy is radiated at a low angle
+3. It's easy to match the antenna to the transmitter
+4. It's a convenient length on VHF
+> The 'five eights' wavelength antenna focuses energy somewhat better towards the horizon (lower radiation angle) than a regular quarter-wave antenna.
+
+A-007-07-11 (1) The most important consideration when deciding upon an antenna for contacting stations at great distances (DX) is:
+1. vertical angle of radiation
+2. sunspot activity
+3. impedance
+4. bandwidth
+> Depending on band (for example, 10, 15 and 20 metre) and distance, preferred radiation angles range from 1 to 25 degrees for long distance communication.  A low radiation angle permits hitting the ionosphere at a greater distance for longer skip distances.
+
+A-007-08-01 (4) What is meant by the radiation resistance of an antenna?
+1. The resistance in the atmosphere that an antenna must overcome to be able to radiate a signal
+2. The specific impedance of an antenna
+3. The combined losses of the antenna elements and feed line
+4. The equivalent resistance that would dissipate the same amount of power as that radiated from an antenna
+> The power delivered to an antenna can be transformed in two ways:  some of it is lost through heat and dielectric losses, the rest is radiated.  The part that is radiated can be imagined to have "disappeared" into a virtual resistance.  Radiation Resistance is defined as an equivalent resistance that would have dissipated all the power radiated.  The dimensions of the radiating element, particularly its length, and its immediate environment, the proximity to ground for instance, affect radiation resistance.  Except for electrically short antennas, radiation resistance makes up most of the antenna impedance.  Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.
+
+A-007-08-02 (3) Why would one need to know the radiation resistance of an antenna?
+1. To measure the near-field radiation density from a transmitting antenna
+2. To calculate the front-to-side ratio of the antenna
+3. To match impedances for maximum power transfer
+4. To calculate the front-to-back ratio of the antenna
+> The power delivered to an antenna can be transformed in two ways:  some of it is lost through heat and dielectric losses, the rest is radiated.  The part that is radiated can be imagined to have "disappeared" into a virtual resistance.  Radiation Resistance is defined as an equivalent resistance that would have dissipated all the power radiated.  The dimensions of the radiating element, particularly its length, and its immediate environment, the proximity to ground for instance, affect radiation resistance.  Except for electrically short antennas, radiation resistance makes up most of the antenna impedance.  Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.
+
+A-007-08-03 (1) What factors determine the radiation resistance of an antenna?
+1. Antenna location with respect to nearby objects and the conductors length/diameter ratio
+2. Transmission line length and antenna height
+3. Sunspot activity and time of day
+4. It is a physical constant and is the same for all antennas
+> The power delivered to an antenna can be transformed in two ways:  some of it is lost through heat and dielectric losses, the rest is radiated.  The part that is radiated can be imagined to have "disappeared" into a virtual resistance.  Radiation Resistance is defined as an equivalent resistance that would have dissipated all the power radiated.  The dimensions of the radiating element, particularly its length, and its immediate environment, the proximity to ground for instance, affect radiation resistance.  Except for electrically short antennas, radiation resistance makes up most of the antenna impedance.  Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.
+
+A-007-08-04 (4) What is the term for the ratio of the radiation resistance of an antenna to the total resistance of the system?
+1. Beamwidth
+2. Effective Radiated Power
+3. Radiation conversion loss
+4. Antenna efficiency
+> The power delivered to an antenna can be transformed in two ways:  some of it is lost through heat and dielectric losses, the rest is radiated.  The part that is radiated can be imagined to have "disappeared" into a virtual resistance.  Radiation Resistance is defined as an equivalent resistance that would have dissipated all the power radiated.  The dimensions of the radiating element, particularly its length, and its immediate environment, the proximity to ground for instance, affect radiation resistance.  Except for electrically short antennas, radiation resistance makes up most of the antenna impedance.  Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.
+
+A-007-08-05 (2) What is included in the total resistance of an antenna system?
+1. Radiation resistance plus transmission resistance
+2. Radiation resistance plus ohmic resistance
+3. Transmission line resistance plus radiation resistance
+4. Radiation resistance plus space impedance
+> The power delivered to an antenna can be transformed in two ways:  some of it is lost through heat and dielectric losses, the rest is radiated.  The part that is radiated can be imagined to have "disappeared" into a virtual resistance.  Radiation Resistance is defined as an equivalent resistance that would have dissipated all the power radiated.  The dimensions of the radiating element, particularly its length, and its immediate environment, the proximity to ground for instance, affect radiation resistance.  Except for electrically short antennas, radiation resistance makes up most of the antenna impedance.  Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.
+
+A-007-08-06 (2) How can the approximate beamwidth of a beam antenna be determined?
+1. Draw two imaginary lines through the ends of the elements and measure the angle between the lines
+2. Note the two points where the signal strength is down 3 dB from the maximum signal point and compute the angular difference
+3. Measure the ratio of the signal strengths of the radiated power lobes from the front and side of the antenna
+4. Measure the ratio of the signal strengths of the radiated power lobes from the front and rear of the antenna
+> Beamwidth is defined as the width in degrees over which the major lobe is within 3 dB of maximum gain, this is equally described as the angle between the half-power points.
+
+A-007-08-07 (4) How is antenna percent efficiency calculated?
+1. (radiation resistance / transmission resistance) X 100
+2. (total resistance / radiation resistance) X 100
+3. (effective radiated power / transmitter output) X 100
+4. (radiation resistance / total resistance) X 100
+> The power delivered to an antenna can be transformed in two ways:  some of it is lost through heat and dielectric losses, the rest is radiated.  The part that is radiated can be imagined to have "disappeared" into a virtual resistance.  Radiation Resistance is defined as an equivalent resistance that would have dissipated all the power radiated.  The dimensions of the radiating element, particularly its length, and its immediate environment, the proximity to ground for instance, affect radiation resistance.  Except for electrically short antennas, radiation resistance makes up most of the antenna impedance.  Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.
+
+A-007-08-08 (1) What is the term used for an equivalent resistance which would dissipate the same amount of energy as that radiated from an antenna?
+1. Radiation resistance
+2. "j" factor
+3. Antenna resistance
+4. "K" factor
+> The power delivered to an antenna can be transformed in two ways:  some of it is lost through heat and dielectric losses, the rest is radiated.  The part that is radiated can be imagined to have "disappeared" into a virtual resistance.  Radiation Resistance is defined as an equivalent resistance that would have dissipated all the power radiated.  The dimensions of the radiating element, particularly its length, and its immediate environment, the proximity to ground for instance, affect radiation resistance.  Except for electrically short antennas, radiation resistance makes up most of the antenna impedance.  Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.
+
+A-007-08-09 (1) Antenna beamwidth is the angular distance between :
+1. the points on the major lobe at the half-power points
+2. the maximum lobe spread points on the major lobe
+3. the 6 dB power points on the major lobe
+4. the 3 dB power points on the first minor lobe
+> Beamwidth is defined as the width in degrees over which the major lobe is within 3 dB of maximum gain, this is equally described as the angle between the half-power points.
+
+A-007-08-10 (3) If the ohmic resistance of a half-wave dipole is 2 ohms, and the radiation resistance is 72 ohms, what is the antenna efficiency?
+1.   74%
+2.   72%
+3.   97.3%
+4.   100%
+> Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.  In this example, 72 divided by 74 is 97.3%
+
+A-007-08-11 (2) If the ohmic resistance of a miniloop antenna is 2 milliohms and the radiation resistance is 50 milliohms, what is the antenna efficiency?
+1.   52%
+2.   96.15%
+3.   25%
+4.   50%
+> Antenna efficiency in percentage can be computed as Radiation Resistance over total resistance times 100.  In this example, 50 divided by 52 is 96.2%
+
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+{L13} Digital Signal Processing
+
+A-005-07-03 (1) Which of the following functions IS NOT included in a typical digital signal processor?
+1. Aliasing amplifier
+2. Analog to digital converter
+3. Digital to analog converter
+4. Mathematical transform
+> Digital Signal Processing first transforms an analog signal to digital via an analog-to-digital converter (ADC), performs mathematical operations to filter or demodulate, for example, and recreates an analog signal through a digital-to-analog converter (DAC).  Aliasing is a situation where input frequencies above the sampling rate get erroneously reproduced as lower frequencies;  the situation is prevented through the use of an anti-aliasing filter (a low-pass filter).
+
+A-005-07-04 (3) How many bits are required to provide 256 discrete levels, or a ratio of 256:1?
+1.   6 bits
+2.   16 bits
+3.   8 bits
+4.   4 bits
+> 256 levels in binary data spans the range 0 to 255.  Add the value of each bit in an 8-bit binary number, starting with the lowest:  1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 = 255.
+
+A-005-07-05 (3) Adding one bit to the word length, is equivalent to adding ____ dB to the dynamic range of the digitizer:
+1.   1 dB
+2.   4 dB
+3.   6 dB
+4.   3 dB
+> The number of bits determines the maximum number of distinct values available to represent a signal.  For each sample, the analog-to-digital converter selects the closest value to describe the instantaneous value of the input signal.  The difference between the real value and its numerical representation is a quantization error:  plus or minus half a bit, i.e., 1 bit total.  In digital terms, Signal-to-Noise Ratio and Dynamic Range are synonyms specifying the ratio between the largest possible sample value to the quantization error.  Dynamic Range for fixed-point processors can be approximated by the data word size:  6 dB times number of bits.  Each bit doubles the value, doubling voltage is 6 dB.
+
+A-005-07-06 (3) What do you call the circuit which employs an analog to digital converter, a mathematical transform, a digital to analog converter and a low pass filter?
+1. Digital formatter
+2. Mathematical transformer
+3. Digital signal processor
+4. Digital transformer
+> Digital Signal Processing first transforms an analog signal to digital via an analog-to-digital converter (ADC), performs mathematical operations to filter or demodulate, for example, and recreates an analog signal through a digital-to-analog converter (DAC).  Aliasing is a situation where input frequencies above the sampling rate get erroneously reproduced as lower frequencies;  the situation is prevented through the use of an anti-aliasing filter (a low-pass filter).

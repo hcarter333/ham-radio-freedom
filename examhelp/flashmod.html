@@ -1,0 +1,250 @@
+<style type="text/css">ol{margin:0;padding:0}p{margin:0}.c0{color:#000000;font-size:36pt;font-family:Arial}.c1{line-height:1.15;text-indent:0pt;direction:ltr}.c2{background-color:#ffffff}p{color:#000000;font-size:11pt;font-family:Arial}.heading1{font-size:24pt;font-weight:bold}.heading2{font-size:18pt;font-weight:bold}.heading3{font-size:14pt;font-weight:bold}.heading4{font-size:12pt;font-weight:bold}.heading5{font-size:11pt;font-weight:bold}.heading6{font-size:10pt;font-weight:bold}</style>
+<div id="cards" style="width:97%; height:95%; border:7px solid #555555;">
+  <div id="adheader" style="width:100%; overflow:hidden">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-6583317371769852";
+    /* 468x15, created 7/9/10 */
+    google_ad_slot = "6914591717";
+    google_ad_width = 468;
+    google_ad_height = 15;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  </div>
+<div id=menubar style="width:100%; ">
+  <table style="width:100%; background-color:#ffffff; border:1px solid #555555;">
+  <tr>
+  <td>
+    <div style="text-align:left">
+        <a target="_blank" href="http://copaseticflows.appspot.com">home</a>
+    </div>
+  </td>
+  <td id="entries">
+    <div style="text-align:center; font-family:Trebuchet MS, Arial, Helvetica, sans-serif;">
+      <b>German 111 Ch. A Flash Cards</b>
+    </div>
+  </td>
+  <td>
+    <div style="text-align:right">
+      <a target="_blank" href="http://copaseticflows.appspot.com/examhelp/acf.html">about</a>
+    </div>
+  </td>
+  </tr>
+  </table>
+</div>
+  <div id="cardstuff" style="width:100%; height:73%; border:1px solid #555555;">
+    <span style="text-align:left">Study the extra class band plan in preparation for your
+    FCC amateur radio license exam.  Memorize which frequencies are allowed and what modes, (CW, RTTY,
+    phone, image and data) are used on those frequencies.</span>
+  </div>
+  <div id="card_controls" style="width:100%; height:9%; text-align:center">
+    <input id="start" type="button" value="Start" onclick="start_cards()">
+  </div>
+</div>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+//arrays to hold card content
+var front = [];
+var back = [];
+var fb = 0;
+var cindex = 0;
+
+front[0] = '<p class="c1"><span class="c0">arbeiten Sie mit einem Partner</span></p>';
+back[0] = '<p class="c1"><span class="c0">work with a partner</span></p>';
+front[1] = '<p class="c1"><span class="c0">geben Sie mir</span></p>';
+back[1] = '<p class="c1"><span class="c0">give me</span></p>';
+
+
+front[2] = '<p style="font-size:400%; text-align:center; vertical-align:middle">60m</p>';
+back[2] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr>' +
+        '<td style="border: 1px solid #666666">5.3305 Mhz</td>' +
+        '<td style="border: 1px solid #666666">USB phone only 50 W</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">5.3465 Mhz</td>' +
+        '<td style="border: 1px solid #666666">USB phone only 50 W</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">5.3665 Mhz</td>' +
+        '<td style="border: 1px solid #666666">USB phone only 50 W</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">5.3715 Mhz</td>' +
+        '<td style="border: 1px solid #666666">USB phone only 50 W</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">5.4035 Mhz</td>' +
+        '<td style="border: 1px solid #666666">USB phone only 50 W</td>' +
+        '</tr>';
+
+
+
+
+front[3] = '<p style="font-size:400%; text-align:center; vertical-align:middle">40m</p>';
+back[3] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">7.000 - 7.125 Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">7.125 - 7.300 Mhz</td>' +
+        '<td style="border: 1px solid #666666">phone and image</td>' +
+        '</tr>';
+
+
+
+front[4] = '<p style="font-size:400%; text-align:center; vertical-align:middle">30m</p>';
+back[4] ='<p style="font-size:250%; text-align:center; vertical-align:middle">10.100-10.150<br>RTTY and data 200 W PEP</p>';
+
+front[5] = '<p style="font-size:400%; text-align:center; vertical-align:middle">20m</p>';
+back[5] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">14.000-14.150Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">14.150-14.350Mhz</td>' +
+        '<td style="border: 1px solid #666666">phone and image</td>' +
+        '</tr>';
+
+front[6] = '<p style="font-size:400%; text-align:center; vertical-align:middle">17m</p>';
+back[6] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">18.068-18.110Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">18.110-18.168Mhz</td>' +
+        '<td style="border: 1px solid #666666">phone and image</td>' +
+        '</tr>';
+
+front[7] = '<p style="font-size:400%; text-align:center; vertical-align:middle">15m</p>';
+back[7] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">21.000-21.2000Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">21.200-21.450Mhz</td>' +
+        '<td style="border: 1px solid #666666">phone and image</td>' +
+        '</tr>';
+
+front[8] = '<p style="font-size:400%; text-align:center; vertical-align:middle">12m</p>';
+back[8] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">24.890-24.930Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">24.930-24.990Mhz</td>' +
+        '<td style="border: 1px solid #666666">phone and image</td>' +
+        '</tr>';
+
+front[9] = '<p style="font-size:400%; text-align:center; vertical-align:middle">10m</p>';
+back[9] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">28.000 - 28.300 Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">28.300 - 29.700 Mhz</td>' +
+        '<td style="border: 1px solid #666666">SSB Phone</td>' +
+        '</tr>';
+
+front[10] = '<p style="font-size:400%; text-align:center; vertical-align:middle">6m</p>';
+back[10] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">50.0 - 50.1 Mhz</td>' +
+        '<td style="border: 1px solid #666666">CW Only</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">50.1 - 54.0 Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data<br>phone and image</td>' +
+        '</tr>';
+
+front[11] = '<p style="font-size:400%; text-align:center; vertical-align:middle">2m</p>';
+back[11] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">144.0 - 144.1 Mhz</td>' +
+        '<td style="border: 1px solid #666666">CW Only</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">144.1 - 148.0 Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data<br>phone and image</td>' +
+        '</tr>';
+
+front[12] = '<p style="font-size:400%; text-align:center; vertical-align:middle">1.25m</p>';
+back[12] = '<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">219.0 - 220.1 Mhz</td>' +
+        '<td style="border: 1px solid #666666">Fixed digital message<br>forwarding systems only</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td style="border: 1px solid #666666">222.0 - 225.0 Mhz</td>' +
+        '<td style="border: 1px solid #666666">RTTY and data<br>phone and image</td>' +
+        '</tr>';
+front[13] = '<p style="font-size:400%; text-align:center; vertical-align:middle">70cm</p>';
+back[13] ='<p style="font-size:250%; text-align:center; vertical-align:middle">420.0 - 450.0 Mhz<br>RTTY and data, phone and image</p>';
+front[14] = '<p style="font-size:400%; text-align:center; vertical-align:middle">33cm</p>';
+back[14] ='<p style="font-size:250%; text-align:center; vertical-align:middle">902.0 - 928.0 Mhz<br>RTTY and data, phone and image</p>';
+front[15] = '<p style="font-size:400%; text-align:center; vertical-align:middle">23cm</p>';
+back[15] ='<p style="font-size:250%; text-align:center; vertical-align:middle">1240 - 1300 Mhz<br>RTTY and data, phone and image</p>';
+front[16] = '<p style="font-size:400%; text-align:center; vertical-align:middle"><23cm part I</p>';
+back[16] ='<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">2300 - 2310 MHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td></tr><tr>'+
+        '<td style="border: 1px solid #666666">2390 - 2450 MHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td></tr><tr>'+
+        '<td style="border: 1px solid #666666">3300 - 3500 MHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td></tr><tr>'+
+        '<td style="border: 1px solid #666666">5650 - 5925 MHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td></tr><tr>'+
+        '<td style="border: 1px solid #666666">10.1 - 10.5 GHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td style="border: 1px solid #666666">24.0 - 24.25 GHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td>'+
+        '</tr>'+
+        '</table';
+front[17] = '<p style="font-size:400%; text-align:center; vertical-align:middle"><23cm part II</p>';
+back[17] ='<table style="border-collapse:collapse; height:100%; width:100%; 1px solid #555555;"><tr><td style="border: 1px solid #666666">47.0 - 47.2 GHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td></tr><tr>'+
+        '<td style="border: 1px solid #666666">76.0 - 81.0 GHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td></tr><tr>'+
+        '<td style="border: 1px solid #666666">122.25 - 123 GHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td></tr><tr>'+
+        '<td style="border: 1px solid #666666">134 - 141 GHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td></tr><tr>'+
+        '<td style="border: 1px solid #666666">241 - 250 GHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td style="border: 1px solid #666666">greater than 275 GHz</td>'+
+        '<td style="border: 1px solid #666666">All modes</td>'+
+        '</tr>'+
+        '</table>';
+//var ga = new _IG_GA("UA-1414453-1");
+//ga.reportPageview('/view/extraBandPlanCards');
+
+  var question_sel = [];
+  var card_count = 10;
+  var test_size = 10;
+
+
+function card(){
+  //alert('Started');
+  cindex = (cindex + 1)%front.length;
+  document.getElementById('cardstuff').innerHTML = front[cindex];
+  fb=0;
+}
+
+function start_cards(){
+  //question_sel.clear();
+  //init_test_structs();
+
+  document.getElementById('card_controls').innerHTML =
+    '    <input style="text-align:center; id="flip_card" type="button" value="Flip" onclick="flip()">' +
+    '<input style="text-align:center; id="next_card" type="button" value="Next Card" onclick="card()">';
+  document.getElementById('cardstuff').innerHTML = front[0];
+  
+}
+
+function flip(){
+  //alert('The other side');
+  if(fb == 0){
+    document.getElementById('cardstuff').innerHTML = back[cindex];
+    fb = 1;
+  }
+  else{
+    document.getElementById('cardstuff').innerHTML = front[cindex];
+    fb = 0;
+  }  
+}
+
+
+</script>

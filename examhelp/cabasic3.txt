@@ -1,0 +1,582 @@
+
+
+B-002-2-6 (4) What is the Standard International Phonetic for the letter E?
+1. Easy
+2. Edward
+3. England
+4. Echo
+> To make a call sign clearer or spell some unusual word, use the International Phonetic Alphabet:  Alpha, Bravo, Charlie, Delta, Echo, Fox-Trot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu.
+
+B-002-2-7 (1) What is the Standard International Phonetic for the letter G?
+1. Golf
+2. George
+3. Germany
+4. Gibraltar
+> To make a call sign clearer or spell some unusual word, use the International Phonetic Alphabet:  Alpha, Bravo, Charlie, Delta, Echo, Fox-Trot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu.
+
+B-002-2-8 (3) What is the Standard International Phonetic for the letter I?
+1. Iran
+2. Italy
+3. India
+4. Item
+> To make a call sign clearer or spell some unusual word, use the International Phonetic Alphabet:  Alpha, Bravo, Charlie, Delta, Echo, Fox-Trot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu.
+
+B-002-2-9 (4) What is the Standard International Phonetic for the letter L?
+1. Love
+2. London
+3. Luxembourg
+4. Lima
+> To make a call sign clearer or spell some unusual word, use the International Phonetic Alphabet:  Alpha, Bravo, Charlie, Delta, Echo, Fox-Trot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu.
+
+B-002-2-10 (2) What is the Standard International Phonetic for the letter P?
+1. Portugal
+2. Papa
+3. Paris
+4. Peter
+> To make a call sign clearer or spell some unusual word, use the International Phonetic Alphabet:  Alpha, Bravo, Charlie, Delta, Echo, Fox-Trot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu.
+
+B-002-2-11 (1) What is the Standard International Phonetic for the letter R?
+1. Romeo
+2. Roger
+3. Radio
+4. Romania
+> To make a call sign clearer or spell some unusual word, use the International Phonetic Alphabet:  Alpha, Bravo, Charlie, Delta, Echo, Fox-Trot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu.
+
+B-002-3-1 (1) What is the correct way to call "CQ" when using voice?
+1. Say "CQ" three times, followed by "this is," followed by your call sign spoken three times
+2. Say "CQ" once, followed by "this is," followed by your call sign spoken three times
+3. Say "CQ" at least five times, followed by "this is," followed by your call sign spoken once
+4. Say "CQ" at least ten times, followed by "this is," followed by your call sign spoken once
+> A call to any station:  "CQ" three times, "THIS IS", your call sign three times.  Any word only spoken once might easily not get noticed.
+
+B-002-3-2 (2) How should you answer a voice CQ call?
+1. Say the other station's call sign at least five times phonetically, followed by "this is," then your call sign twice
+2. Say the other station's call sign once, followed by "this is," then your call sign given phonetically
+3. Say the other station's call sign at least three times, followed by "this is," and your call sign at least five times phonetically
+4. Say the other station's call sign at least ten times, followed by "this is," then your call sign at least twice
+> Anything spoken five or ten times is just overkill.
+
+B-002-3-3 (4) What is simplex operation?
+1. Transmitting and receiving over a wide area
+2. Transmitting on one frequency and receiving on another
+3. Transmitting one-way communications
+4. Transmitting and receiving on the same frequency
+> 'Simplex' ( also known as direct ) operation where two stations use one frequency in turns contrasts with repeater operation (duplex) where two frequencies are used simultaneously ( the repeater output frequency and the repeater input frequency ).  Stations should avoid tying-up a repeater for long periods of time when within range of one another on a simplex frequency.  Most receivers can be switched to the repeater input frequency at the press of a button (this is useful to verify if simplex operation is possible with a given station).
+
+B-002-3-4 (1) When should you use simplex operation instead of a repeater?
+1. When a contact is possible without using a repeater
+2. When the most reliable communications are needed
+3. When an emergency telephone call is needed
+4. When you are traveling and need some local information
+> 'Simplex' ( also known as direct ) operation where two stations use one frequency in turns contrasts with repeater operation (duplex) where two frequencies are used simultaneously ( the repeater output frequency and the repeater input frequency ).  Stations should avoid tying-up a repeater for long periods of time when within range of one another on a simplex frequency.  Most receivers can be switched to the repeater input frequency at the press of a button (this is useful to verify if simplex operation is possible with a given station).
+
+B-002-3-5 (1) Why should local amateur communications use VHF and UHF frequencies instead of HF frequencies?
+1. To minimize interference on HF bands capable of long-distance communication
+2. Because greater output power is permitted on VHF and UHF
+3. Because HF transmissions are not propagated locally
+4. Because signals are louder on VHF and UHF frequencies
+> Always choose a frequency with the least reach so the spectrum remains usable elsewhere.
+
+B-002-3-6 (3) Why should simplex be used where possible, instead of using a repeater?
+1. Your antenna's effectiveness will be better tested
+2. Long distance toll charges will be avoided
+3. The repeater will not be tied up unnecessarily
+4. Signal range will be increased
+> 'Simplex' ( also known as direct ) operation where two stations use one frequency in turns contrasts with repeater operation (duplex) where two frequencies are used simultaneously ( the repeater output frequency and the repeater input frequency ).  Stations should avoid tying-up a repeater for long periods of time when within range of one another on a simplex frequency.  Most receivers can be switched to the repeater input frequency at the press of a button (this is useful to verify if simplex operation is possible with a given station).
+
+B-002-3-7 (3) If you are talking to a station using a repeater, how would you find out if you could communicate using simplex instead?
+1. See if a third station can clearly receive both of you
+2. See if you can clearly receive a more distant repeater
+3. See if you can clearly receive the station on the repeater's input frequency
+4. See if you can clearly receive the station on a lower frequency band
+> 'Simplex' ( also known as direct ) operation where two stations use one frequency in turns contrasts with repeater operation (duplex) where two frequencies are used simultaneously ( the repeater output frequency and the repeater input frequency ).  Stations should avoid tying-up a repeater for long periods of time when within range of one another on a simplex frequency.  Most receivers can be switched to the repeater input frequency at the press of a button (this is useful to verify if simplex operation is possible with a given station).
+
+B-002-3-8 (1) If you are operating simplex on a repeater frequency, why would it be good amateur practice to change to another frequency?
+1. Changing the repeater's frequency is not practical
+2. The repeater's output power may ruin your station's receiver
+3. There are more repeater operators than simplex operators
+4. Changing the repeater's frequency requires the authorization of Industry Canada
+> If you operate simplex on a repeater frequency, you are preventing others from using the repeater.  Amateur organizations publish 'Band Plans' where segments reserved for simplex operation are recommended.
+
+B-002-3-9 (1) Which sideband is commonly used for 20-metre phone operation?
+1. Upper
+2. Lower
+3. FM
+4. Double
+> Choice of sideband:  BELOW 10 MHZ ( 160m, 80m, 40m ), use Lower Sideband (LSB).  Above 10 MHz ( 20m and up ), use Upper Sideband (USB).
+
+B-002-3-10 (2) Which sideband is commonly used on 3755 kHz for phone operation?
+1. FM
+2. Lower
+3. Double
+4. Upper
+> Choice of sideband:  BELOW 10 MHZ ( 160m, 80m, 40m ), use Lower Sideband (LSB).  Above 10 MHz ( 20m and up ), use Upper Sideband (USB).
+
+B-002-3-11 (4) What is the best method to tell if a band is "open" for communication with a particular distant location?
+1. Ask others on your local 2 metre FM repeater
+2. Telephone an experienced local amateur
+3. Look at the propagation forecasts in an amateur radio magazine
+4. Listen for signals from that area from an amateur beacon station or a foreign broadcast or television station on a nearby frequency
+> 'Beacons' are one-way automated stations maintained by amateurs which operate on known frequencies to permit evaluating propagation conditions.
+
+B-002-4-1 (2) What should you do before you transmit on any frequency?
+1. Check your antenna for resonance at the selected frequency
+2. Listen to make sure others are not using the frequency
+3. Make sure the SWR on your antenna feed line is high enough
+4. Listen to make sure that someone will be able to hear you 
+> First, listen for a little while then ask "Is this frequency in use?" ( QRL? in Morse ).
+
+B-002-4-2 (4) If you contact another station and your signal is extremely strong and perfectly readable, what adjustment might you make to your transmitter?
+1. Turn on your speech processor
+2. Reduce your SWR
+3. Continue with your contact, making no changes
+4. Turn down your power output to the minimum necessary
+> Amateurs should always use the minimum power required.
+
+B-002-4-3 (4) What is one way to shorten transmitter tune-up time on the air to cut down on interference?
+1. Use a random wire antenna
+2. Tune up on 40 metres first, then switch to the desired band
+3. Use twin lead instead of coaxial cable feed lines
+4. Tune the transmitter into a dummy load
+> The 'Dummy Load' (a resistor with a high power rating) dissipates RF energy as heat without radiating the RF on the air.  Permits tests or adjustments without causing interference to other stations. The 'tuning process' (or 'loading') refers to a manual procedure necessary for equipment with vacuum tube final Power Amplifiers where variable capacitors needed to be adjusted.
+
+B-002-4-4 (4) How can on-the-air interference be minimized during a lengthy transmitter testing or loading-up procedure?
+1. Choose an unoccupied frequency
+2. Use a non-resonant antenna
+3. Use a resonant antenna that requires no loading-up procedure
+4. Use a dummy load
+> The 'Dummy Load' (a resistor with a high power rating) dissipates RF energy as heat without radiating the RF on the air.  Permits tests or adjustments without causing interference to other stations. The 'tuning process' (or 'loading') refers to a manual procedure necessary for equipment with vacuum tube final Power Amplifiers where variable capacitors needed to be adjusted.
+
+B-002-4-5 (2) Why would you use a dummy antenna?
+1. To give comparative signal reports
+2. To allow antenna tuning without causing interference
+3. It is faster to tune
+4. To reduce output power
+> The 'Dummy Load' (a resistor with a high power rating) dissipates RF energy as heat without radiating the RF on the air.  Permits tests or adjustments without causing interference to other stations. The 'tuning process' (or 'loading') refers to a manual procedure necessary for equipment with vacuum tube final Power Amplifiers where variable capacitors needed to be adjusted.
+
+B-002-4-6 (1) If you are the net control station of a daily HF net, what should you do if the frequency on which you normally meet is in use just before the net begins?
+1. Conduct the net on a frequency 3 to 5 kHz away from the regular net frequency
+2. Reduce your output power and start the net as usual
+3. Increase your power output so that net participants will be able to hear you over the existing activity
+4. Cancel the net for that day
+> A 'Net' is an activity carried on a given day and time at a known frequency where stations exchange information.  Although no given station is entitled to any specific frequency (regardless of license class, power or affiliation), stations would normally yield to an established daily net but if not, you need to move the net away.
+
+B-002-4-7 (1) If a net is about to begin on a frequency which you and another station are using, what should you do? 
+1. As a courtesy to the net, move to a different frequency
+2. Increase your power output to ensure that all net participants can hear you
+3. Transmit as long as possible on the frequency so that no other stations may use it
+4. Turn off your radio
+> A 'Net' is an activity carried on a given day and time at a known frequency where stations exchange information.  Although no given station is entitled to any specific frequency (regardless of license class, power or affiliation), stations would normally yield to an established daily net but if not, you need to move the net away.
+
+B-002-4-8 (4) If propagation changes during your contact and you notice increasing interference from other activity on the same frequency, what should you do?
+1. Tell the interfering stations to change frequency, since you were there first
+2. Report the interference to your local Amateur Auxiliary Coordinator
+3. Increase the output power of your transmitter to overcome the interference
+4. Move your contact to another frequency
+> No given station is entitled to any specific frequency (regardless of license class, power or affiliation).
+
+B-002-4-9 (1) When selecting a single-sideband phone transmitting frequency, what minimum frequency separation from a contact in progress should you allow (between suppressed carriers) to minimize interference?
+1. Approximately 3 kHz
+2. 150 to 500 Hz
+3. Approximately 6 kHz
+4. Approximately 10 kHz
+> In order of bandwidth requirements:  CW = about 100 Hz, RTTY = about 600 Hz, SSB = 2 to 3 kHz, FM = 10 to 20 kHz.  Minimum frequency separation:  CW = 150 to 500 Hz, RTTY = 250 to 500 Hz, SSB = 3 kHz to 5 kHz.
+
+B-002-4-10 (2) What is a band plan?
+1. A plan of operating schedules within an amateur band published by Industry Canada
+2. A guideline for using different operating modes within an amateur band
+3. A plan devised by a club to best use a frequency band during a contest
+4. A guideline for deviating from amateur frequency band allocations
+> "Band Plans" are published by Amateur organizations to suggest specific modes in specific segments of the band.  The idea is to minimize interference and allow interest groups to find one another.
+
+B-002-4-11 (4) Before transmitting, the first thing you should do is:
+1. ask if the frequency is occupied
+2. make an announcement on the frequency indicating that you intend to make a call
+3. decrease your receiver's volume
+4. listen carefully so as not to interrupt communications already in progress
+> First, listen for a little while then ask "Is this frequency in use?" ( QRL? in Morse ).
+
+B-002-5-1 (4) What is the correct way to call "CQ" when using Morse code?
+1. Send the letters "CQ" three times, followed by "DE", followed by your call sign sent once
+2. Send the letters "CQ" ten times, followed by "DE", followed by your call sign sent once
+3. Send the letters "CQ" over and over
+4. Send the letters "CQ" three times, followed by "DE", followed by your call sign sent three times
+> "CQ" is a general call to any station.  "DE" ( French for 'from' ) is the Morse abbreviation for "this is".  Other abbreviations include:  "K" (go ahead or over), "DX" (distant station) and "73" (best regards). [ "KN" is 'go station' ]
+
+B-002-5-2 (4) How should you answer a Morse code "CQ" call?
+1. Send your call sign four times
+2. Send the other station's call sign once, followed by "DE", followed by your call sign four times
+3. Send your call sign followed by your name, station location and a signal report
+4. Send the other station's call sign twice, followed by "DE", followed by your call sign twice
+> "CQ" is a general call to any station.  "DE" ( French for 'from' ) is the Morse abbreviation for "this is".  Other abbreviations include:  "K" (go ahead or over), "DX" (distant station) and "73" (best regards). [ "KN" is 'go station' ]
+
+B-002-5-3 (1) At what speed should a Morse code CQ call be transmitted?
+1. At any speed which you can reliably receive
+2. At any speed below 5 WPM
+3. At the highest speed your keyer will operate
+4. At the highest speed at which you can control the keyer
+> Any station which answers your call is likely to transmit at a speed similar to yours.  Operators frequently find it easier to transmit at higher speed than they can reliably copy.
+
+B-002-5-4 (1) What is the meaning of the procedural signal "CQ"?
+1. Calling any station
+2. Call on the quarter hour
+3. An antenna is being tested
+4. Only the station "CQ" should answer
+> "CQ" is a general call to any station.  "DE" ( French for 'from' ) is the Morse abbreviation for "this is".  Other abbreviations include:  "K" (go ahead or over), "DX" (distant station) and "73" (best regards). [ "KN" is 'go station' ]
+
+B-002-5-5 (2) What is the meaning of the procedural signal "DE"?
+1. Received all correctly
+2. From
+3. Calling any station
+4. Directional Emissions
+> "CQ" is a general call to any station.  "DE" ( French for 'from' ) is the Morse abbreviation for "this is".  Other abbreviations include:  "K" (go ahead or over), "DX" (distant station) and "73" (best regards). [ "KN" is 'go station' ]
+
+B-002-5-6 (2) What is the meaning of the procedural signal "K"?
+1. End of message
+2. Any station transmit
+3. Called station only transmit
+4. All received correctly
+> "CQ" is a general call to any station.  "DE" ( French for 'from' ) is the Morse abbreviation for "this is".  Other abbreviations include:  "K" (go ahead or over), "DX" (distant station) and "73" (best regards). [ "KN" is 'go station' ]
+
+B-002-5-7 (2) What is meant by the term "DX"?
+1. Calling any station
+2. Distant station
+3. Go ahead
+4. Best regards
+> "CQ" is a general call to any station.  "DE" ( French for 'from' ) is the Morse abbreviation for "this is".  Other abbreviations include:  "K" (go ahead or over), "DX" (distant station) and "73" (best regards). [ "KN" is 'go station' ]
+
+B-002-5-8 (4) What is the meaning of the term "73"?
+1. Long distance
+2. Love and kisses
+3. Go ahead
+4. Best regards
+> "CQ" is a general call to any station.  "DE" ( French for 'from' ) is the Morse abbreviation for "this is".  Other abbreviations include:  "K" (go ahead or over), "DX" (distant station) and "73" (best regards). [ "KN" is 'go station' ]
+
+B-002-5-9 (2) Which of the following describes full break-in telegraphy ?
+1. Automatic keyers are used to send Morse code instead of hand keys
+2. Incoming signals are received between transmitted Morse dots
+3. An operator must activate a manual send/receive switch before and after every transmission
+4. Breaking stations send the Morse code prosign "BK"
+> When a station operates "full break-in", the receiver becomes active IN BETWEEN the transmitted dots and dashes.  It permits the other station to interrupt (break-in), for example, when it failed to copy a word.
+
+B-002-5-10 (1) When selecting a CW transmitting frequency, what minimum frequency separation from a contact in progress should you allow to minimize interference?
+1. 150 to 500 Hz
+2. 5 to 50 Hz
+3. 1 to 3 kHz
+4. 3 to 6 kHz
+> In order of bandwidth requirements:  CW = about 100 Hz, RTTY = about 600 Hz, SSB = 2 to 3 kHz, FM = 10 to 20 kHz.  Minimum frequency separation:  CW = 150 to 500 Hz, RTTY = 250 to 500 Hz, SSB = 3 kHz to 5 kHz.
+
+B-002-5-11 (2) Good Morse telegraphy operators:
+1. always give stations a good readability report
+2. listen to the frequency to make sure that it is not in use before transmitting
+3. save time by leaving out spaces between words
+4. tune the transmitter using the operating antenna
+> First, listen for a little while then ask "Is this frequency in use?" ( QRL? in Morse ).
+
+B-002-6-1 (2) What are "RST" signal reports?
+1. A short way to describe transmitter power
+2. A short way to describe signal reception
+3. A short way to describe sunspot activity
+4. A short way to describe ionospheric conditions
+> "RST", A short way to describe signal reception ( Readability: 1 to 5, Signal Strength: 1 to 9, Tone Quality (for Morse): 1 to 9 ).  For example, "11" unreadable, barely perceptible. "33" difficult to read, weak signal. "45" readable, fairly good. "57" perfectly readable, moderately strong.
+
+B-002-6-2 (4) What does "RST" mean in a signal report?
+1. Recovery, signal strength, tempo
+2. Recovery, signal speed, tone
+3. Readability, signal speed, tempo
+4. Readability, signal strength, tone
+> "RST", A short way to describe signal reception ( Readability: 1 to 5, Signal Strength: 1 to 9, Tone Quality (for Morse): 1 to 9 ).  For example, "11" unreadable, barely perceptible. "33" difficult to read, weak signal. "45" readable, fairly good. "57" perfectly readable, moderately strong.
+
+B-002-6-3 (2) What is the meaning of: "Your signal report is 5 7"?
+1. Your signal is readable with considerable difficulty
+2. Your signal is perfectly readable and moderately strong
+3. Your signal is perfectly readable with near pure tone
+4. Your signal is perfectly readable, but weak
+> "RST", A short way to describe signal reception ( Readability: 1 to 5, Signal Strength: 1 to 9, Tone Quality (for Morse): 1 to 9 ).  For example, "11" unreadable, barely perceptible. "33" difficult to read, weak signal. "45" readable, fairly good. "57" perfectly readable, moderately strong.
+
+B-002-6-4 (3) What is the meaning of: "Your signal report is 3 3 "?
+1. Your signal is unreadable, very weak in strength
+2. The station is located at latitude 33 degrees
+3. Your signal is readable with considerable difficulty and weak in strength
+4. The contact is serial number 33
+> "RST", A short way to describe signal reception ( Readability: 1 to 5, Signal Strength: 1 to 9, Tone Quality (for Morse): 1 to 9 ).  For example, "11" unreadable, barely perceptible. "33" difficult to read, weak signal. "45" readable, fairly good. "57" perfectly readable, moderately strong.
+
+B-002-6-5 (3) What is the meaning of: "Your signal report is 5 9 plus 20 dB"?
+1. The bandwidth of your signal is 20 decibels above linearity
+2. Repeat your transmission on a frequency 20 kHz higher
+3. A relative signal-strength meter reading is 20 decibels greater than strength 9
+4. Your signal strength has increased by a factor of 100
+> The 'S-meter' on a receiver provides a relative indication of received signal strength.  S-meters are calibrated at the low end in S units, from S1 to S9.  One S unit represents about 6 decibels ( four times the power ).  Above a signal strength of S9, readings are in decibels: 10 dB over S9, 20 dB over S9, 30 dB over S9, etc. 
+
+B-002-6-6 (3) What is used to measure relative signal strength in a receiver?
+1. An SSB meter
+2. A signal deviation meter
+3. An S meter
+4. An RST meter
+> The 'S-meter' on a receiver provides a relative indication of received signal strength.  S-meters are calibrated at the low end in S units, from S1 to S9.  One S unit represents about 6 decibels ( four times the power ).  Above a signal strength of S9, readings are in decibels: 10 dB over S9, 20 dB over S9, 30 dB over S9, etc. 
+
+B-002-6-7 (2) If the power output of a transmitter is increased by four times, how might a nearby receiver's S-meter reading change?
+1. Increase by approximately four S units
+2. Increase by approximately one S unit
+3. Decrease by approximately four S units
+4. Decrease by approximately one S unit
+> The 'S-meter' on a receiver provides a relative indication of received signal strength.  S-meters are calibrated at the low end in S units, from S1 to S9.  One S unit represents about 6 decibels ( four times the power ).  Above a signal strength of S9, readings are in decibels: 10 dB over S9, 20 dB over S9, 30 dB over S9, etc. 
+
+B-002-6-8 (3) By how many times must the power output of a transmitter be increased to raise the S-meter reading on a nearby receiver from S8 to S9?
+1. Approximately 5 times
+2. Approximately 3 times
+3. Approximately 4 times
+4. Approximately 2 times
+> The 'S-meter' on a receiver provides a relative indication of received signal strength.  S-meters are calibrated at the low end in S units, from S1 to S9.  One S unit represents about 6 decibels ( four times the power ).  Above a signal strength of S9, readings are in decibels: 10 dB over S9, 20 dB over S9, 30 dB over S9, etc. 
+
+B-002-6-9 (1) What does "RST 579" mean in a Morse code contact?
+1. Your signal is perfectly readable, moderately strong, and with perfect tone
+2. Your signal is perfectly readable, weak strength, and with perfect tone
+3. Your signal is fairly readable, fair strength, and with perfect tone
+4. Your signal is barely readable, moderately strong, and with faint ripple
+> "RST", A short way to describe signal reception ( Readability: 1 to 5, Signal Strength: 1 to 9, Tone Quality (for Morse): 1 to 9 ).  For example, "11" unreadable, barely perceptible. "33" difficult to read, weak signal. "45" readable, fairly good. "57" perfectly readable, moderately strong.
+
+B-002-6-10 (4) What does "RST 459" mean in a Morse code contact?
+1. Your signal is very readable, very strong, and with perfect tone
+2. Your signal is barely readable, very weak, and with perfect tone
+3. Your signal is moderately readable, very weak, and with hum on the tone
+4. Your signal is quite readable, fair strength, and with perfect tone
+> "RST", A short way to describe signal reception ( Readability: 1 to 5, Signal Strength: 1 to 9, Tone Quality (for Morse): 1 to 9 ).  For example, "11" unreadable, barely perceptible. "33" difficult to read, weak signal. "45" readable, fairly good. "57" perfectly readable, moderately strong.
+
+B-002-6-11 (1) What is the meaning of "Your signal report is 1 1"?
+1. Your signal is unreadable, and barely perceptible
+2. Your signal is 11 dB over S9
+3. Your signal is first class in readability and first class in strength
+4. Your signal is very readable and very strong
+> "RST", A short way to describe signal reception ( Readability: 1 to 5, Signal Strength: 1 to 9, Tone Quality (for Morse): 1 to 9 ).  For example, "11" unreadable, barely perceptible. "33" difficult to read, weak signal. "45" readable, fairly good. "57" perfectly readable, moderately strong.
+
+B-002-7-1 (4) What is the meaning of the Q signal "QRS"?
+1. Interference from static
+2. Send "RST" report
+3. Radio station location is:
+4. Send more slowly
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-2 (3) What is one meaning of the Q signal "QTH"?
+1. Stop sending
+2. My name is
+3. My location is
+4. Time here is
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-3 (1) What is the proper Q signal to use to see if a frequency is in use before transmitting on CW?
+1. QRL?
+2. QRV?
+3. QRU?
+4. QRZ?
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-4 (3) What is one meaning of the Q signal "QSY"?
+1. Use more power
+2. Send faster
+3. Change frequency
+4. Send more slowly
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-5 (2) What is the meaning of the Q signal "QSO"?
+1. A contact is ending
+2. A contact is in progress
+3. A conversation is desired
+4. A contact is confirmed
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-6 (1) What is the proper Q signal to use to ask if someone is calling you on CW?
+1. QRZ?
+2. QSL?
+3. QRL?
+4. QRT?
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-7 (4) The signal "QRM" signifies:
+1. I am troubled by static
+2. your signals are fading
+3. is my transmission being interfered with
+4. I am being interfered with
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-8 (4) The signal "QRN" means:
+1. I am busy
+2. are you troubled by static
+3. I am being interfered with
+4. I am troubled by static
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-9 (2) The "Q signal" indicating that you want the other station to send slower is:
+1. QRM
+2. QRS
+3. QRL
+4. QRN
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-10 (3) "Who is calling me" is denoted by the "Q signal":
+1. QRK?
+2. QRP?
+3. QRZ?
+4. QRM?
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-7-11 (1) The "Q signal" which signifies "I will call you again" is:
+1. QRX
+2. QRZ
+3. QRS
+4. QRT
+> Nine Q codes:  QRL? frequency in use?, QRM interference, QRN static, QRS send more slowly, QRX will call you, QRZ? who is calling, QSO contact in progress, QSY change frequency, QTH location.
+
+B-002-8-1 (4) When may you use your amateur station to transmit an "SOS" or "MAYDAY"?
+1. Never
+2. Only at specific times (at 15 and 30 minutes after the hour)
+3. Only in case of a severe weather watch
+4. In a life-threatening distress situation
+> SOS (Morse) and MAYDAY (voice) are internationally recognized distress signals.  Used to request help in a life-threatening situation.  False or deceptive distress signals are punishable by law.
+
+B-002-8-2 (1) If you are in contact with another station and you hear an emergency call for help on your frequency, what should you do?
+1. Immediately stop your contact and take the emergency call
+2. Tell the calling station that the frequency is in use
+3. Direct the calling station to the nearest emergency net frequency
+4. Call your local police station and inform them of the emergency call
+> Stations in distress are priority number one, someone's life is at risk.  The order of priority is 1) Distress, 2) Emergency and 3) Safety.  Acknowledge the station immediately and see how it can be helped.  If you cannot provide help, monitor the frequency to ensure help is forthcoming.
+
+B-002-8-3 (3) What is the proper distress call to use when operating phone?
+1. Say "SOS" several times
+2. Say "EMERGENCY" several times
+3. Say "MAYDAY" several times
+4. Say "HELP" several times
+> SOS (Morse) and MAYDAY (voice) are internationally recognized distress signals.  Used to request help in a life-threatening situation.  False or deceptive distress signals are punishable by law.
+
+B-002-8-4 (3) What is the proper distress call to use when operating CW?
+1. CQD
+2. QRRR
+3. SOS
+4. MAYDAY
+> SOS (Morse) and MAYDAY (voice) are internationally recognized distress signals.  Used to request help in a life-threatening situation.  False or deceptive distress signals are punishable by law.
+
+B-002-8-5 (3) What is the proper way to interrupt a repeater conversation to signal a distress call?
+1. Say "EMERGENCY" three times
+2. Say "SOS," then your call sign
+3. Say "BREAK" twice, then your call sign
+4. Say "HELP" as many times as it takes to get someone to answer
+>  "Break, Break" and your call sign  OR  your call sign with the words "emergency traffic" inserted during a pause.  Repeaters are meant primarily to extend the range of portables and mobiles.  You never know when someone else might need the repeater.  Be sure to leave pauses in between transmissions.  Anyone wanting the repeater may signal his presence by stating his call sign during one such pause.
+
+B-002-8-6 (3) Why is it a good idea to have a way to operate your amateur station without using commercial AC power lines?
+1. So you will comply with rules
+2. So you may operate in contests where AC power is not allowed
+3. So you may provide communications in an emergency
+4. So you may use your station while mobile
+> Amateurs have a long history of providing emergency communications during disasters.  Charged batteries and rapidly-deployable antennas are useful station accessories.
+
+B-002-8-7 (1) What is the most important accessory to have for a hand-held radio in an emergency?
+1. Several sets of charged batteries
+2. An extra antenna
+3. A portable amplifier
+4. A microphone headset for hands-free operation
+> Amateurs have a long history of providing emergency communications during disasters.  Charged batteries and rapidly-deployable antennas are useful station accessories.
+
+B-002-8-8 (3) Which type of antenna would be a good choice as part of a portable HF amateur station that could be set up in case of an emergency?
+1. A parabolic dish
+2. A three-element Yagi
+3. A dipole
+4. A three-element quad
+> Amateurs have a long history of providing emergency communications during disasters.  Charged batteries and rapidly-deployable antennas are useful station accessories.
+
+B-002-8-9 (4) If you are communicating with another amateur station and hear a station in distress break in, what should you do?
+1. Continue your communication because you were on frequency first
+2. Change to a different frequency so the station in distress may have a clear channel to call for assistance
+3. Immediately cease all transmissions because stations in distress have emergency rights to the frequency
+4. Acknowledge the station in distress and determine its location and what assistance may be needed
+> Stations in distress are priority number one, someone's life is at risk.  The order of priority is 1) Distress, 2) Emergency and 3) Safety.  Acknowledge the station immediately and se how it can be helped.  If you cannot provide help, monitor the frequency to ensure help is forthcoming.
+
+B-002-8-10 (3) In order of priority, a distress message comes before:
+1. no other messages
+2. a government priority message
+3. an urgency message
+4. a safety message
+> Stations in distress are priority number one, someone's life is at risk.  The order of priority is 1) Distress, 2) Emergency and 3) Safety.  Acknowledge the station immediately and se how it can be helped.  If you cannot provide help, monitor the frequency to ensure help is forthcoming.
+
+B-002-8-11 (1) If you hear distress traffic and are unable to render assistance you should:
+1. maintain watch until you are certain that assistance will be forthcoming
+2. enter the details in the log book and take no further action 
+3. take no action
+4. tell all other stations to cease transmitting
+> Stations in distress are priority number one, someone's life is at risk.  The order of priority is 1) Distress, 2) Emergency and 3) Safety.  Acknowledge the station immediately and se how it can be helped.  If you cannot provide help, monitor the frequency to ensure help is forthcoming.
+
+B-002-9-1 (2) What is a "QSL card"?
+1. A Notice of Violation from Industry Canada
+2. A written proof of communication between two amateurs
+3. A postcard reminding you when your station license will expire
+4. A letter or postcard from an amateur pen pal
+> A 'QSL Card' is a postcard-sized confirmation of a radio contact.
+
+B-002-9-2 (4) What is an azimuthal map?
+1. A map projection centered on the North Pole
+2. A map that shows the angle at which an amateur satellite crosses the equator
+3. A map that shows the number of degrees longitude that an amateur satellite appears to move westward at the equator
+4. A map projection centered on a particular location, used to determine the shortest path between points on the earth's surface
+> An 'Azimuthal Map' centered on your location is convenient to determine beam headings (i.e., where to orient a directional antenna) for the shortest distance to a given point on Earth ( the 'Short Path' ).  The 'Long Path' is precisely 180 degrees in the opposite direction ( sometimes propagation conditions provide a path around the globe to a particular location ).
+
+B-002-9-3 (4) What is the most useful type of map to use when orienting a directional HF antenna toward a distant station?
+1. Mercator
+2. Polar projection
+3. Topographical
+4. Azimuthal
+> An 'Azimuthal Map' centered on your location is convenient to determine beam headings (i.e., where to orient a directional antenna) for the shortest distance to a given point on Earth ( the 'Short Path' ).  The 'Long Path' is precisely 180 degrees in the opposite direction ( sometimes propagation conditions provide a path around the globe to a particular location ).
+
+B-002-9-4 (4) A directional antenna pointed in the long-path direction to another station is generally oriented how many degrees from its short-path heading?
+1. 45 degrees
+2. 90 degrees
+3. 270 degrees
+4. 180 degrees
+> An 'Azimuthal Map' centered on your location is convenient to determine beam headings (i.e., where to orient a directional antenna) for the shortest distance to a given point on Earth ( the 'Short Path' ).  The 'Long Path' is precisely 180 degrees in the opposite direction ( sometimes propagation conditions provide a path around the globe to a particular location ).
+
+B-002-9-5 (1) What method is used by radio amateurs to provide written proof of communication between two amateur stations?
+1. A signed post card listing contact date, time, frequency, mode and power, called a "QSL card"
+2. A two-page letter containing a photograph of the operator
+3. A radiogram sent over the CW traffic net
+4. A packet message
+> A 'QSL Card' is a postcard-sized confirmation of a radio contact.
+
+B-002-9-6 (3) You hear other local stations talking to radio amateurs in New Zealand but you don't hear those stations with your beam aimed on the normal compass bearing to New Zealand. What should you try?
+1. Point your antenna toward Newington, CT
+2. Point your antenna to the north
+3. Point your beam 180 degrees away from that bearing and listen for the stations arriving on the "long-path"
+4. Point your antenna to the south
+> An 'Azimuthal Map' centered on your location is convenient to determine beam headings (i.e., where to orient a directional antenna) for the shortest distance to a given point on Earth ( the 'Short Path' ).  The 'Long Path' is precisely 180 degrees in the opposite direction ( sometimes propagation conditions provide a path around the globe to a particular location ).
+
+B-002-9-7 (2) Which statement about recording all contacts and unanswered "CQ calls" in a station logbook or computer log IS NOT correct?
+1. A log is important for recording contacts for operating awards
+2. A logbook is required by Industry Canada
+3. A well-kept log preserves your fondest amateur radio memories for years
+4. A log is important for handling neighbour interference complaints
+> key words:  NOT CORRECT.  A logbook is no longer a legal requirement.
+
+B-002-9-8 (1) Why would it be useful to have an azimuthal world map centred on the location of your station?
+1. Because it shows the compass bearing from your station to any place on earth, for antenna planning and pointing
+2. Because it looks impressive
+3. Because it shows the angle at which an amateur satellite crosses the equator
+4. Because it shows the number of degrees longitude that an amateur satellite moves west
+> An 'Azimuthal Map' centered on your location is convenient to determine beam headings (i.e., where to orient a directional antenna) for the shortest distance to a given point on Earth ( the 'Short Path' ).  The 'Long Path' is precisely 180 degrees in the opposite direction ( sometimes propagation conditions provide a path around the globe to a particular location ).
+
+B-002-9-9 (1) Station logs and confirmation (QSL) cards are always kept in UTC (Universal Time Coordinated). Where is that time based?
+1. Greenwich, England
+2. Geneva, Switzerland
+3. Ottawa, Canada
+4. Newington, CT
+> "Coordinated Universal Time", the international time standard.  "UTC" is not a true acronym; it is a variant of Universal Time, UT, and has a modifier C (for "coordinated") appended to it.  Has replaced Greenwich Mean Time (GMT).  Greenwich Mean Time (GMT) is mean solar time at the Royal Greenwich Observatory in Greenwich, England, which by convention is at 0 degrees geographic longitude.
+
+B-002-9-10 (1) When referring to contacts in the station log, what do the letters UTC mean?
+1. Universal Time Coordinated (formerly Greenwich Mean Time - GMT)
+2. Universal Time Constant
+3. Unlisted Telephone Call
+4. Unlimited Time Capsule
+> "Coordinated Universal Time", the international time standard.  "UTC" is not a true acronym; it is a variant of Universal Time, UT, and has a modifier C (for "coordinated") appended to it.  Has replaced Greenwich Mean Time (GMT).  Greenwich Mean Time (GMT) is mean solar time at the Royal Greenwich Observatory in Greenwich, England, which by convention is at 0 degrees geographic longitude.
+
+B-002-9-11 (3) To set your station clock accurately to UTC, you could receive the most accurate time off the air from _______ ?
+1. A non-directional beacon station
+2. Your local television station
+3. CHU, WWV or WWVH
+4. Your local radio station
+> CHU [Ottawa, Ontario], WWV [Fort Collins, CO] and WWVH [Kauai, HI] are stations continually broadcasting highly accurate time information. 

@@ -1,0 +1,1567 @@
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1414453-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="/jscript/prototype.js" type="text/javascript"></script>
+<script src="/jscript/scriptaculous.js" type="text/javascript"></script>
+<style type="text/css">ol{margin:0;padding:0}p{margin:0}.c0{color:#000000;font-size:18pt;font-family:Arial}.c1{line-height:1.15;text-indent:0pt;direction:ltr}.c2{background-color:#ffffff}body{color:#000000;font-size:11pt;font-family:Arial}.heading1{font-size:24pt;font-weight:bold}.heading2{font-size:18pt;font-weight:bold}.heading3{font-size:14pt;font-weight:bold}.heading4{font-size:12pt;font-weight:bold}.heading5{font-size:11pt;font-weight:bold}.heading6{font-size:10pt;font-weight:bold}</style>
+
+<style type="text/css" media="screen">     
+.tableinput{border: 0px solid #666666; background-color: #ffff00; color: #000000;}    
+
+table.quiz td{font-size:14px;}
+    #tabs{
+        margin-left: 4px;
+        padding: 0;
+        background: transparent;
+        voice-family: "\"}\"";
+        voice-family: inherit;
+        padding-left: 5px;
+    }
+    #tabs ul{
+        font: bold 11px Arial, Verdana, sans-serif;
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+    #tabs li{
+        display:inline;
+        margin:0 2px 0 0;
+        padding:0;
+        text-transform:uppercase;
+    }
+    #tabs a{
+        float:left;
+        background:#A3BBE6 url(images/tabs_left.gif) no-repeat left top;
+        margin:0 2px 0 0;
+        padding:0 0 1px 3px;
+        text-decoration:none;
+    }
+    #tabs a span{
+        float:left;
+        display:block;
+        background: transparent url(images/tabs_right.gif) no-repeat right top;
+        padding:4px 9px 2px 6px;
+    }
+    #tabs a span{float:none;}
+    #tabs a:hover{background-color: #7E94B9;color: white;}
+    #tabs a:hover span{background-color: #7E94B9;}
+    #tabHeaderActive span, #tabHeaderActive a { background-color: #42577B; color:#fff;}
+    .tabContent {
+        clear:both;
+        border:2px solid #42577B;
+        padding-top:2px;
+        background-color:#FFF;
+    }
+</style>
+<link type="text/css" rel="stylesheet" href="/jscript/headerhelp.css" />
+
+<div style="overflow-y:auto; width:470px; height:470">
+<div id="adheader" style="position:relative; width:100%; ">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-6583317371769852";
+/* FlashCards */
+google_ad_slot = "6558886318";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div id=menubar style="position:relative; width:100%">
+  <table style="width:100%; background-color:#ffffff;">
+  <tr>
+  <td>
+    <div style="text-align:left">
+        <a href="http://copaseticflows.appspot.com/examhelp/german111.html">Control Panel</a>
+    </div>
+  </td>
+  <td id="entries">
+    <div style="text-align:center; font-family:Trebuchet MS, Arial, Helvetica, sans-serif;">
+      <b>German 111 Ch. B Vocabulary</b>
+    </div>
+  </td>
+  <td>
+    <div style="text-align:right">
+      <a href="/examhelp/acf.html">about</a>
+    </div>
+  </td>
+  </tr>
+  </table>
+</div>
+
+  <div id="tabs" style=" width:100%; float:right; background-color:#ffffff; ">
+
+    <ul>
+        <li style="margin-left: 1px" id="tabHeaderActive"><a href="javascript:void(0)" onClick="toggleTab(1,4)"><span>Test</span></a></li>
+        <li id="tabHeader2"><a href="javascript:void(0)" onClick="toggleTab(2,4); show_results()" ><span>Scores</span></a></li>
+        <li id="tabHeader3"><a href="javascript:void(0)" onClick="toggleTab(3,4)"><span>Login</span></a></li>
+        <li id="tabHeader4"><a href="javascript:void(0)" onClick="toggleTab(4,4)"><span>Help</span></a></li>
+    </ul>
+    </div>
+    <div id="tabscontent" style=" width:100%; float:right; overflow-y:auto; background-color:#ffffff; ">
+
+
+        <div id="tabContent1" class="tabContent" style="display:yes;">
+
+
+  <div id="fblogin" style="position:relative; float:left; width:100%; ">
+  <fb:login-button perms="">
+         Login with Facebook
+  </fb:login-button>
+  </div>
+  <div style="width:100%; height:53px; color:#DDDDDD;border:1px solid #555555;">
+    <div id="fbimage" style="float:left; color:#333333">
+    </div>
+    <div id="fbname" style="color:#333333">
+    </div>
+  </div>
+  <div id="cardstuff" style="width:100%; border:1px solid #555555;">
+    <span style="text-align:left">Practice German vocabulary for German 111 Ch. B. <br><br>
+    Be sure to login to track your scores and the words you've seen.  Click the Help
+    tab for instructions.
+    </span>
+  </div>
+  <div id="card_controls" style="width:100%; height:9%; text-align:center">
+    <input id="start" type="button" value="Start" onclick="start_cards()">
+  </div>
+
+
+
+<p>
+      </div>
+        <div id="tabContent2" class="tabContent" style="display:none;">
+            <br /><div>Login to see saved test scores</div>
+        </div>
+        <div id="tabContent3" class="tabContent" style="display:none;">
+          <div id="login_top">
+          Login to save scores and track your progress<br>
+          <iframe name="login_target" height="0" width="0"></iframe><br>
+          <form target="login_target" id="login_form" action="/" method="POST">
+          Name:<input size="10" type="text" name="user" id="user"><br>
+          Password:<input size="10" type="text" name="password" id="password"><br>
+          <input id="my_login" type="button" value="Login" onclick="log_it_in()">
+          <input id="c" type="button" value="Create" onclick="create_acct()"></form>
+          </div>
+          <div id="login_bottom"><br>
+          When you login, your scores are automatically tracked 
+          in the Scores tab.  
+          In addition, the question you've answered are tracked, 
+          so you can take a test that contains questions you've 
+          never answered, (unseen), or questions you've never answered 
+          correctly, (unpassed).  See the example below.
+          <img src="/img/scoretrack.jpg">
+          </div>
+        </div>
+        <div id="tabContent4" class="tabContent" style="display:none;">
+            <br /><div>Create an account or login on the login tab to track your scores and what words you've 
+    already practiced. <br> Click 'Start' to practice random vocabulary words from the list.<br>
+    On each card, you can click 'Flip' to see the other side.  If you remembered the card 
+    correctly, click 'Correct' to go to the next card, otherwise, click 'Wrong'.  <br>If you 
+    get tired of studying before you're through the entire deck, click 'Save Scores' to track your 
+    progress.  If you get through the entire deck, your scores will be saved automatically.  
+    Click 'New Test Unseen' on the 'Scores' tab to practice only the words you haven't seen yet.
+    <br>Click 'New Test Unpassed' to practice the words you didn't get correct yet.</div>
+        </div>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="/jscript/login.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  
+//arrays to hold card content
+var front = [];
+var back = [];
+var fb = 0;
+var cindex = 0;
+
+front[0] = '<p class="c0"><span class="c1">Arithmetic Progression</span></p>';
+back[0] = '<p class="c0"><span class="c1"><img src="http://goo.gl/r1XYd"></span></p>';
+
+front[1] = '<p class="c0"><span class="c1">Sum of Squares</span></p>';
+back[1] = '<p class="c0"><span class="c1"><img src="http://goo.gl/tPeKc"></span></p>';
+
+front[2] = '<p class="c0"><span class="c1">Riemann Zeta Function</span></p>';
+back[2] = '<p class="c0"><span class="c1"><img src="http://goo.gl/NLH50"></span></p>';
+
+front[3] = '<p class="c0"><span class="c1">Binomial Coefficients</span></p>';
+back[3] = '<p class="c0"><span class="c1"><img src="http://goo.gl/5AoC5"></span></p>';
+
+front[4] = '<p class="c0"><span class="c1">Sine Product to Sum</span></p>';
+back[4] = '<p class="c0"><span class="c1"><img src="http://goo.gl/1Yqds"></span></p>';
+
+front[5] = '<p class="c0"><span class="c1">der Witz, -e</span></p>';
+back[5] = '<p class="c0"><span class="c1">joke</span></p>';
+
+front[6] = '<p class="c0"><span class="c1">Witze erz&auml;hlen</span></p>';
+back[6] = '<p class="c0"><span class="c1">to tell jokes</span></p>';
+
+front[7] = '<p class="c0"><span class="c1">schneiden</span></p>';
+back[7] = '<p class="c0"><span class="c1">to cut</span></p>';
+
+front[8] = '<p class="c0"><span class="c1">Haare schneiden</span></p>';
+back[8] = '<p class="c0"><span class="c1">to cut hair</span></p>';
+
+front[9] = '<p class="c0"><span class="c1">stricken</span></p>';
+back[9] = '<p class="c0"><span class="c1">to knit</span></p>';
+
+front[10] = '<p class="c0"><span class="c1">tauchen</span></p>';
+back[10] = '<p class="c0"><span class="c1">to dive</span></p>';
+
+front[11] = '<p class="c0"><span class="c1">tippen</span></p>';
+back[11] = '<p class="c0"><span class="c1">to tzpe</span></p>';
+front[12] = '<p class="c0"><span class="c1">zeichnen</span></p>';
+back[12] = '<p class="c0"><span class="c1">to draw</span></p>';
+front[13] = '<p class="c0"><span class="c1">der Ski, -er</span></p>';
+back[13] = '<p class="c0"><span class="c1">skis</span></p>';
+front[14] = '<p class="c0"><span class="c1">Ski fahren, f&auml;hrt</span></p>';
+back[14] = '<p class="c0"><span class="c1">to ski</span></p>';
+front[15] = '<p class="c0"><span class="c1">der Walzer, -</span></p>';
+back[15] = '<p class="c0"><span class="c1">the waltz</span></p>';
+front[16] = '<p class="c0"><span class="c1">das Skateboard, -s</span></p>';
+back[16] = '<p class="c0"><span class="c1">skateboard</span></p>';
+front[17] = '<p class="c0"><span class="c1">Skateboard fahren, f&auml;hrt</span></p>';
+back[17] = '<p class="c0"><span class="c1">to skateboard</span></p>';
+front[18] = '<p class="c0"><span class="c1">Pflichten</span></p>';
+back[18] = '<p class="c0"><span class="c1">Obligations</span></p>';
+front[19] = '<p class="c0"><span class="c1">ab.r&auml;umen</span></p>';
+back[19] = '<p class="c0"><span class="c1">to clear</span></p>';
+front[20] = '<p class="c0"><span class="c1">den Tisch ab.r&auml;umen</span></p>';
+back[20] = '<p class="c0"><span class="c1">to clear the table</span></p>';
+front[21] = '<p class="c0"><span class="c1">decken</span></p>';
+back[21] = '<p class="c0"><span class="c1">to set; to cover</span></p>';
+front[22] = '<p class="c0"><span class="c1">den Tisch decken</span></p>';
+back[22] = '<p class="c0"><span class="c1">to set the table</span></p>';
+front[23] = '<p class="c0"><span class="c1">gerade stellen</span></p>';
+back[23] = '<p class="c0"><span class="c1">to straighten</span></p>';
+front[24] = '<p class="c0"><span class="c1">gie&szlig;en</span></p>';
+back[24] = '<p class="c0"><span class="c1">to water</span></p>';
+front[25] = '<p class="c0"><span class="c1">die Blumen gie&szlig;en</span></p>';
+back[25] = '<p class="c0"><span class="c1">to water the flowers</span></p>';
+front[26] = '<p class="c0"><span class="c1">putzen</span></p>';
+back[26] = '<p class="c0"><span class="c1">to clean</span></p>';
+front[27] = '<p class="c0"><span class="c1">sauber machen</span></p>';
+back[27] = '<p class="c0"><span class="c1">to clean</span></p>';
+front[28] = '<p class="c0"><span class="c1">K&ouml;rperliche und geistige Verfassung</span></p>';
+back[28] = '<p class="c0"><span class="c1">Phzsical and Mental States</span></p>';
+front[29] = '<p class="c0"><span class="c1">die Angst, -e uml</span></p>';
+back[29] = '<p class="c0"><span class="c1">fear</span></p>';
+front[30] = '<p class="c0"><span class="c1">Angst haben</span></p>';
+back[30] = '<p class="c0"><span class="c1">to be afraid</span></p>';
+front[31] = '<p class="c0"><span class="c1">die Eile</span></p>';
+back[31] = '<p class="c0"><span class="c1">hurry</span></p>';
+front[32] = '<p class="c0"><span class="c1">in Eile sein</span></p>';
+back[32] = '<p class="c0"><span class="c1">to be in a hurrz</span></p>';
+front[33] = '<p class="c0"><span class="c1">die Langeweile</span></p>';
+back[33] = '<p class="c0"><span class="c1">boredom</span></p>';
+front[34] = '<p class="c0"><span class="c1">Langeweile haben</span></p>';
+back[34] = '<p class="c0"><span class="c1">to be bored</span></p>';
+front[35] = '<p class="c0"><span class="c1">das Gl&uuml;ck</span></p>';
+back[35] = '<p class="c0"><span class="c1">luck; happiness</span></p>';
+front[36] = '<p class="c0"><span class="c1">viel Gl&uuml;uck</span></p>';
+back[36] = '<p class="c0"><span class="c1">lots of luck... good luck</span></p>';
+front[37] = '<p class="c0"><span class="c1">das Heimweh</span></p>';
+back[37] = '<p class="c0"><span class="c1">homesickness</span></p>';
+front[38] = '<p class="c0"><span class="c1">Heimweh haben</span></p>';
+back[38] = '<p class="c0"><span class="c1">to be homesick</span></p>';
+front[39] = '<p class="c0"><span class="c1">&auml;rgern</span></p>';
+back[39] = '<p class="c0"><span class="c1">to annoz; to tease</span></p>';
+front[40] = '<p class="c0"><span class="c1">schreien</span></p>';
+back[40] = '<p class="c0"><span class="c1">to scream, yell</span></p>';
+front[41] = '<p class="c0"><span class="c1">st&ouml;ren</span></p>';
+back[41] = '<p class="c0"><span class="c1">to distrub</span></p>';
+front[42] = '<p class="c0"><span class="c1">weinen</span></p>';
+back[42] = '<p class="c0"><span class="c1">to cry</span></p>';
+front[43] = '<p class="c0"><span class="c1">besch&auml;ftigt</span></p>';
+back[43] = '<p class="c0"><span class="c1">busz</span></p>';
+front[44] = '<p class="c0"><span class="c1">eifers&uuml;chtig</span></p>';
+back[44] = '<p class="c0"><span class="c1">jealous</span></p>';
+front[45] = '<p class="c0"><span class="c1">faul</span></p>';
+back[45] = '<p class="c0"><span class="c1">lazy</span></p>';
+front[46] = '<p class="c0"><span class="c1">krank</span></p>';
+back[46] = '<p class="c0"><span class="c1">sick</span></p>';
+front[47] = '<p class="c0"><span class="c1">m&uuml;de</span></p>';
+back[47] = '<p class="c0"><span class="c1">tired</span></p>';
+front[48] = '<p class="c0"><span class="c1">w&uuml;tend</span></p>';
+back[48] = '<p class="c0"><span class="c1">angry</span></p>';
+front[49] = '<p class="c0"><span class="c1">der Durst</span></p>';
+back[49] = '<p class="c0"><span class="c1">thirst</span></p>';
+front[50] = '<p class="c0"><span class="c1">Durst haben</span></p>';
+back[50] = '<p class="c0"><span class="c1">to be thirsty</span></p>';
+front[51] = '<p class="c0"><span class="c1">der Hunger</span></p>';
+back[51] = '<p class="c0"><span class="c1">hunger</span></p>';
+front[52] = '<p class="c0"><span class="c1">Hunger haben</span></p>';
+back[52] = '<p class="c0"><span class="c1">to be hungrz</span></p>';
+front[53] = '<p class="c0"><span class="c1">das Gef&uuml;hl, -e</span></p>';
+back[53] = '<p class="c0"><span class="c1">feeling</span></p>';
+front[54] = '<p class="c0"><span class="c1">f&uuml;hlen</span></p>';
+back[54] = '<p class="c0"><span class="c1">feel</span></p>';
+front[55] = '<p class="c0"><span class="c1">wie f&uuml;hlst du dich?</span></p>';
+back[55] = '<p class="c0"><span class="c1">how do you feel?</span></p>';
+front[56] = '<p class="c0"><span class="c1">ich F&uuml;hle mich...</span></p>';
+back[56] = '<p class="c0"><span class="c1">I feel </span></p>';
+front[57] = '<p class="c0"><span class="c1">frustriert</span></p>';
+back[57] = '<p class="c0"><span class="c1">frustrated</span></p>';
+front[58] = '<p class="c0"><span class="c1">die Nachhilfe</span></p>';
+back[58] = '<p class="c0"><span class="c1">tutoring</span></p>';
+front[59] = '<p class="c0"><span class="c1">die Sprechstunde, -n</span></p>';
+back[59] = '<p class="c0"><span class="c1">office hour</span></p>';
+front[60] = '<p class="c0"><span class="c1">der Satz, -e uml</span></p>';
+back[60] = '<p class="c0"><span class="c1">sentence</span></p>';
+front[61] = '<p class="c0"><span class="c1">der sommerkurs, -e</span></p>';
+back[61] = '<p class="c0"><span class="c1">summer school</span></p>';
+front[62] = '<p class="c0"><span class="c1">das Arbeitbuch, -er uml</span></p>';
+back[62] = '<p class="c0"><span class="c1">workbook</span></p>';
+front[63] = '<p class="c0"><span class="c1">das Beispiel, -e</span></p>';
+back[63] = '<p class="c0"><span class="c1">example</span></p>';
+front[64] = '<p class="c0"><span class="c1">zum Beispiel (z.B.)</span></p>';
+back[64] = '<p class="c0"><span class="c1">for example</span></p>';
+front[65] = '<p class="c0"><span class="c1">das Refereat, -e</span></p>';
+back[65] = '<p class="c0"><span class="c1">report</span></p>';
+front[66] = '<p class="c0"><span class="c1">das Studium, Studien &reg;</span></p>';
+back[66] = '<p class="c0"><span class="c1">course of studies</span></p>';
+front[67] = '<p class="c0"><span class="c1">die &Auml;rztin, -nen</span></p>';
+back[67] = '<p class="c0"><span class="c1">female phzsician</span></p>';
+front[68] = '<p class="c0"><span class="c1">die Blume, -n</span></p>';
+back[68] = '<p class="c0"><span class="c1">flower</span></p>';
+front[69] = '<p class="c0"><span class="c1">die Geige -n</span></p>';
+back[69] = '<p class="c0"><span class="c1">violin</span></p>';
+front[70] = '<p class="c0"><span class="c1">die Geliebte, -n</span></p>';
+back[70] = '<p class="c0"><span class="c1">beloved female friend, love</span></p>';
+front[71] = '<p class="c0"><span class="c1">die Hauptstadt, -e uml</span></p>';
+back[71] = '<p class="c0"><span class="c1">capital city</span></p>';
+front[72] = '<p class="c0"><span class="c1">die Haut</span></p>';
+back[72] = '<p class="c0"><span class="c1">skin</span></p>';
+front[73] = '<p class="c0"><span class="c1">die Kerze, -n</span></p>';
+back[73] = '<p class="c0"><span class="c1">candle</span></p>';
+front[74] = '<p class="c0"><span class="c1">kie Kneipe, -n</span></p>';
+back[74] = '<p class="c0"><span class="c1">bar, tavern</span></p>';
+front[75] = '<p class="c0"><span class="c1">kie Oma, -s</span></p>';
+back[75] = '<p class="c0"><span class="c1">grandma</span></p>';
+front[76] = '<p class="c0"><span class="c1">die Pflicht, -en</span></p>';
+back[76] = '<p class="c0"><span class="c1">dutz; requirement</span></p>';
+front[77] = '<p class="c0"><span class="c1">der Arzt, -e uml</span></p>';
+back[77] = '<p class="c0"><span class="c1">male phzsician</span></p>';
+front[78] = '<p class="c0"><span class="c1">der Papierkorb, -e uml</span></p>';
+back[78] = '<p class="c0"><span class="c1">wastebasket</span></p>';
+front[79] = '<p class="c0"><span class="c1">der Punkt, -e</span></p>';
+back[79] = '<p class="c0"><span class="c1">point</span></p>';
+front[80] = '<p class="c0"><span class="c1">der Roman, -e</span></p>';
+back[80] = '<p class="c0"><span class="c1">novel</span></p>';
+front[81] = '<p class="c0"><span class="c1">das Gedicht, -e</span></p>';
+back[81] = '<p class="c0"><span class="c1">poem</span></p>';
+front[82] = '<p class="c0"><span class="c1">das Krankenhaus, -er uml</span></p>';
+back[82] = '<p class="c0"><span class="c1">hospital</span></p>';
+front[83] = '<p class="c0"><span class="c1">das Lied, -er</span></p>';
+back[83] = '<p class="c0"><span class="c1">song</span></p>';
+front[84] = '<p class="c0"><span class="c1">das Mittagessen</span></p>';
+back[84] = '<p class="c0"><span class="c1">middaz meal, lunch</span></p>';
+front[85] = '<p class="c0"><span class="c1">das Taschentuch, -er uml</span></p>';
+back[85] = '<p class="c0"><span class="c1">handkerchief</span></p>';
+front[86] = '<p class="c0"><span class="c1">das Tier, -e</span></p>';
+back[86] = '<p class="c0"><span class="c1">animal</span></p>';
+front[87] = '<p class="c0"><span class="c1">die CD, -s ( R ) </span></p>';
+back[87] = '<p class="c0"><span class="c1">CD</span></p>';
+front[88] = '<p class="c0"><span class="c1">die Disko, -s</span></p>';
+back[88] = '<p class="c0"><span class="c1">disco</span></p>';
+front[89] = '<p class="c0"><span class="c1">die Firma, Firmen</span></p>';
+back[89] = '<p class="c0"><span class="c1">business</span></p>';
+front[90] = '<p class="c0"><span class="c1">die Pflanze, -n</span></p>';
+back[90] = '<p class="c0"><span class="c1">plant</span></p>';
+front[91] = '<p class="c0"><span class="c1">die VAse, -n</span></p>';
+back[91] = '<p class="c0"><span class="c1">vase</span></p>';
+front[92] = '<p class="c0"><span class="c1">der DVD-Spiele, - ( R )</span></p>';
+back[92] = '<p class="c0"><span class="c1">dvd plazer</span></p>';
+front[93] = '<p class="c0"><span class="c1">das Aspirin</span></p>';
+back[93] = '<p class="c0"><span class="c1">aspirin</span></p>';
+front[94] = '<p class="c0"><span class="c1">das Licht, -er</span></p>';
+back[94] = '<p class="c0"><span class="c1">light</span></p>';
+front[95] = '<p class="c0"><span class="c1">das Talent, -e</span></p>';
+back[95] = '<p class="c0"><span class="c1">talent</span></p>';
+front[96] = '<p class="c0"><span class="c1">das Taxi, -s</span></p>';
+back[96] = '<p class="c0"><span class="c1">taxi</span></p>';
+front[97] = '<p class="c0"><span class="c1">das Tischtennis</span></p>';
+back[97] = '<p class="c0"><span class="c1">table tennis</span></p>';
+front[98] = '<p class="c0"><span class="c1">Modalverben</span></p>';
+back[98] = '<p class="c0"><span class="c1">Modal Verbs</span></p>';
+front[99] = '<p class="c0"><span class="c1">d&uuml;rfen, darf</span></p>';
+back[99] = '<p class="c0"><span class="c1">to be permitted (to)), may</span></p>';
+front[100] = '<p class="c0"><span class="c1">k&ouml;nnen, kann</span></p>';
+back[100] = '<p class="c0"><span class="c1">to be able (to), can, may</span></p>';
+front[101] = '<p class="c0"><span class="c1">m&auml;gen, mag ( R )</span></p>';
+back[101] = '<p class="c0"><span class="c1">to like, care for</span></p>';
+front[102] = '<p class="c0"><span class="c1">m&ouml;chte</span></p>';
+back[102] = '<p class="c0"><span class="c1">would like (to)</span></p>';
+front[103] = '<p class="c0"><span class="c1">m&uuml;ssen, muss</span></p>';
+back[103] = '<p class="c0"><span class="c1">to have to, must</span></p>';
+front[104] = '<p class="c0"><span class="c1">sollen, soll</span></p>';
+back[104] = '<p class="c0"><span class="c1">to be supposed to</span></p>';
+front[105] = '<p class="c0"><span class="c1">wollen, will</span></p>';
+back[105] = '<p class="c0"><span class="c1">to want; to intend, plan (to)</span></p>';
+front[106] = '<p class="c0"><span class="c1">an.machen</span></p>';
+back[106] = '<p class="c0"><span class="c1">to turn on, switch on</span></p>';
+front[107] = '<p class="c0"><span class="c1">an.schen, sieht...an</span></p>';
+back[107] = '<p class="c0"><span class="c1">to look at; to watch</span></p>';
+front[108] = '<p class="c0"><span class="c1">an.yiehen</span></p>';
+back[108] = '<p class="c0"><span class="c1">to put on (clothes)</span></p>';
+front[109] = '<p class="c0"><span class="c1">an.y&uuml;nden</span></p>';
+back[109] = '<p class="c0"><span class="c1">to light</span></p>';
+front[110] = '<p class="c0"><span class="c1">auf.machen</span></p>';
+back[110] = '<p class="c0"><span class="c1">to open</span></p>';
+front[111] = '<p class="c0"><span class="c1">aus.passen</span></p>';
+back[111] = '<p class="c0"><span class="c1">to paz atention</span></p>';
+front[112] = '<p class="c0"><span class="c1">aus.geben, bibt...aus</span></p>';
+back[112] = '<p class="c0"><span class="c1">to spend</span></p>';
+front[113] = '<p class="c0"><span class="c1">aus.machen</span></p>';
+back[113] = '<p class="c0"><span class="c1">to turn off</span></p>';
+front[114] = '<p class="c0"><span class="c1">aus.leeren</span></p>';
+back[114] = '<p class="c0"><span class="c1">to emptz</span></p>';
+front[115] = '<p class="c0"><span class="c1">aus.yiehen</span></p>';
+back[115] = '<p class="c0"><span class="c1">to take off (lothes)</span></p>';
+front[116] = '<p class="c0"><span class="c1">bekommen</span></p>';
+back[116] = '<p class="c0"><span class="c1">to get, receive</span></p>';
+front[117] = '<p class="c0"><span class="c1">belegen</span></p>';
+back[117] = '<p class="c0"><span class="c1">to take (a course)</span></p>';
+front[118] = '<p class="c0"><span class="c1">ein.steigen</span></p>';
+back[118] = '<p class="c0"><span class="c1">to board</span></p>';
+front[119] = '<p class="c0"><span class="c1">erz&auml;hlen</span></p>';
+back[119] = '<p class="c0"><span class="c1">to tell</span></p>';
+front[120] = '<p class="c0"><span class="c1">mit.nehmen</span></p>';
+back[120] = '<p class="c0"><span class="c1">to take along</span></p>';
+front[121] = '<p class="c0"><span class="c1">nimmt...mit</span></p>';
+back[121] = '<p class="c0"><span class="c1">to take along</span></p>';
+front[122] = '<p class="c0"><span class="c1">probieren</span></p>';
+back[122] = '<p class="c0"><span class="c1">to try, taste</span></p>';
+front[123] = '<p class="c0"><span class="c1">rauchen</span></p>';
+back[123] = '<p class="c0"><span class="c1">to smoke</span></p>';
+front[124] = '<p class="c0"><span class="c1">stellen</span></p>';
+back[124] = '<p class="c0"><span class="c1">to put, place (upright)</span></p>';
+front[125] = '<p class="c0"><span class="c1">verbringen</span></p>';
+back[125] = '<p class="c0"><span class="c1">to spend (time)</span></p>';
+front[126] = '<p class="c0"><span class="c1">verreisen</span></p>';
+back[126] = '<p class="c0"><span class="c1">to go on a trip</span></p>';
+front[127] = '<p class="c0"><span class="c1">vorbei.kommen</span></p>';
+back[127] = '<p class="c0"><span class="c1">to come by, visit</span></p>';
+front[128] = '<p class="c0"><span class="c1">werfen, wirft</span></p>';
+back[128] = '<p class="c0"><span class="c1">to throw</span></p>';
+front[129] = '<p class="c0"><span class="c1">zu.machen</span></p>';
+back[129] = '<p class="c0"><span class="c1">to close</span></p>';
+front[130] = '<p class="c0"><span class="c1">baden</span></p>';
+back[130] = '<p class="c0"><span class="c1">swim</span></p>';
+front[131] = '<p class="c0"><span class="c1">h&auml;ngen</span></p>';
+back[131] = '<p class="c0"><span class="c1">depend</span></p>';
+front[132] = '<p class="c0"><span class="c1">hoffen</span></p>';
+back[132] = '<p class="c0"><span class="c1">hope</span></p>';
+front[133] = '<p class="c0"><span class="c1">k&auml;mmen</span></p>';
+back[133] = '<p class="c0"><span class="c1">comb</span></p>';
+front[134] = '<p class="c0"><span class="c1">kombinieren</span></p>';
+back[134] = '<p class="c0"><span class="c1">combine</span></p>';
+front[135] = '<p class="c0"><span class="c1">lachen</span></p>';
+back[135] = '<p class="c0"><span class="c1">laugh</span></p>';
+front[136] = '<p class="c0"><span class="c1">leben</span></p>';
+back[136] = '<p class="c0"><span class="c1">live</span></p>';
+front[137] = '<p class="c0"><span class="c1">mit.bringen</span></p>';
+back[137] = '<p class="c0"><span class="c1">bring with</span></p>';
+front[138] = '<p class="c0"><span class="c1">das Bild an die Wand h&auml;ngen</span></p>';
+back[138] = '<p class="c0"><span class="c1">hang a picture on the wal</span></p>';
+front[139] = '<p class="c0"><span class="c1">ausgezeichnet</span></p>';
+back[139] = '<p class="c0"><span class="c1">excellent</span></p>';
+front[140] = '<p class="c0"><span class="c1">beliebt</span></p>';
+back[140] = '<p class="c0"><span class="c1">popular</span></p>';
+front[141] = '<p class="c0"><span class="c1">besonders</span></p>';
+back[141] = '<p class="c0"><span class="c1">particularly</span></p>';
+front[142] = '<p class="c0"><span class="c1">bestimmt</span></p>';
+back[142] = '<p class="c0"><span class="c1">definitely, certainly</span></p>';
+front[143] = '<p class="c0"><span class="c1">eigentlich</span></p>';
+back[143] = '<p class="c0"><span class="c1">actuallz</span></p>';
+front[144] = '<p class="c0"><span class="c1">fertig</span></p>';
+back[144] = '<p class="c0"><span class="c1">readz; finished</span></p>';
+front[145] = '<p class="c0"><span class="c1">die ganze Nacht</span></p>';
+back[145] = '<p class="c0"><span class="c1">all night long</span></p>';
+front[146] = '<p class="c0"><span class="c1">ganz sch&ouml;n viel</span></p>';
+back[146] = '<p class="c0"><span class="c1">quite a bit</span></p>';
+front[147] = '<p class="c0"><span class="c1">nass</span></p>';
+back[147] = '<p class="c0"><span class="c1">wet</span></p>';
+front[148] = '<p class="c0"><span class="c1">schnell</span></p>';
+back[148] = '<p class="c0"><span class="c1">quick, fast</span></p>';
+front[149] = '<p class="c0"><span class="c1">scwer</span></p>';
+back[149] = '<p class="c0"><span class="c1">heavz; hard, difficult</span></p>';
+front[150] = '<p class="c0"><span class="c1">wahr</span></p>';
+back[150] = '<p class="c0"><span class="c1">true</span></p>';
+front[151] = '<p class="c0"><span class="c1">bei dir</span></p>';
+back[151] = '<p class="c0"><span class="c1">at zour place</span></p>';
+front[152] = '<p class="c0"><span class="c1">blau machen</span></p>';
+back[152] = '<p class="c0"><span class="c1">to take the daz off</span></p>';
+front[153] = '<p class="c0"><span class="c1">dreimal</span></p>';
+back[153] = '<p class="c0"><span class="c1">three times</span></p>';
+front[154] = '<p class="c0"><span class="c1">einander</span></p>';
+back[154] = '<p class="c0"><span class="c1">one another, each other</span></p>';
+front[155] = '<p class="c0"><span class="c1">hintereinander</span></p>';
+back[155] = '<p class="c0"><span class="c1">in a row</span></p>';
+front[156] = '<p class="c0"><span class="c1">miteinander</span></p>';
+back[156] = '<p class="c0"><span class="c1">with each other</span></p>';
+front[157] = '<p class="c0"><span class="c1">Entschuldigung</span></p>';
+back[157] = '<p class="c0"><span class="c1">excuse me</span></p>';
+front[158] = '<p class="c0"><span class="c1">gar nicht</span></p>';
+back[158] = '<p class="c0"><span class="c1">not a bit</span></p>';
+front[159] = '<p class="c0"><span class="c1">immer</span></p>';
+back[159] = '<p class="c0"><span class="c1">always</span></p>';
+front[160] = '<p class="c0"><span class="c1">jede</span></p>';
+back[160] = '<p class="c0"><span class="c1">each, everz</span></p>';
+front[161] = '<p class="c0"><span class="c1">jede Woche</span></p>';
+back[161] = '<p class="c0"><span class="c1">everz week</span></p>';
+front[162] = '<p class="c0"><span class="c1">jemand</span></p>';
+back[162] = '<p class="c0"><span class="c1">someone, somebodz</span></p>';
+front[163] = '<p class="c0"><span class="c1">jetzt</span></p>';
+back[163] = '<p class="c0"><span class="c1">now</span></p>';
+front[164] = '<p class="c0"><span class="c1">kein bisschen</span></p>';
+back[164] = '<p class="c0"><span class="c1">not at all</span></p>';
+front[165] = '<p class="c0"><span class="c1">mit mir</span></p>';
+back[165] = '<p class="c0"><span class="c1">with me</span></p>';
+front[166] = '<p class="c0"><span class="c1">na</span></p>';
+back[166] = '<p class="c0"><span class="c1">well</span></p>';
+front[167] = '<p class="c0"><span class="c1">nach</span></p>';
+back[167] = '<p class="c0"><span class="c1">after; to</span></p>';
+front[168] = '<p class="c0"><span class="c1">nebn</span></p>';
+back[168] = '<p class="c0"><span class="c1">beside, in addition to</span></p>';
+front[169] = '<p class="c0"><span class="c1">nur</span></p>';
+back[169] = '<p class="c0"><span class="c1">only</span></p>';
+front[170] = '<p class="c0"><span class="c1">pro</span></p>';
+back[170] = '<p class="c0"><span class="c1">per</span></p>';
+front[171] = '<p class="c0"><span class="c1">schade</span></p>';
+back[171] = '<p class="c0"><span class="c1">too bad</span></p>';
+front[172] = '<p class="c0"><span class="c1">sicherlich</span></p>';
+back[172] = '<p class="c0"><span class="c1">certainly</span></p>';
+front[173] = '<p class="c0"><span class="c1">sofort</span></p>';
+back[173] = '<p class="c0"><span class="c1">immediately</span></p>';
+front[174] = '<p class="c0"><span class="c1">versetzt</span></p>';
+back[174] = '<p class="c0"><span class="c1">promoted</span></p>';
+front[175] = '<p class="c0"><span class="c1">von der Arbeit</span></p>';
+back[175] = '<p class="c0"><span class="c1">from work</span></p>';
+front[176] = '<p class="c0"><span class="c1">warum</span></p>';
+back[176] = '<p class="c0"><span class="c1">why</span></p>';
+front[177] = '<p class="c0"><span class="c1">weil</span></p>';
+back[177] = '<p class="c0"><span class="c1">because</span></p>';
+front[178] = '<p class="c0"><span class="c1">wieder</span></p>';
+back[178] = '<p class="c0"><span class="c1">again</span></p>';
+front[179] = '<p class="c0"><span class="c1">schon wieder</span></p>';
+back[179] = '<p class="c0"><span class="c1">once again</span></p>';
+front[180] = '<p class="c0"><span class="c1">wohin</span></p>';
+back[180] = '<p class="c0"><span class="c1">where to</span></p>';
+front[181] = '<p class="c0"><span class="c1">zu Fu&szlig;</span></p>';
+back[181] = '<p class="c0"><span class="c1">on foot</span></p>';
+front[182] = '<p class="c0"><span class="c1">zum Arzt</span></p>';
+back[182] = '<p class="c0"><span class="c1">to the doctor</span></p>';
+front[183] = '<p class="c0"><span class="c1">zum Mittagessen</span></p>';
+back[183] = '<p class="c0"><span class="c1">for lunch</span></p>';
+
+//login panel location
+  element = 'login_top';
+  login_msg = 'Login to save scores and track your progress';
+  
+  //Properties of the question set that don't change after init
+  var group_count = 0;
+  var group_offsets = [];
+  var subel_offsets = [];
+  var group_q_count = [];
+  var questions = [];
+  var total_questions = 0;
+  
+  //Array to randomly select groups
+  //Used to randomly select the group number
+  var groups_sel = [];
+  var question_sel = [];
+  //Fields of the current question
+  var q_sel_fields = [];
+
+  //Indicates that the passedseen data has come in for the user and has
+  //been added to the local copy
+  var psprocessed = 0;
+  var passedseen = [];
+
+
+function clearps(){
+  passedseen = new Array(front.length);
+  for(var i = 0; i < passedseen.length; i += 1){
+    passedseen[i] = 0;
+  }
+}
+
+function logout(){
+  //Landed in the outer logout
+  //alert('Landed in the outer logout');
+  //Clear things that belonged to the current user
+  psprocessed = 0;
+  clearps();
+  norm_logout();
+}
+
+
+init_groups();
+
+function start_cards(){
+  //question_sel.clear();
+  //init_test_structs();
+
+  document.getElementById('card_controls').innerHTML =
+    '    <input style="text-align:center; id="flip_card" type="button" value="Flip" onclick="flip()">' +
+    '<input style="text-align:center; id="next_card_c" type="button" value="Correct" onclick="check(1, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_w" type="button" value="Wrong" onclick="check(0, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_ss" type="button" value="Save Score" onclick="log_scores();">' +
+    '<input style="text-align:center; id="next_card_rv" type="button" value="Reverse" onclick="reverse();">';
+  
+  question_getter('Next Question');
+  //document.getElementById('cardstuff').innerHTML = front[0];
+  
+}
+
+var flip_direction = 0;
+function reverse(){
+  flip();
+  flip_direction = flip_direction ^ 1;
+  fb = 0;
+}
+
+function flip(){
+  //alert('The other side');
+  if(fb == 0){
+    if(flip_direction == 0){
+      document.getElementById('cardstuff').innerHTML = back[cindex];
+    }else{
+      document.getElementById('cardstuff').innerHTML = front[cindex];
+    }
+    fb = 1;
+  }
+  else{
+    if(flip_direction == 0){
+      document.getElementById('cardstuff').innerHTML = front[cindex];
+    }else{
+      document.getElementById('cardstuff').innerHTML = back[cindex];
+    }
+    fb = 0;
+  }  
+}
+
+function card( card_index ){
+  //alert('Started');
+  cindex = card_index;
+    if(flip_direction == 0){
+      document.getElementById('cardstuff').innerHTML = front[cindex];
+    }else{
+      document.getElementById('cardstuff').innerHTML = back[cindex];
+    }
+  //document.getElementById('cardstuff').innerHTML = front[card_index];
+  fb=0;
+}
+
+
+function init_groups(){
+  //Initilize the passedseen structure
+  clearps();
+  
+  //alert('Found ' + group_count + ' groups with ' +
+  //      group_q_count[0] + ' ' + group_q_count[1] + 
+  //      ' ' + group_q_count[5] + '...');
+}
+
+function init_test_structs(){
+      //Setup the random group choser
+      question_sel = new Array(front.length);
+      for(var i = 0; i < front.length; i += 1){
+        question_sel[i] = i;
+      }
+}
+
+
+
+
+    var r_chosen = []; 
+   var question_structure; 
+   var questions_done = 0;
+   var subelement;
+   var group;
+   var qnum;
+   var rqnum;
+    var q2test = 0;
+    var correct = 'A';
+    var first_answer = 1;
+    var questions_answered = 0;
+    var raw_test_score = 0;
+    var questions_asked = 0;
+    var s_test_score = 0.0;
+    var s_test_accuracy = 0.0;
+    var sing_test = false;
+    var subel = [];
+    var subel_count = [];         
+     var stQuery_qu = 'http://spreadsheets.google.com/pub?key=pvFXGB-79Kl0MiDlVNiUiVQ&gid=0&pub=1';
+    var stScoreQuery = 'http://spreadsheets.google.com/pub?key=pvFXGB-79Kl3nEmVhWk5bKw&gid=0&pub=1';
+    var stScoreAction = 'http://spreadsheets.google.com/formResponse?key=pvFXGB-79Kl3nEmVhWk5bKw';
+    var my_copyright = 'Copyright 2008 Pythagorean Productions';
+    var stQuery = 'http://spreadsheets.google.com/pub?key=pvFXGB-79Kl338aI6gFPzJQ&gid=0&pub=1';
+      var stAction = 'http://spreadsheets.google.com/formResponse?key=pvFXGB-79Kl338aI6gFPzJQ';
+         var login_db = 'http://spreadsheets.google.com/pub?key=pvFXGB-79Kl2JkNT5hLmiJA&gid=0&pub=1';
+    var login_form = 'http://spreadsheets.google.com/formResponse?key=pvFXGB-79Kl2JkNT5hLmiJA';
+    var question_count = 50;
+    var subel_prefix = 'E';
+    var subel_label = 'E1';
+    subel_count[1] = 6;
+    subel_count[2] = 5;
+    subel_count[3] = 3;
+    subel_count[4] = 5;
+    subel_count[5] = 4;
+    subel_count[6] = 6;
+    subel_count[7] = 8;
+    subel_count[8] = 4;
+    subel_count[9] = 8;
+    subel_count[0] = 1;
+    var in_exam = true;
+    
+    //Used to track current question number for passedseen tracking
+    var abs_qnum = 0;
+
+    google.load("visualization", "1");
+    google.setOnLoadCallback(test_initialize);
+function uiSetup(){
+}
+  
+function test_initialize(){
+  //alert('Registerd setup handler');
+       questions_done = 0;
+        first_answer = 1;
+        correct = 'A';
+        q2test = 0;
+        questions_answered = 0;
+        questions_asked = 0;
+        raw_test_score = 0;
+        s_test_score = 0.0;
+        s_test_accuracy = 0.0; 
+        
+
+      init_test_structs();
+      initialize_test_scores();
+      init_score();
+      //new_study_form();
+      //start_test();
+}
+      
+var group_num = 0;
+var group_index = 0;
+var question_num = 0;
+var quesiton_index = 0;
+
+function debugqsel(){
+  //alert('group_index ' + group_index + ' ' +
+  //      'group_num ' + group_num + ' ' +
+  //      'question_index ' + question_index + ' ' +
+  //      'question_num ' + question_num + ' ');
+        
+  //alert('goup_offset ' + group_offsets[group_num]);
+  
+  //alert('total_questions ' + total_questions);
+  
+        var passedseen_str = '';
+        for(var i=0; i < front.length; i+=1){
+          passedseen_str += passedseen[i] + '|';
+        }
+  alert('About to log scores');
+  log_scores();
+}
+
+function cull_unseenpassed( seenpass ){
+  //use passedseen array to remove questions from the
+  //random selection that have already been seen or passed
+  
+  //Walk the groups and remove quesitons
+  //There are as many entries in group_offsets as there are groups
+  //for(var i=0; i < group_offsets.length; i += 1){
+    //Determine if there are enough questions >1 to populate the test
+    unculled = 0;
+    for(var k=0; k < front.length; k += 1){
+      if(passedseen[k] < seenpass){
+        unculled += 1;
+      }
+    }
+    if(unculled > 0){
+      //Cull the group
+      for(var k=0; k < front.length; k += 1){
+        if(!(passedseen[k] < seenpass)){
+          //search the group until the question is found
+          //and then splice it out
+          for(var m=0; m < front.length; m += 1){
+            if(question_sel[m] == k){
+              question_sel.splice(m, 1);
+              //Now that the question is removed, get out and start over
+              break;           
+            }
+          }
+        }
+      }//Done culling the group      
+    }//The group had something to cull
+  //}//Done stepping through the groups
+}
+
+function question_getter(button_value){
+      if(button_value == 'New Test'){
+        subel_toggling = true;
+        reset_test();
+      }
+      else if(button_value == 'New Test Unseen'){
+         subel_toggling = true;
+         reset_test();
+         cull_unseenpassed(1);    
+         //Turn off the other new test buttons 
+           document.getElementById('card_controls').innerHTML =
+    '    <input style="text-align:center; id="flip_card" type="button" value="Flip" onclick="flip()">' +
+    '<input style="text-align:center; id="next_card_c" type="button" value="Correct" onclick="check(1, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_w" type="button" value="Wrong" onclick="check(0, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_ss" type="button" value="Save Score" onclick="log_scores();">' +
+    '<input style="text-align:center; id="next_card_rv" type="button" value="Reverse" onclick="reverse();">';
+    
+          
+      }
+      else if(button_value == 'New Test Unpassed'){
+         subel_toggling = true;
+         reset_test();
+         cull_unseenpassed(2);            
+         //Turn off the other new test buttons
+           document.getElementById('card_controls').innerHTML =
+    '    <input style="text-align:center; id="flip_card" type="button" value="Flip" onclick="flip()">' +
+    '<input style="text-align:center; id="next_card_c" type="button" value="Correct" onclick="check(1, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_w" type="button" value="Wrong" onclick="check(0, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_ss" type="button" value="Save Score" onclick="log_scores();">' +
+    '<input style="text-align:center; id="next_card_rv" type="button" value="Reverse" onclick="reverse();">';
+           
+      }
+      else{
+        questions_asked = questions_asked + 1;
+        first_answer = 1;
+        
+        //Randomly choose a group and question index
+        //Use the index to retrieve the group number from the array of
+        //unused groups
+        
+        question_index = Math.floor(Math.random() * 
+                                     question_sel.length);
+        question_num = question_sel[question_index];
+        
+        abs_qnum = question_num;
+        
+        //Remove the selected group and question from the random mix
+        //This is only necessary later when unseen or unpassed 
+        //questions are being selected and more than one question 
+        //can be selected from a group
+        question_sel.splice(question_index, 1);
+        
+        
+      }
+
+    //update_questions_asked();
+    //document.getElementById('next_question').disabled = true;
+    //question_receiver();
+    card(question_num);
+    }
+
+    function reset_test(){
+      //document.getElementById('next_question').value = 'Next Question';
+
+      test_initialize();
+    }
+    
+  function updateps(qnum){
+    //Flag not set if user not logged in
+    if(psprocessed == 1){
+      passedseen[qnum] += 1;
+      if(passedseen[qnum] > 2){
+        passedseen[qnum] = 2;
+      }
+    }
+  }
+
+  function question_receiver(){
+    if(question_sel.length > 0){
+
+      //HBC display a new flash card
+      card(quesiton_num);
+
+      questions_done = questions_done + 1;
+    }  else{
+       
+      //document.getElementById('next_question').value = 'New Test';
+    }
+  }
+
+function update_questions_asked(){
+    var test_score = new Number(s_test_score);
+    var accuracy = new Number(s_test_accuracy);
+    
+    //HBC Place score update here
+    
+    //document.getElementById('q_correct').innerHTML = 'Question ' + (questions_asked) + ' of ' + question_count + ' Accuracy = ' + accuracy.toFixed(2) + '%' + 'Test Score = ' + test_score.toFixed(2) + '% ';
+}
+
+function check(answer, a_id){  
+  //Record the fact that the question has been seen
+  updateps(question_num);
+  
+  if(answer == a_id){
+    //Record that the question has been passed
+    updateps(abs_qnum);
+    //document.getElementById(a_id).style.backgroundColor = '#00FF00';
+    //document.getElementById('q_correct').innerHTML = 'Correct!';
+      raw_test_score = raw_test_score + 1;
+      subel[0] = subel[0] + 1;
+  }
+    questions_answered = questions_answered + 1;
+    update_test_scores();
+}
+
+function update_test_scores(){
+    var test_score = new Number((raw_test_score/question_count)*100);
+    s_test_score = test_score;
+    var accuracy = new Number((raw_test_score/questions_answered)*100);
+    s_test_accuracy = accuracy;
+    //document.getElementById('next_question').disabled = false;
+        if(question_sel.length == 0){
+      alert('Out of cards');
+      end_test();
+    }
+}
+
+//Request used to communicate with application
+var req;
+var flashclass = 'G111B'
+function log_scores_org(){
+      //alert('entered log_scores');
+      //store the test scores if the user is logged in
+      if(login_user != ''){
+        //Prep everything to send in the score
+        var score_str = '';
+        for(var i = 0; i < 1; i += 1){
+          score_str += subel[i] + '|';
+        }
+        var passedseen_str = '';
+        for(var i=0; i < front.length; i+=1){
+          passedseen_str += passedseen[i] + '|';
+        }
+        alert('passedseen is ' + passedseen_str);
+        alert('Score is ' + score_str);
+        var score_params = "tclass=" +
+                      encodeURIComponent(flashclass) + 
+                      "&name=" + encodeURIComponent(login_user) +
+                      "&elementscores=" + encodeURIComponent(score_str) +
+                      "&passedseen=" + encodeURIComponent(passedseen_str);
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            req = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            req = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        
+        req.open("POST", '/hamtestscore', true);
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        req.setRequestHeader("Content-length", score_params.length);
+        req.setRequestHeader("Connection", "close");
+
+        
+        req.onreadystatechange = log_scores_cb;
+        req.send(score_params);
+
+      }
+
+}
+
+function log_scores(){
+      //alert('entered log_scores');
+      //store the test scores if the user is logged in
+      if(login_user != '' && question_sel.length != front.length){
+        //Prep everything to send in the score
+        var score_str = '';
+        for(var i = 0; i < 1; i += 1){
+          score_str += subel[i] + '|';
+        }
+        //alert('scores are ' + score_str);
+        var passedseen_str = '';
+        for(var i=0; i < front.length; i+=1){
+          passedseen_str += passedseen[i] + '|';
+        }
+        //alert('passedseen is ' + passedseen_str);
+        //alert('Score is ' + score_str);
+        var score_params = "tclass=" +
+                      encodeURIComponent(flashclass) + 
+                      "&name=" + encodeURIComponent(login_user) +
+                      "&elementscores=" + encodeURIComponent(score_str) +
+                      "&passedseen=" + encodeURIComponent(passedseen_str);
+        if(question_sel.length != 0 || questions_asked != front.length){
+          //partial test results
+          if(question_sel.length != 0){
+            //alert('front ' + front.length + ' sel ' + question_sel.length);
+            score_params += "&partial=" + encodeURIComponent(front.length - (question_sel.length + 1));
+          }
+          else{
+            score_params += "&partial=" + encodeURIComponent(questions_asked + 1);
+          }
+        }
+  
+                      
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            req = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            req = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        
+        req.open("POST", '/hamtestscore', true);
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        req.setRequestHeader("Content-length", score_params.length);
+        req.setRequestHeader("Connection", "close");
+
+        
+        req.onreadystatechange = log_scores_cb;
+        req.send(score_params);
+
+      }
+
+}
+
+
+function log_scores_cb(){
+    if (req.readyState == 4) {
+        if (req.status == 200) {
+              //alert('Entered log_cb with ' + req.responseText);
+              //document.getElementById('logtable').innerHTML = req.responseText;
+        }
+        else{
+          alert('log_cb Reqeust failed ' + req.status + ' ' + req.responseText);
+        }
+    }
+}
+
+function end_test(){
+  if(in_exam == true){
+    log_scores();
+  }
+  //HBC Go back to the start page
+  
+  //document.getElementById('next_question').value = 'New Test';
+  if(in_exam == true){
+    if(s_test_score >= 75){
+      //HBC update message
+      //document.getElementById('q_correct').innerHTML = 'You Passed the Test!!! Congratualations!';
+    }
+    else{
+      //HBC update message
+      //document.getElementById('q_correct').innerHTML = 'You did not pass the test.  You might want to study some more.';
+    }
+    reset_test();
+    sing_test = true;
+    show_results();
+  }
+}
+
+function welcome_user(){
+  norm_welcome_user();
+  show_results();
+}
+
+var reqc;
+function show_results(){
+  if(login_user != ''){
+        var score_url = "/hamtestscore?tclass=" +
+                      encodeURIComponent(flashclass) + 
+                      "&name=" + encodeURIComponent(login_user);
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            reqc = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            reqc = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        reqc.open("GET", score_url, true);
+        reqc.onreadystatechange = show_test_results_resp;
+        reqc.send(null);
+  }
+  else{
+    //document.getElementById('show_hide_scores').value = 'Hide Scores';
+    //document.getElementById('show_hide_scores').style.backgroundColor = '#43cc43';
+    //show_single_test_sec_results_resp();
+  }
+}
+
+
+function show_test_results(){
+
+}
+
+var score_row_count = 1;
+
+function show_test_results_resp(){
+    if (reqc.readyState == 4) {
+        if (reqc.status == 200) {
+              //alert('Entered log_cb with ' + req.responseText);
+              //document.getElementById('logtable').innerHTML = req.responseText;
+
+    var score_colors = ''; 
+  var response = reqc.responseText;
+  //alert('results ' + response);
+  //First, break the accumulated scores away from the passedseen data
+  var scoredata = response.split(':');
+  //Update the passedseen data if necessary
+  if(psprocessed == 0){
+    psprocessed = 1;
+    var psdata = scoredata[1];
+    //alert('psdata ' + psdata);
+    if(psdata != ''){
+      //alert('going to process ' + psdata.length);
+      pssaved = psdata.split('|');
+      //load the users passedseen data
+      for(var i=0; i < front.length; i+= 1){
+        passedseen[i] = parseInt(pssaved[i]);
+      }
+    }
+  }
+  //var datarows = response.split('&');
+  var datarows = scoredata[0].split('&');
+  //alert(datarows.length + ' scores found');
+  //alert(response);
+  var test_scores = [];
+  //var data = response.getDataTable();
+   //Graph progress on complete practice exams
+   if(datarows.length - 1 == 0){
+     document.getElementById('tabContent2').innerHTML = 'No scores saved yet'
+   }
+   for(var test=0; test < datarows.length - 1; test += 1){
+    var raw_score = 0;
+    //alert('datarow[' + test + '] = ' + datarows[test]);
+    var datarow = datarows[test].split('|');
+    //alert(datarows[test]);
+    //If there is a 61st element score, then set the partial flag
+    var partial = false;
+    var partial_value = 'N';
+    if(datarow[score_row_count + 1] != 'None'){
+      if(datarow[score_row_count + 1] != ''){
+        //alert('Found partial in ' + test + ' ' + datarow[61]);
+        partial = true;
+        partial_value = datarow[score_row_count + 1];
+      }
+    }
+    for(var x = 0; x < score_row_count; x++){
+      raw_score = raw_score + parseInt(datarow[x]);
+      //alert(raw_score + 
+    }
+    //alert(test + ' ' + raw_score);
+    
+    //The 61 below is a graphic scaling factor and has nothing to do with
+    //the 60 questions in the test
+    test_scores[test] = (raw_score/front.length)*61;
+    if(partial && (partial_value != 'Y')){
+      test_scores[test] = (raw_score/partial_value)*61;
+    }
+      if(test == 0){
+        score_colors = '&amp;chco=';
+      }
+      if(test > 0){
+        score_colors = score_colors + '|';      
+      }
+      var color_score = raw_score/front.length;
+      if(partial && (partial_value != 'Y')){
+        color_score = raw_score/partial_value;
+      }
+      
+      score_colors = score_colors + getScoreColor(color_score);
+      //Make partial test scores transparent
+      if(partial){
+        score_colors += '77';
+      }
+  }
+  if(datarows.length - 1 != 0){
+    for(var pad = datarows.length - 1; pad < 10; pad++){
+      test_scores[pad] = 0;
+    }
+
+
+  //Encapsulate this as the progress charting method
+  table_start = '<table style="border: 0px solid #666666; text-align:center"><tr><td colspan=2>'
+  var chart_url = [];
+  chart_url.push(' <img src="http://chart.apis.google.com/chart?chs=280x200');
+  chart_url.push(score_colors);  
+  chart_url.push('&chg=101,25');
+  chart_url.push('&amp;chd=');  chart_url.push(simpleEncode(test_scores, 61));
+  //alert(test_scores[0] + ' ' + test_scores[1]);
+  chart_url.push('&amp;cht=bvs&amp;chbh=a&amp;chxt=y');
+  chart_url.push('&amp;chtt= Test Scores for ' + login_name + '">');
+  document.getElementById('tabContent2').innerHTML = table_start + 
+                            chart_url.join('') + 
+                            '<br><br></td></tr><tr>'+
+                            '<td>%Questions Answered<br>'+
+                            get_pie_chart(gettotunseen(), front.length, 130, 100) + 
+                            '<br><input id="Unseen" type="button" value="New Test Unseen" onclick="toggleTab(1,4); question_getter(this.value)">' +
+                            '</td>'+
+                            '<td>%Questions Passed<br>'+
+                            get_pie_chart(gettotunpassed(), front.length, 130, 100) +
+                            '<br><input id="Unpassed" type="button" value="New Test Unpassed" onclick="toggleTab(1,4); question_getter(this.value)"></td></tr></table><br>' +
+                            ' <input id="Clear" type="button" value="Clear" onclick="clearps(); log_scores(); show_results()">';
+  }
+   
+   //document.getElementById('tabContent2').innerHTML += '</table>'
+        }
+        else{
+          alert('log_cb Reqeust failed ' + reqc.status + ' ' + reqc.responseText);
+        }
+    }
+}
+
+
+function show_test_results_resp2(){
+    if (reqc.readyState == 4) {
+        if (reqc.status == 200) {
+              //alert('Entered log_cb with ' + req.responseText);
+              //document.getElementById('logtable').innerHTML = req.responseText;
+
+    var score_colors = ''; 
+  var response = reqc.responseText;
+  //alert('score results ' + response);
+  //First, break the accumulated scores away from the passedseen data
+  var scoredata = response.split(':');
+  //Update the passedseen data if necessary
+  if(psprocessed == 0){
+    psprocessed = 1;
+    var psdata = scoredata[1];
+    //alert('psdata ' + psdata);
+    if(psdata != ''){
+      //alert('going to process ' + psdata.length);
+      pssaved = psdata.split('|');
+      //load the users passedseen data
+      for(var i=0; i < front.length; i+= 1){
+        passedseen[i] = parseInt(pssaved[i]);
+      }
+    }
+  }
+  //var datarows = response.split('&');
+  var datarows = scoredata[0].split('&');
+  //alert(response);
+  var test_scores = [];
+  //var data = response.getDataTable();
+   //Graph progress on complete practice exams
+   for(var test=0; test < datarows.length - 1; test += 1){
+    var raw_score = 0;
+    var datarow = datarows[test].split('|');
+    //alert(datarows[test]);
+    for(var x = 0; x < 1; x++){
+      raw_score = raw_score + parseInt(datarow[x]);
+      //alert(raw_score + 
+    }
+    //alert(test + ' ' + raw_score);
+    test_scores[test] = (raw_score/front.length)*61;
+      if(test == 0){
+        score_colors = '&amp;chco=';
+      }
+      if(test > 0){
+        score_colors = score_colors + '|';      
+      }
+      var color_score = raw_score/front.length;
+      score_colors = score_colors + getScoreColor(color_score);
+  }
+  if(datarows.length - 1 != 0){
+    for(var pad = datarows.length - 1; pad < 10; pad++){
+      test_scores[pad] = 0;
+    }
+
+
+  //Encapsulate this as the progress charting method
+  table_start = '<table style="border: 0px solid #666666; text-align:center"><tr><td colspan=2>'
+  var chart_url = [];
+  chart_url.push(' <img src="http://chart.apis.google.com/chart?chs=280x200');
+  chart_url.push(score_colors);  
+  chart_url.push('&chg=101,25');
+  chart_url.push('&amp;chd=');  chart_url.push(simpleEncode(test_scores, 61));
+  //alert(test_scores[0] + ' ' + test_scores[1]);
+  chart_url.push('&amp;cht=bvs&amp;chbh=a&amp;chxt=y');
+  chart_url.push('&amp;chtt= Test Scores for ' + login_user + '">');
+  document.getElementById('tabContent2').innerHTML = table_start + 
+                            chart_url.join('') + 
+                            '<br><br></td></tr><tr>'+
+                            '<td>%Questions Tested<br>'+
+                            get_pie_chart(gettotunseen(), front.length, 130, 100) + 
+                            '<br><input id="Unseen" type="button" value="New Test Unseen" onclick="toggleTab(1,4); question_getter(this.value)">' +
+                            '</td>'+
+                            '<td>%Questions Passed<br>'+
+                            get_pie_chart(gettotunpassed(), front.length, 130, 100) +
+                            '<br><input id="Unpassed" type="button" value="New Test Unpassed" onclick="toggleTab(1,4); question_getter(this.value)">' +
+                            '</td></tr>';
+  }
+   //Now graph the per element progress of the student
+
+   document.getElementById('tabContent2').innerHTML += '</table>'
+        }
+        else{
+          alert('log_cb Reqeust failed ' + reqc.status + ' ' + reqc.responseText);
+        }
+    }
+}
+
+  //Functions to process unpassed and unseen questions
+  function gettotunseen(){
+    var totunseen = 0;
+    for(var i = 0; i < passedseen.length; i+= 1){
+      if(passedseen[i] == 0){
+        totunseen += 1;
+      }
+    }
+    return totunseen;
+  }
+  
+  function getunseen( group ){
+    //Determine the offset and size of the group
+    groupunseen = 0;
+    var offset = group_offests[group];
+    var count = group_q_count[group];
+    
+    for(var i = 0; i < group_q_count; i += 1){
+      if(passedseen[offset + i] == 0){
+        groupunseen += 1;
+      }
+    }
+    return groupunseen;
+  }
+
+
+  function gettotunpassed(){
+    var totunpassed = 0;
+    for(var i = 0; i < passedseen.length; i+= 1){
+      if(passedseen[i] < 2){
+        totunpassed += 1;
+      }
+    }
+    return totunpassed;
+  }
+
+function get_pie_chart(unseenpassed, total, x, y){
+    var piedata = [];
+    var pie_url = [];
+    piedata[0] = unseenpassed;
+    piedata[1] = total - unseenpassed;
+    pie_url.push(' <img src="http://chart.apis.google.com/chart?chs=' + x + 'x' + y);
+    //chart_url.push(score_colors);
+    pie_url.push('&amp;chco=FF0000|00FF00');  
+    //pie_url.push('&amp;chl=Untested|Tested');
+    pie_url.push('&amp;chd=');
+    pie_url.push(simpleEncode(piedata, total));  
+    pie_url.push('&amp;cht=p');  
+    pie_url.push('">');
+    //pie_url.push('&amp;chtt= Question Pool Completion' + '">'); 
+    //alert(pie_url.join(''));
+    return pie_url.join('');  
+
+}
+
+function insert_graph( graph_scores, title, colors){
+  //Encapsulate this as the progress charting method
+  var chart_url = [];
+  chart_url.push(' <img src="http://chart.apis.google.com/chart?chs=280x200');
+  chart_url.push(colors);  
+  chart_url.push('&chg=101,25');
+  chart_url.push('&amp;chd=');  chart_url.push(simpleEncode(graph_scores, 61));
+  //alert(test_scores[0] + ' ' + test_scores[1]);
+  chart_url.push('&amp;cht=bvs&amp;chbh=a&amp;chxt=y');
+  chart_url.push('&amp;chtt= ' + title + '">');
+  return chart_url.join('');
+}
+
+  function getScoreColor(color_score){
+    var stScore = '000000';
+    if(color_score < 0.75){
+      stScore = 'FF0000';
+    }   
+    else if(color_score >= 0.75  && color_score < 0.90){
+      stScore = 'FFFF00';
+    }   
+    else if(color_score >= 0.90){
+      stScore = '00FF00';
+    } 
+    else{
+      //alert('Funny score ' + color_score);
+    }
+    return stScore;  
+  }
+
+
+var simpleEncoding = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function simpleEncode(valueArray,maxValue) {
+  var chartData = ['s:'];
+  for (var i = 0; i < valueArray.length; i++) {
+    var currentValue = valueArray[i];
+    if (!isNaN(currentValue) && currentValue >= 0) {
+      chartData.push(simpleEncoding.charAt(Math.round((simpleEncoding.length-1) * currentValue / maxValue)));
+    }
+    else {
+      chartData.push('_');
+    }
+  }
+return chartData.join('');
+}
+
+
+function initialize_test_scores(){
+  //HBC add new messages
+  //document.getElementById('q_correct').innerHTML = '';
+  //document.getElementById('q_correct').innerHTML = 'Questions Answered = 1 of ' + question_count + ' Accuracy = 0 Score = 0';
+}
+
+function init_score(){
+  for(var x = 0; x < 1; x++){
+      subel[x] = 0;
+  }
+}
+
+/*-----------------------------------------------------------
+    Toggles element's display value
+    Input: any number of element id's
+    Output: none 
+    ---------------------------------------------------------*/
+function toggleDisp() {
+    for (var i=0;i<arguments.length;i++){
+        var d = $(arguments[i]);
+        if (d.style.display == 'none')
+            d.style.display = 'block';
+        else
+            d.style.display = 'none';
+    }
+}
+/*-----------------------------------------------------------
+    Toggles tabs - Closes any open tabs, and then opens current tab
+    Input:     1.The number of the current tab
+                    2.The number of tabs
+                    3.(optional)The number of the tab to leave open
+                    4.(optional)Pass in true or false whether or not to animate the open/close of the tabs
+    Output: none 
+    ---------------------------------------------------------*/
+function toggleTab(num,numelems,opennum,animate) {
+    if ($('tabContent'+num).style.display == 'none'){
+        for (var i=1;i<=numelems;i++){
+            if ((opennum == null) || (opennum != i)){
+                var temph = 'tabHeader'+i;
+                var h = $(temph);
+                if (!h){
+                    var h = $('tabHeaderActive');
+                    h.id = temph;
+                }
+                var tempc = 'tabContent'+i;
+                var c = $(tempc);
+                if(c.style.display != 'none'){
+                    //if (animate || typeof animate == 'undefined')
+                        //Effect.toggle(tempc,'blind',{duration:0.5, queue:{scope:'menus', limit: 3}});
+                    //else
+                        toggleDisp(tempc);
+                }
+            }
+        }
+        var h = $('tabHeader'+num);
+        if (h)
+            h.id = 'tabHeaderActive';
+        h.blur();
+        var c = $('tabContent'+num);
+        c.style.marginTop = '2px';
+        //if (animate || typeof animate == 'undefined'){
+            //Effect.toggle('tabContent'+num,'blind',{duration:0.5, queue:{scope:'menus', position:'end', limit: 3}});
+        //}else{
+            toggleDisp('tabContent'+num);
+        //}
+    }
+}
+
+</script>
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+
+<script>
+var reqfb;
+function logComm( commentxid ){                      
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            reqfb = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            reqfb = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        var comm_params = "xid=" +
+                      encodeURIComponent(commentxid);
+        
+        reqfb.open("POST", '/fbcomm', true);
+        reqfb.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        reqfb.setRequestHeader("Content-length", comm_params.length);
+        reqfb.setRequestHeader("Connection", "close");
+
+        
+        reqfb.onreadystatechange = comm_cb;
+        reqfb.send(comm_params);
+}
+
+function comm_cb(){
+
+}
+FB.init({appId: '105604822850082', status: true, cookie: true,
+             xfbml: true});
+
+FB.Event.subscribe('comments.add', function(response) {
+      //var msession = FB.getSession();
+      //alert('Comment usera:' + response.widget._attr.xid);
+      logComm(response.widget._attr.xid);
+    });    
+
+         //Listen for the user to login and then customize
+         FB.Event.subscribe('auth.login', function(response) {
+           // do something with response
+           fb_setup();
+         });
+         
+         //If the user is already logged in and connected, then get rid of the login button
+         FB.getLoginStatus(function(response) {
+           if (response.session) {
+             // logged in and connected user, someone you know
+             fb_setup();
+             
+           } else {
+             // no user session available, someone you dont know
+           }
+         }, true);
+         
+         
+         function fb_setup(){
+           FB.api('/me', function(user) {
+             if(user != null) {
+                document.getElementById('fblogin').innerHTML = '';
+                //alert(user.name);
+                var image = document.getElementById('fbimage');
+                //image.src = 'http://graph.facebook.com/' + user.id + '/picture';
+                image.innerHTML = '<img src="http://graph.facebook.com/' + user.id + '/picture' + '">'
+                var name = document.getElementById('fbname');
+                name.innerHTML = user.name
+                login_user = user.id;
+                login_name = user.name;
+             }
+           });
+         }
+
+
+
+
+</script>

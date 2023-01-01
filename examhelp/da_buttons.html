@@ -1,0 +1,48 @@
+<head>
+</head>
+<script type="text/javascript">
+var datatable = '<table><tr><th>time</th><th>Res Fill</th><th>Magnet On</th><th>Magnet Off</th><th>Res Remove</th><th>Residual SC Gone</th>';
+var datarows = '';
+function record(data_event){
+	nowdate = new Date();
+	nowhours = nowdate.getHours()*360;
+	nowminutes = nowdate.getMinutes()*60;
+	nowseconds = nowdate.getSeconds();
+	nowmilli = nowdate.getMilliseconds();
+	
+	//(hour*360)+(minute*60)+second) + "." + str(microsecond)
+	nowtimeprint = nowdate.getHours()*3600 + nowdate.getMinutes()*60 + 
+                   nowdate.getSeconds();
+	datarows += '<tr><td>' + nowtimeprint + '.' + nowdate.getMilliseconds() + '</td>';
+    if(data_event == 'resfill'){
+    	datarows += '<td>1023</td><td>0</td><td>0</td><td>0</td><td>0</td>';
+    }
+    else if(data_event == 'magon'){
+    	datarows += '<td>0</td><td>1023</td><td>0</td><td>0</td><td>0</td>';
+    }
+    else if(data_event == 'magoff'){
+    	datarows += '<td>0</td><td>0</td><td>1023</td><td>0</td><td>0</td>';
+    }
+    else if(data_event == 'resremove'){
+    	datarows += '<td>0</td><td>0</td><td>0</td><td>1023</td><td>0</td>';
+    }
+    else if(data_event == 'resscgone'){
+    	datarows += '<td>0</td><td>0</td><td>0</td><td>0</td><td>1023</td>';
+    }
+	datarows += '</tr>'          
+	document.getElementById('datastore').innerHTML = datatable + datarows + '</table>';
+}
+
+</script>
+<body>
+<input id="map_type" type="button" value="Resovoir Fill" onclick="record('resfill');"></input>
+<input id="map_type" type="button" value="Magnet on" onclick="record('magon');"></input>
+<input id="map_type" type="button" value="Magnet off" onclick="record('magoff');"></input>
+<input id="map_type" type="button" value="Resovoir Remove" onclick="record('resremove');"></input>
+<input id="map_type" type="button" value="Residual SC Gone" onclick="record('resscgone');"></input>
+<br><br>
+<b>Data</b>
+<div id="datastore" style="width:100%"></div>
+
+
+</body>

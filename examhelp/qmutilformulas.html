@@ -1,0 +1,1201 @@
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1414453-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="/jscript/prototype.js" type="text/javascript"></script>
+<script src="/jscript/scriptaculous.js" type="text/javascript"></script>
+<style type="text/css">ol{margin:0;padding:0}p{margin:0}.c0{color:#000000;font-size:18pt;font-family:Arial}.c1{line-height:1.15;text-indent:0pt;direction:ltr}.c2{background-color:#ffffff}body{color:#000000;font-size:11pt;font-family:Arial}.heading1{font-size:24pt;font-weight:bold}.heading2{font-size:18pt;font-weight:bold}.heading3{font-size:14pt;font-weight:bold}.heading4{font-size:12pt;font-weight:bold}.heading5{font-size:11pt;font-weight:bold}.heading6{font-size:10pt;font-weight:bold}</style>
+
+<style type="text/css" media="screen">     
+.tableinput{border: 0px solid #666666; background-color: #ffff00; color: #000000;}    
+
+table.quiz td{font-size:14px;}
+    #tabs{
+        margin-left: 4px;
+        padding: 0;
+        background: transparent;
+        voice-family: "\"}\"";
+        voice-family: inherit;
+        padding-left: 5px;
+    }
+    #tabs ul{
+        font: bold 11px Arial, Verdana, sans-serif;
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+    #tabs li{
+        display:inline;
+        margin:0 2px 0 0;
+        padding:0;
+        text-transform:uppercase;
+    }
+    #tabs a{
+        float:left;
+        background:#A3BBE6 url(images/tabs_left.gif) no-repeat left top;
+        margin:0 2px 0 0;
+        padding:0 0 1px 3px;
+        text-decoration:none;
+    }
+    #tabs a span{
+        float:left;
+        display:block;
+        background: transparent url(images/tabs_right.gif) no-repeat right top;
+        padding:4px 9px 2px 6px;
+    }
+    #tabs a span{float:none;}
+    #tabs a:hover{background-color: #7E94B9;color: white;}
+    #tabs a:hover span{background-color: #7E94B9;}
+    #tabHeaderActive span, #tabHeaderActive a { background-color: #42577B; color:#fff;}
+    .tabContent {
+        clear:both;
+        border:2px solid #42577B;
+        padding-top:2px;
+        background-color:#FFF;
+    }
+</style>
+<link type="text/css" rel="stylesheet" href="/jscript/headerhelp.css" />
+
+<div style="overflow-y:auto; width:470px; height:470">
+<div id="adheader" style="position:relative; width:100%; ">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-6583317371769852";
+/* FlashCards */
+google_ad_slot = "6558886318";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div id=menubar style="position:relative; width:100%">
+  <table style="width:100%; background-color:#ffffff;">
+  <tr>
+  <td>
+    <div style="text-align:left">
+        <a href="http://copaseticflows.appspot.com/examhelp/german111.html">Control Panel</a>
+    </div>
+  </td>
+  <td id="entries">
+    <div style="text-align:center; font-family:Trebuchet MS, Arial, Helvetica, sans-serif;">
+      <b>Quantum Mechanics Useful Formulas</b>
+    </div>
+  </td>
+  <td>
+    <div style="text-align:right">
+      <a href="/examhelp/acf.html">about</a>
+    </div>
+  </td>
+  </tr>
+  </table>
+</div>
+
+  <div id="tabs" style=" width:100%; float:right; background-color:#ffffff; ">
+
+    <ul>
+        <li style="margin-left: 1px" id="tabHeaderActive"><a href="javascript:void(0)" onClick="toggleTab(1,4)"><span>Test</span></a></li>
+        <li id="tabHeader2"><a href="javascript:void(0)" onClick="toggleTab(2,4); show_results()" ><span>Scores</span></a></li>
+        <li id="tabHeader3"><a href="javascript:void(0)" onClick="toggleTab(3,4)"><span>Login</span></a></li>
+        <li id="tabHeader4"><a href="javascript:void(0)" onClick="toggleTab(4,4)"><span>Help</span></a></li>
+    </ul>
+    </div>
+    <div id="tabscontent" style=" width:100%; float:right; overflow-y:auto; background-color:#ffffff; ">
+
+
+        <div id="tabContent1" class="tabContent" style="display:yes;">
+
+
+  <div id="fblogin" style="position:relative; float:left; width:100%; ">
+  <fb:login-button perms="">
+         Login with Facebook
+  </fb:login-button>
+  </div>
+  <div style="width:100%; height:53px; color:#DDDDDD;border:1px solid #555555;">
+    <div id="fbimage" style="float:left; color:#333333">
+    </div>
+    <div id="fbname" style="color:#333333">
+    </div>
+  </div>
+  <div id="cardstuff" style="width:100%; border:1px solid #555555;">
+    <span style="text-align:left">Practice frequently used quantum mechanics formulas<br><br>
+    Be sure to login to track your scores and the formulas you've seen.  Click the Help
+    tab for instructions.
+    </span>
+  </div>
+  <div id="card_controls" style="width:100%; height:9%; text-align:center">
+    <input id="start" type="button" value="Start" onclick="start_cards()">
+  </div>
+
+
+
+<p>
+      </div>
+        <div id="tabContent2" class="tabContent" style="display:none;">
+            <br /><div>Login to see saved test scores</div>
+        </div>
+        <div id="tabContent3" class="tabContent" style="display:none;">
+          <div id="login_top">
+          Login to save scores and track your progress<br>
+          <iframe name="login_target" height="0" width="0"></iframe><br>
+          <form target="login_target" id="login_form" action="/" method="POST">
+          Name:<input size="10" type="text" name="user" id="user"><br>
+          Password:<input size="10" type="text" name="password" id="password"><br>
+          <input id="my_login" type="button" value="Login" onclick="log_it_in()">
+          <input id="c" type="button" value="Create" onclick="create_acct()"></form>
+          </div>
+          <div id="login_bottom"><br>
+          When you login, your scores are automatically tracked 
+          in the Scores tab.  
+          In addition, the question you've answered are tracked, 
+          so you can take a test that contains questions you've 
+          never answered, (unseen), or questions you've never answered 
+          correctly, (unpassed).  See the example below.
+          <img src="/img/scoretrack.jpg">
+          </div>
+        </div>
+        <div id="tabContent4" class="tabContent" style="display:none;">
+            <br /><div>Create an account or login on the login tab to track your scores and what words you've 
+    already practiced. <br> Click 'Start' to practice random vocabulary words from the list.<br>
+    On each card, you can click 'Flip' to see the other side.  If you remembered the card 
+    correctly, click 'Correct' to go to the next card, otherwise, click 'Wrong'.  <br>If you 
+    get tired of studying before you're through the entire deck, click 'Save Scores' to track your 
+    progress.  If you get through the entire deck, your scores will be saved automatically.  
+    Click 'New Test Unseen' on the 'Scores' tab to practice only the words you haven't seen yet.
+    <br>Click 'New Test Unpassed' to practice the words you didn't get correct yet.</div>
+        </div>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="/jscript/login.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  
+//arrays to hold card content
+var front = [];
+var back = [];
+var fb = 0;
+var cindex = 0;
+
+front[0] = '<p class="c0"><span class="c1">Cosine Product to Sum</span></p>';
+back[0] = '<p class="c0"><span class="c1"><img src="http://chart.apis.google.com/chart?cht=tx&chs=55&chl=%5Ccos%20%5Ctheta%20%5Ccos%20%5Cvarphi%20%3D%20{%5Ccos(%5Ctheta%20-%20%5Cvarphi)%20%2B%20%5Ccos(%5Ctheta%20%2B%20%5Cvarphi)%20%5Cover%202}"></img></span></p>';
+front[1] = '<p class="c0"><span class="c1">Sine Product to Sum</span></p>';
+back[1] = '<p class="c0"><span class="c1"><img src="http://chart.apis.google.com/chart?cht=tx&chs=55&chl=%5Csin%20%5Ctheta%20%5Csin%20%5Cvarphi%20%3D%20%7B%5Ccos(%5Ctheta%20-%20%5Cvarphi)%20-%20%5Ccos(%5Ctheta%20%2B%20%5Cvarphi)%20%5Cover%202%7D"></img></span></p>';
+front[2] = '<p class="c0"><span class="c1">Mixed Product to Sum</span></p>';
+back[2] = '<p class="c0"><span class="c1"><img src="http://chart.apis.google.com/chart?cht=tx&chs=55&chl=%5Csin%20%5Ctheta%20%5Ccos%20%5Cvarphi%20%3D%20%7B%5Csin(%5Ctheta%20%2B%20%5Cvarphi)%20%2B%20%5Csin(%5Ctheta%20-%20%5Cvarphi)%20%5Cover%202%7D"></img></span></p>';
+front[3] = '<p class="c0"><span class="c1">Integration by Parts</span></p>';
+back[3] = '<p class="c0"><span class="c1"><img src="http://chart.apis.google.com/chart?cht=tx&chs=30&chl=%5Cint%20f(x)%20g\'(x)%5C%2C%20dx%20%3D%20f(x)%20g(x)%20-%20%5Cint%20f\'(x)%20g(x)%5C%2C%20dx"></img></span></p>';
+front[4] = '<p class="c0"><span class="c1">Gaussian Integral</span></p>';
+back[4] = '<p class="c0"><span class="c1"><img src="http://chart.apis.google.com/chart?cht=tx&chs=55&chl=%5Cint_0%5E%5Cinfty%7Be%5E%7B-a%20x%5E2%7D%5C%2Cdx%7D%20%3D%20%5Cfrac%7B1%7D%7B2%7D%20%5Csqrt%20%5Cfrac%20%7B%5Cpi%7D%20%7Ba%7D"></img></span></p>';
+front[5] = '<p class="c0"><span class="c1">x sqared times Gaussian</span></p>';
+back[5] = '<p class="c0"><span class="c1"><img src="http://chart.apis.google.com/chart?cht=tx&chs=55&chl=%5Cint_0%5E%5Cinfty%7Bx%5E2%20e%5E%7B-a%20x%5E2%7D%5C%2Cdx%7D%20%3D%20%5Cfrac%7B1%7D%7B4%7D%20%5Csqrt%20%5Cfrac%20%7B%5Cpi%7D%20%7Ba%5E3%7D%20"></img></span></p>';
+
+
+//login panel location
+  element = 'login_top';
+  login_msg = 'Login to save scores and track your progress';
+  
+  //Properties of the question set that don't change after init
+  var group_count = 0;
+  var group_offsets = [];
+  var subel_offsets = [];
+  var group_q_count = [];
+  var questions = [];
+  var total_questions = 0;
+  
+  //Array to randomly select groups
+  //Used to randomly select the group number
+  var groups_sel = [];
+  var question_sel = [];
+  //Fields of the current question
+  var q_sel_fields = [];
+
+  //Indicates that the passedseen data has come in for the user and has
+  //been added to the local copy
+  var psprocessed = 0;
+  var passedseen = [];
+
+
+function clearps(){
+  passedseen = new Array(front.length);
+  for(var i = 0; i < passedseen.length; i += 1){
+    passedseen[i] = 0;
+  }
+}
+
+function logout(){
+  //Landed in the outer logout
+  //alert('Landed in the outer logout');
+  //Clear things that belonged to the current user
+  psprocessed = 0;
+  clearps();
+  norm_logout();
+}
+
+
+init_groups();
+
+function start_cards(){
+  //question_sel.clear();
+  //init_test_structs();
+
+  document.getElementById('card_controls').innerHTML =
+    '    <input style="text-align:center; id="flip_card" type="button" value="Flip" onclick="flip()">' +
+    '<input style="text-align:center; id="next_card_c" type="button" value="Correct" onclick="check(1, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_w" type="button" value="Wrong" onclick="check(0, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_ss" type="button" value="Save Score" onclick="log_scores();">' +
+    '<input style="text-align:center; id="next_card_rv" type="button" value="Reverse" onclick="reverse();">';
+  
+  question_getter('Next Question');
+  //document.getElementById('cardstuff').innerHTML = front[0];
+  
+}
+
+var flip_direction = 0;
+function reverse(){
+  flip();
+  flip_direction = flip_direction ^ 1;
+  fb = 0;
+}
+
+function flip(){
+  //alert('The other side');
+  if(fb == 0){
+    if(flip_direction == 0){
+      document.getElementById('cardstuff').innerHTML = back[cindex];
+    }else{
+      document.getElementById('cardstuff').innerHTML = front[cindex];
+    }
+    fb = 1;
+  }
+  else{
+    if(flip_direction == 0){
+      document.getElementById('cardstuff').innerHTML = front[cindex];
+    }else{
+      document.getElementById('cardstuff').innerHTML = back[cindex];
+    }
+    fb = 0;
+  }  
+}
+
+function card( card_index ){
+  //alert('Started');
+  cindex = card_index;
+    if(flip_direction == 0){
+      document.getElementById('cardstuff').innerHTML = front[cindex];
+    }else{
+      document.getElementById('cardstuff').innerHTML = back[cindex];
+    }
+  //document.getElementById('cardstuff').innerHTML = front[card_index];
+  fb=0;
+}
+
+
+function init_groups(){
+  //Initilize the passedseen structure
+  clearps();
+  
+  //alert('Found ' + group_count + ' groups with ' +
+  //      group_q_count[0] + ' ' + group_q_count[1] + 
+  //      ' ' + group_q_count[5] + '...');
+}
+
+function init_test_structs(){
+      //Setup the random group choser
+      question_sel = new Array(front.length);
+      for(var i = 0; i < front.length; i += 1){
+        question_sel[i] = i;
+      }
+}
+
+
+
+
+    var r_chosen = []; 
+   var question_structure; 
+   var questions_done = 0;
+   var subelement;
+   var group;
+   var qnum;
+   var rqnum;
+    var q2test = 0;
+    var correct = 'A';
+    var first_answer = 1;
+    var questions_answered = 0;
+    var raw_test_score = 0;
+    var questions_asked = 0;
+    var s_test_score = 0.0;
+    var s_test_accuracy = 0.0;
+    var sing_test = false;
+    var subel = [];
+    var subel_count = [];         
+     var stQuery_qu = 'http://spreadsheets.google.com/pub?key=pvFXGB-79Kl0MiDlVNiUiVQ&gid=0&pub=1';
+    var stScoreQuery = 'http://spreadsheets.google.com/pub?key=pvFXGB-79Kl3nEmVhWk5bKw&gid=0&pub=1';
+    var stScoreAction = 'http://spreadsheets.google.com/formResponse?key=pvFXGB-79Kl3nEmVhWk5bKw';
+    var my_copyright = 'Copyright 2008 Pythagorean Productions';
+    var stQuery = 'http://spreadsheets.google.com/pub?key=pvFXGB-79Kl338aI6gFPzJQ&gid=0&pub=1';
+      var stAction = 'http://spreadsheets.google.com/formResponse?key=pvFXGB-79Kl338aI6gFPzJQ';
+         var login_db = 'http://spreadsheets.google.com/pub?key=pvFXGB-79Kl2JkNT5hLmiJA&gid=0&pub=1';
+    var login_form = 'http://spreadsheets.google.com/formResponse?key=pvFXGB-79Kl2JkNT5hLmiJA';
+    var question_count = 50;
+    var subel_prefix = 'E';
+    var subel_label = 'E1';
+    subel_count[1] = 6;
+    subel_count[2] = 5;
+    subel_count[3] = 3;
+    subel_count[4] = 5;
+    subel_count[5] = 4;
+    subel_count[6] = 6;
+    subel_count[7] = 8;
+    subel_count[8] = 4;
+    subel_count[9] = 8;
+    subel_count[0] = 1;
+    var in_exam = true;
+    
+    //Used to track current question number for passedseen tracking
+    var abs_qnum = 0;
+
+    google.load("visualization", "1");
+    google.setOnLoadCallback(test_initialize);
+function uiSetup(){
+}
+  
+function test_initialize(){
+  //alert('Registerd setup handler');
+       questions_done = 0;
+        first_answer = 1;
+        correct = 'A';
+        q2test = 0;
+        questions_answered = 0;
+        questions_asked = 0;
+        raw_test_score = 0;
+        s_test_score = 0.0;
+        s_test_accuracy = 0.0; 
+        
+
+      init_test_structs();
+      initialize_test_scores();
+      init_score();
+      //new_study_form();
+      //start_test();
+}
+      
+var group_num = 0;
+var group_index = 0;
+var question_num = 0;
+var quesiton_index = 0;
+
+function debugqsel(){
+  //alert('group_index ' + group_index + ' ' +
+  //      'group_num ' + group_num + ' ' +
+  //      'question_index ' + question_index + ' ' +
+  //      'question_num ' + question_num + ' ');
+        
+  //alert('goup_offset ' + group_offsets[group_num]);
+  
+  //alert('total_questions ' + total_questions);
+  
+        var passedseen_str = '';
+        for(var i=0; i < front.length; i+=1){
+          passedseen_str += passedseen[i] + '|';
+        }
+  alert('About to log scores');
+  log_scores();
+}
+
+function cull_unseenpassed( seenpass ){
+  //use passedseen array to remove questions from the
+  //random selection that have already been seen or passed
+  
+  //Walk the groups and remove quesitons
+  //There are as many entries in group_offsets as there are groups
+  //for(var i=0; i < group_offsets.length; i += 1){
+    //Determine if there are enough questions >1 to populate the test
+    unculled = 0;
+    for(var k=0; k < front.length; k += 1){
+      if(passedseen[k] < seenpass){
+        unculled += 1;
+      }
+    }
+    if(unculled > 0){
+      //Cull the group
+      for(var k=0; k < front.length; k += 1){
+        if(!(passedseen[k] < seenpass)){
+          //search the group until the question is found
+          //and then splice it out
+          for(var m=0; m < front.length; m += 1){
+            if(question_sel[m] == k){
+              question_sel.splice(m, 1);
+              //Now that the question is removed, get out and start over
+              break;           
+            }
+          }
+        }
+      }//Done culling the group      
+    }//The group had something to cull
+  //}//Done stepping through the groups
+}
+
+function question_getter(button_value){
+      if(button_value == 'New Test'){
+        subel_toggling = true;
+        reset_test();
+      }
+      else if(button_value == 'New Test Unseen'){
+         subel_toggling = true;
+         reset_test();
+         cull_unseenpassed(1);    
+         //Turn off the other new test buttons 
+           document.getElementById('card_controls').innerHTML =
+    '    <input style="text-align:center; id="flip_card" type="button" value="Flip" onclick="flip()">' +
+    '<input style="text-align:center; id="next_card_c" type="button" value="Correct" onclick="check(1, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_w" type="button" value="Wrong" onclick="check(0, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_ss" type="button" value="Save Score" onclick="log_scores();">' +
+    '<input style="text-align:center; id="next_card_rv" type="button" value="Reverse" onclick="reverse();">';
+    
+          
+      }
+      else if(button_value == 'New Test Unpassed'){
+         subel_toggling = true;
+         reset_test();
+         cull_unseenpassed(2);            
+         //Turn off the other new test buttons
+           document.getElementById('card_controls').innerHTML =
+    '    <input style="text-align:center; id="flip_card" type="button" value="Flip" onclick="flip()">' +
+    '<input style="text-align:center; id="next_card_c" type="button" value="Correct" onclick="check(1, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_w" type="button" value="Wrong" onclick="check(0, 1); question_getter(2);">' +
+    '<input style="text-align:center; id="next_card_ss" type="button" value="Save Score" onclick="log_scores();">' +
+    '<input style="text-align:center; id="next_card_rv" type="button" value="Reverse" onclick="reverse();">';
+           
+      }
+      else{
+        questions_asked = questions_asked + 1;
+        first_answer = 1;
+        
+        //Randomly choose a group and question index
+        //Use the index to retrieve the group number from the array of
+        //unused groups
+        
+        question_index = Math.floor(Math.random() * 
+                                     question_sel.length);
+        question_num = question_sel[question_index];
+        
+        abs_qnum = question_num;
+        
+        //Remove the selected group and question from the random mix
+        //This is only necessary later when unseen or unpassed 
+        //questions are being selected and more than one question 
+        //can be selected from a group
+        question_sel.splice(question_index, 1);
+        
+        
+      }
+
+    //update_questions_asked();
+    //document.getElementById('next_question').disabled = true;
+    //question_receiver();
+    card(question_num);
+    }
+
+    function reset_test(){
+      //document.getElementById('next_question').value = 'Next Question';
+
+      test_initialize();
+    }
+    
+  function updateps(qnum){
+    //Flag not set if user not logged in
+    if(psprocessed == 1){
+      passedseen[qnum] += 1;
+      if(passedseen[qnum] > 2){
+        passedseen[qnum] = 2;
+      }
+    }
+  }
+
+  function question_receiver(){
+    if(question_sel.length > 0){
+
+      //HBC display a new flash card
+      card(quesiton_num);
+
+      questions_done = questions_done + 1;
+    }  else{
+       
+      //document.getElementById('next_question').value = 'New Test';
+    }
+  }
+
+function update_questions_asked(){
+    var test_score = new Number(s_test_score);
+    var accuracy = new Number(s_test_accuracy);
+    
+    //HBC Place score update here
+    
+    //document.getElementById('q_correct').innerHTML = 'Question ' + (questions_asked) + ' of ' + question_count + ' Accuracy = ' + accuracy.toFixed(2) + '%' + 'Test Score = ' + test_score.toFixed(2) + '% ';
+}
+
+function check(answer, a_id){  
+  //Record the fact that the question has been seen
+  updateps(question_num);
+  
+  if(answer == a_id){
+    //Record that the question has been passed
+    updateps(abs_qnum);
+    //document.getElementById(a_id).style.backgroundColor = '#00FF00';
+    //document.getElementById('q_correct').innerHTML = 'Correct!';
+      raw_test_score = raw_test_score + 1;
+      subel[0] = subel[0] + 1;
+  }
+    questions_answered = questions_answered + 1;
+    update_test_scores();
+}
+
+function update_test_scores(){
+    var test_score = new Number((raw_test_score/question_count)*100);
+    s_test_score = test_score;
+    var accuracy = new Number((raw_test_score/questions_answered)*100);
+    s_test_accuracy = accuracy;
+    //document.getElementById('next_question').disabled = false;
+        if(question_sel.length == 0){
+      alert('Out of cards');
+      end_test();
+    }
+}
+
+//Request used to communicate with application
+var req;
+var flashclass = 'QMUTIL'
+function log_scores_org(){
+      //alert('entered log_scores');
+      //store the test scores if the user is logged in
+      if(login_user != ''){
+        //Prep everything to send in the score
+        var score_str = '';
+        for(var i = 0; i < 1; i += 1){
+          score_str += subel[i] + '|';
+        }
+        var passedseen_str = '';
+        for(var i=0; i < front.length; i+=1){
+          passedseen_str += passedseen[i] + '|';
+        }
+        alert('passedseen is ' + passedseen_str);
+        alert('Score is ' + score_str);
+        var score_params = "tclass=" +
+                      encodeURIComponent(flashclass) + 
+                      "&name=" + encodeURIComponent(login_user) +
+                      "&elementscores=" + encodeURIComponent(score_str) +
+                      "&passedseen=" + encodeURIComponent(passedseen_str);
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            req = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            req = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        
+        req.open("POST", '/hamtestscore', true);
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        req.setRequestHeader("Content-length", score_params.length);
+        req.setRequestHeader("Connection", "close");
+
+        
+        req.onreadystatechange = log_scores_cb;
+        req.send(score_params);
+
+      }
+
+}
+
+function log_scores(){
+      //alert('entered log_scores');
+      //store the test scores if the user is logged in
+      if(login_user != '' && question_sel.length != front.length){
+        //Prep everything to send in the score
+        var score_str = '';
+        for(var i = 0; i < 1; i += 1){
+          score_str += subel[i] + '|';
+        }
+        //alert('scores are ' + score_str);
+        var passedseen_str = '';
+        for(var i=0; i < front.length; i+=1){
+          passedseen_str += passedseen[i] + '|';
+        }
+        //alert('passedseen is ' + passedseen_str);
+        //alert('Score is ' + score_str);
+        var score_params = "tclass=" +
+                      encodeURIComponent(flashclass) + 
+                      "&name=" + encodeURIComponent(login_user) +
+                      "&elementscores=" + encodeURIComponent(score_str) +
+                      "&passedseen=" + encodeURIComponent(passedseen_str);
+        if(question_sel.length != 0 || questions_asked != front.length){
+          //partial test results
+          if(question_sel.length != 0){
+            //alert('front ' + front.length + ' sel ' + question_sel.length);
+            score_params += "&partial=" + encodeURIComponent(front.length - (question_sel.length + 1));
+          }
+          else{
+            score_params += "&partial=" + encodeURIComponent(questions_asked + 1);
+          }
+        }
+  
+                      
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            req = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            req = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        
+        req.open("POST", '/hamtestscore', true);
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        req.setRequestHeader("Content-length", score_params.length);
+        req.setRequestHeader("Connection", "close");
+
+        
+        req.onreadystatechange = log_scores_cb;
+        req.send(score_params);
+
+      }
+
+}
+
+
+function log_scores_cb(){
+    if (req.readyState == 4) {
+        if (req.status == 200) {
+              //alert('Entered log_cb with ' + req.responseText);
+              //document.getElementById('logtable').innerHTML = req.responseText;
+        }
+        else{
+          alert('log_cb Reqeust failed ' + req.status + ' ' + req.responseText);
+        }
+    }
+}
+
+function end_test(){
+  if(in_exam == true){
+    log_scores();
+  }
+  //HBC Go back to the start page
+  
+  //document.getElementById('next_question').value = 'New Test';
+  if(in_exam == true){
+    if(s_test_score >= 75){
+      //HBC update message
+      //document.getElementById('q_correct').innerHTML = 'You Passed the Test!!! Congratualations!';
+    }
+    else{
+      //HBC update message
+      //document.getElementById('q_correct').innerHTML = 'You did not pass the test.  You might want to study some more.';
+    }
+    reset_test();
+    sing_test = true;
+    show_results();
+  }
+}
+
+function welcome_user(){
+  norm_welcome_user();
+  show_results();
+}
+
+var reqc;
+function show_results(){
+  if(login_user != ''){
+        var score_url = "/hamtestscore?tclass=" +
+                      encodeURIComponent(flashclass) + 
+                      "&name=" + encodeURIComponent(login_user);
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            reqc = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            reqc = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        reqc.open("GET", score_url, true);
+        reqc.onreadystatechange = show_test_results_resp;
+        reqc.send(null);
+  }
+  else{
+    //document.getElementById('show_hide_scores').value = 'Hide Scores';
+    //document.getElementById('show_hide_scores').style.backgroundColor = '#43cc43';
+    //show_single_test_sec_results_resp();
+  }
+}
+
+
+function show_test_results(){
+
+}
+
+var score_row_count = 1;
+
+function show_test_results_resp(){
+    if (reqc.readyState == 4) {
+        if (reqc.status == 200) {
+              //alert('Entered log_cb with ' + req.responseText);
+              //document.getElementById('logtable').innerHTML = req.responseText;
+
+    var score_colors = ''; 
+  var response = reqc.responseText;
+  //alert('results ' + response);
+  //First, break the accumulated scores away from the passedseen data
+  var scoredata = response.split(':');
+  //Update the passedseen data if necessary
+  if(psprocessed == 0){
+    psprocessed = 1;
+    var psdata = scoredata[1];
+    //alert('psdata ' + psdata);
+    if(psdata != ''){
+      //alert('going to process ' + psdata.length);
+      pssaved = psdata.split('|');
+      //load the users passedseen data
+      for(var i=0; i < front.length; i+= 1){
+        passedseen[i] = parseInt(pssaved[i]);
+      }
+    }
+  }
+  //var datarows = response.split('&');
+  var datarows = scoredata[0].split('&');
+  //alert(datarows.length + ' scores found');
+  //alert(response);
+  var test_scores = [];
+  //var data = response.getDataTable();
+   //Graph progress on complete practice exams
+   if(datarows.length - 1 == 0){
+     document.getElementById('tabContent2').innerHTML = 'No scores saved yet'
+   }
+   for(var test=0; test < datarows.length - 1; test += 1){
+    var raw_score = 0;
+    //alert('datarow[' + test + '] = ' + datarows[test]);
+    var datarow = datarows[test].split('|');
+    //alert(datarows[test]);
+    //If there is a 61st element score, then set the partial flag
+    var partial = false;
+    var partial_value = 'N';
+    if(datarow[score_row_count + 1] != 'None'){
+      if(datarow[score_row_count + 1] != ''){
+        //alert('Found partial in ' + test + ' ' + datarow[61]);
+        partial = true;
+        partial_value = datarow[score_row_count + 1];
+      }
+    }
+    for(var x = 0; x < score_row_count; x++){
+      raw_score = raw_score + parseInt(datarow[x]);
+      //alert(raw_score + 
+    }
+    //alert(test + ' ' + raw_score);
+    
+    //The 61 below is a graphic scaling factor and has nothing to do with
+    //the 60 questions in the test
+    test_scores[test] = (raw_score/front.length)*61;
+    if(partial && (partial_value != 'Y')){
+      test_scores[test] = (raw_score/partial_value)*61;
+    }
+      if(test == 0){
+        score_colors = '&amp;chco=';
+      }
+      if(test > 0){
+        score_colors = score_colors + '|';      
+      }
+      var color_score = raw_score/front.length;
+      if(partial && (partial_value != 'Y')){
+        color_score = raw_score/partial_value;
+      }
+      
+      score_colors = score_colors + getScoreColor(color_score);
+      //Make partial test scores transparent
+      if(partial){
+        score_colors += '77';
+      }
+  }
+  if(datarows.length - 1 != 0){
+    for(var pad = datarows.length - 1; pad < 10; pad++){
+      test_scores[pad] = 0;
+    }
+
+
+  //Encapsulate this as the progress charting method
+  table_start = '<table style="border: 0px solid #666666; text-align:center"><tr><td colspan=2>'
+  var chart_url = [];
+  chart_url.push(' <img src="http://chart.apis.google.com/chart?chs=280x200');
+  chart_url.push(score_colors);  
+  chart_url.push('&chg=101,25');
+  chart_url.push('&amp;chd=');  chart_url.push(simpleEncode(test_scores, 61));
+  //alert(test_scores[0] + ' ' + test_scores[1]);
+  chart_url.push('&amp;cht=bvs&amp;chbh=a&amp;chxt=y');
+  chart_url.push('&amp;chtt= Test Scores for ' + login_name + '">');
+  document.getElementById('tabContent2').innerHTML = table_start + 
+                            chart_url.join('') + 
+                            '<br><br></td></tr><tr>'+
+                            '<td>%Questions Answered<br>'+
+                            get_pie_chart(gettotunseen(), front.length, 130, 100) + 
+                            '<br><input id="Unseen" type="button" value="New Test Unseen" onclick="toggleTab(1,4); question_getter(this.value)">' +
+                            '</td>'+
+                            '<td>%Questions Passed<br>'+
+                            get_pie_chart(gettotunpassed(), front.length, 130, 100) +
+                            '<br><input id="Unpassed" type="button" value="New Test Unpassed" onclick="toggleTab(1,4); question_getter(this.value)"></td></tr></table><br>' +
+                            ' <input id="Clear" type="button" value="Clear" onclick="clearps(); log_scores(); show_results()">';
+  }
+   
+   //document.getElementById('tabContent2').innerHTML += '</table>'
+        }
+        else{
+          alert('log_cb Reqeust failed ' + reqc.status + ' ' + reqc.responseText);
+        }
+    }
+}
+
+
+function show_test_results_resp2(){
+    if (reqc.readyState == 4) {
+        if (reqc.status == 200) {
+              //alert('Entered log_cb with ' + req.responseText);
+              //document.getElementById('logtable').innerHTML = req.responseText;
+
+    var score_colors = ''; 
+  var response = reqc.responseText;
+  //alert('score results ' + response);
+  //First, break the accumulated scores away from the passedseen data
+  var scoredata = response.split(':');
+  //Update the passedseen data if necessary
+  if(psprocessed == 0){
+    psprocessed = 1;
+    var psdata = scoredata[1];
+    //alert('psdata ' + psdata);
+    if(psdata != ''){
+      //alert('going to process ' + psdata.length);
+      pssaved = psdata.split('|');
+      //load the users passedseen data
+      for(var i=0; i < front.length; i+= 1){
+        passedseen[i] = parseInt(pssaved[i]);
+      }
+    }
+  }
+  //var datarows = response.split('&');
+  var datarows = scoredata[0].split('&');
+  //alert(response);
+  var test_scores = [];
+  //var data = response.getDataTable();
+   //Graph progress on complete practice exams
+   for(var test=0; test < datarows.length - 1; test += 1){
+    var raw_score = 0;
+    var datarow = datarows[test].split('|');
+    //alert(datarows[test]);
+    for(var x = 0; x < 1; x++){
+      raw_score = raw_score + parseInt(datarow[x]);
+      //alert(raw_score + 
+    }
+    //alert(test + ' ' + raw_score);
+    test_scores[test] = (raw_score/front.length)*61;
+      if(test == 0){
+        score_colors = '&amp;chco=';
+      }
+      if(test > 0){
+        score_colors = score_colors + '|';      
+      }
+      var color_score = raw_score/front.length;
+      score_colors = score_colors + getScoreColor(color_score);
+  }
+  if(datarows.length - 1 != 0){
+    for(var pad = datarows.length - 1; pad < 10; pad++){
+      test_scores[pad] = 0;
+    }
+
+
+  //Encapsulate this as the progress charting method
+  table_start = '<table style="border: 0px solid #666666; text-align:center"><tr><td colspan=2>'
+  var chart_url = [];
+  chart_url.push(' <img src="http://chart.apis.google.com/chart?chs=280x200');
+  chart_url.push(score_colors);  
+  chart_url.push('&chg=101,25');
+  chart_url.push('&amp;chd=');  chart_url.push(simpleEncode(test_scores, 61));
+  //alert(test_scores[0] + ' ' + test_scores[1]);
+  chart_url.push('&amp;cht=bvs&amp;chbh=a&amp;chxt=y');
+  chart_url.push('&amp;chtt= Test Scores for ' + login_user + '">');
+  document.getElementById('tabContent2').innerHTML = table_start + 
+                            chart_url.join('') + 
+                            '<br><br></td></tr><tr>'+
+                            '<td>%Questions Tested<br>'+
+                            get_pie_chart(gettotunseen(), front.length, 130, 100) + 
+                            '<br><input id="Unseen" type="button" value="New Test Unseen" onclick="toggleTab(1,4); question_getter(this.value)">' +
+                            '</td>'+
+                            '<td>%Questions Passed<br>'+
+                            get_pie_chart(gettotunpassed(), front.length, 130, 100) +
+                            '<br><input id="Unpassed" type="button" value="New Test Unpassed" onclick="toggleTab(1,4); question_getter(this.value)">' +
+                            '</td></tr>';
+  }
+   //Now graph the per element progress of the student
+
+   document.getElementById('tabContent2').innerHTML += '</table>'
+        }
+        else{
+          alert('log_cb Reqeust failed ' + reqc.status + ' ' + reqc.responseText);
+        }
+    }
+}
+
+  //Functions to process unpassed and unseen questions
+  function gettotunseen(){
+    var totunseen = 0;
+    for(var i = 0; i < passedseen.length; i+= 1){
+      if(passedseen[i] == 0){
+        totunseen += 1;
+      }
+    }
+    return totunseen;
+  }
+  
+  function getunseen( group ){
+    //Determine the offset and size of the group
+    groupunseen = 0;
+    var offset = group_offests[group];
+    var count = group_q_count[group];
+    
+    for(var i = 0; i < group_q_count; i += 1){
+      if(passedseen[offset + i] == 0){
+        groupunseen += 1;
+      }
+    }
+    return groupunseen;
+  }
+
+
+  function gettotunpassed(){
+    var totunpassed = 0;
+    for(var i = 0; i < passedseen.length; i+= 1){
+      if(passedseen[i] < 2){
+        totunpassed += 1;
+      }
+    }
+    return totunpassed;
+  }
+
+function get_pie_chart(unseenpassed, total, x, y){
+    var piedata = [];
+    var pie_url = [];
+    piedata[0] = unseenpassed;
+    piedata[1] = total - unseenpassed;
+    pie_url.push(' <img src="http://chart.apis.google.com/chart?chs=' + x + 'x' + y);
+    //chart_url.push(score_colors);
+    pie_url.push('&amp;chco=FF0000|00FF00');  
+    //pie_url.push('&amp;chl=Untested|Tested');
+    pie_url.push('&amp;chd=');
+    pie_url.push(simpleEncode(piedata, total));  
+    pie_url.push('&amp;cht=p');  
+    pie_url.push('">');
+    //pie_url.push('&amp;chtt= Question Pool Completion' + '">'); 
+    //alert(pie_url.join(''));
+    return pie_url.join('');  
+
+}
+
+function insert_graph( graph_scores, title, colors){
+  //Encapsulate this as the progress charting method
+  var chart_url = [];
+  chart_url.push(' <img src="http://chart.apis.google.com/chart?chs=280x200');
+  chart_url.push(colors);  
+  chart_url.push('&chg=101,25');
+  chart_url.push('&amp;chd=');  chart_url.push(simpleEncode(graph_scores, 61));
+  //alert(test_scores[0] + ' ' + test_scores[1]);
+  chart_url.push('&amp;cht=bvs&amp;chbh=a&amp;chxt=y');
+  chart_url.push('&amp;chtt= ' + title + '">');
+  return chart_url.join('');
+}
+
+  function getScoreColor(color_score){
+    var stScore = '000000';
+    if(color_score < 0.75){
+      stScore = 'FF0000';
+    }   
+    else if(color_score >= 0.75  && color_score < 0.90){
+      stScore = 'FFFF00';
+    }   
+    else if(color_score >= 0.90){
+      stScore = '00FF00';
+    } 
+    else{
+      //alert('Funny score ' + color_score);
+    }
+    return stScore;  
+  }
+
+
+var simpleEncoding = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function simpleEncode(valueArray,maxValue) {
+  var chartData = ['s:'];
+  for (var i = 0; i < valueArray.length; i++) {
+    var currentValue = valueArray[i];
+    if (!isNaN(currentValue) && currentValue >= 0) {
+      chartData.push(simpleEncoding.charAt(Math.round((simpleEncoding.length-1) * currentValue / maxValue)));
+    }
+    else {
+      chartData.push('_');
+    }
+  }
+return chartData.join('');
+}
+
+
+function initialize_test_scores(){
+  //HBC add new messages
+  //document.getElementById('q_correct').innerHTML = '';
+  //document.getElementById('q_correct').innerHTML = 'Questions Answered = 1 of ' + question_count + ' Accuracy = 0 Score = 0';
+}
+
+function init_score(){
+  for(var x = 0; x < 1; x++){
+      subel[x] = 0;
+  }
+}
+
+/*-----------------------------------------------------------
+    Toggles element's display value
+    Input: any number of element id's
+    Output: none 
+    ---------------------------------------------------------*/
+function toggleDisp() {
+    for (var i=0;i<arguments.length;i++){
+        var d = $(arguments[i]);
+        if (d.style.display == 'none')
+            d.style.display = 'block';
+        else
+            d.style.display = 'none';
+    }
+}
+/*-----------------------------------------------------------
+    Toggles tabs - Closes any open tabs, and then opens current tab
+    Input:     1.The number of the current tab
+                    2.The number of tabs
+                    3.(optional)The number of the tab to leave open
+                    4.(optional)Pass in true or false whether or not to animate the open/close of the tabs
+    Output: none 
+    ---------------------------------------------------------*/
+function toggleTab(num,numelems,opennum,animate) {
+    if ($('tabContent'+num).style.display == 'none'){
+        for (var i=1;i<=numelems;i++){
+            if ((opennum == null) || (opennum != i)){
+                var temph = 'tabHeader'+i;
+                var h = $(temph);
+                if (!h){
+                    var h = $('tabHeaderActive');
+                    h.id = temph;
+                }
+                var tempc = 'tabContent'+i;
+                var c = $(tempc);
+                if(c.style.display != 'none'){
+                    //if (animate || typeof animate == 'undefined')
+                        //Effect.toggle(tempc,'blind',{duration:0.5, queue:{scope:'menus', limit: 3}});
+                    //else
+                        toggleDisp(tempc);
+                }
+            }
+        }
+        var h = $('tabHeader'+num);
+        if (h)
+            h.id = 'tabHeaderActive';
+        h.blur();
+        var c = $('tabContent'+num);
+        c.style.marginTop = '2px';
+        //if (animate || typeof animate == 'undefined'){
+            //Effect.toggle('tabContent'+num,'blind',{duration:0.5, queue:{scope:'menus', position:'end', limit: 3}});
+        //}else{
+            toggleDisp('tabContent'+num);
+        //}
+    }
+}
+
+</script>
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+
+<script>
+var reqfb;
+function logComm( commentxid ){                      
+        //Now send the scores to the db
+        if (typeof XMLHttpRequest != "undefined") {
+            reqfb = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            reqfb = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        var comm_params = "xid=" +
+                      encodeURIComponent(commentxid);
+        
+        reqfb.open("POST", '/fbcomm', true);
+        reqfb.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        reqfb.setRequestHeader("Content-length", comm_params.length);
+        reqfb.setRequestHeader("Connection", "close");
+
+        
+        reqfb.onreadystatechange = comm_cb;
+        reqfb.send(comm_params);
+}
+
+function comm_cb(){
+
+}
+FB.init({appId: '105604822850082', status: true, cookie: true,
+             xfbml: true});
+
+FB.Event.subscribe('comments.add', function(response) {
+      //var msession = FB.getSession();
+      //alert('Comment usera:' + response.widget._attr.xid);
+      logComm(response.widget._attr.xid);
+    });    
+
+         //Listen for the user to login and then customize
+         FB.Event.subscribe('auth.login', function(response) {
+           // do something with response
+           fb_setup();
+         });
+         
+         //If the user is already logged in and connected, then get rid of the login button
+         FB.getLoginStatus(function(response) {
+           if (response.session) {
+             // logged in and connected user, someone you know
+             fb_setup();
+             
+           } else {
+             // no user session available, someone you dont know
+           }
+         }, true);
+         
+         
+         function fb_setup(){
+           FB.api('/me', function(user) {
+             if(user != null) {
+                document.getElementById('fblogin').innerHTML = '';
+                //alert(user.name);
+                var image = document.getElementById('fbimage');
+                //image.src = 'http://graph.facebook.com/' + user.id + '/picture';
+                image.innerHTML = '<img src="http://graph.facebook.com/' + user.id + '/picture' + '">'
+                var name = document.getElementById('fbname');
+                name.innerHTML = user.name
+                login_user = user.id;
+                login_name = user.name;
+             }
+           });
+         }
+
+
+
+
+</script>
