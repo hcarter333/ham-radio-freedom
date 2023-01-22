@@ -29,10 +29,13 @@ import logging
 import sys
 import os
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import facebook
 import facebook2
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
 from urllib import FancyURLopener
 
 class User(db.Model):
@@ -98,6 +101,7 @@ class HamTestScore(db.Model):
     se_score = db.StringProperty()
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 class FBComment(db.Model):
     xid = db.StringProperty(
@@ -109,6 +113,8 @@ class FBComment(db.Model):
     comment = db.TextProperty()
 
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
 class APRSTrack(db.Model):
     trackdate = db.DateTimeProperty(auto_now_add = True)
     callsign = db.StringProperty(
@@ -255,10 +261,14 @@ class MainHandler(webapp.RequestHandler):
         }
         self.response.out.write(
 <<<<<<< HEAD
+<<<<<<< HEAD
           template.render('ham_exam_simple.html', values))
 =======
           template.render('fronttest.html', values))
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+          template.render('ham_exam_simple.html', values))
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         
     def post(self):
         user = User(name = self.request.get('user'),
@@ -945,6 +955,7 @@ class FillQSO(webapp.RequestHandler):
           template.render('contacts.html', values))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 class FillFBF(webapp.RequestHandler):
     def get(self):
@@ -957,6 +968,8 @@ class FillFBF(webapp.RequestHandler):
           template.render('fbforumout.html', values))
 
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
 class FillQSOg(webapp.RequestHandler):
     def get(self):
         qsls = db.GqlQuery(
@@ -1350,6 +1363,7 @@ class AccHamTestScore(webapp.RequestHandler):
 
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 class AddFBComm(webapp.RequestHandler):
     def post(self):
@@ -1363,6 +1377,8 @@ class AddFBComm(webapp.RequestHandler):
 
 
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
 class GenTest(webapp.RequestHandler):
     def get(self):
         questions = db.GqlQuery(
@@ -1448,6 +1464,7 @@ class ExtraTest(webapp.RequestHandler):
           template.render('main.html', values))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## API Keys go here!
 =======
@@ -1506,10 +1523,15 @@ _FbSecret = ''
 _FbApiKey2 = '145334095509460'
 _FbSecret2 = ''
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+
+## API Keys go here!
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
 
 class MainPage(webapp.RequestHandler):
     def get(self):
   
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         ## instantiate the Facebook API wrapper with your FB App's keys
@@ -1524,6 +1546,8 @@ class MainPage(webapp.RequestHandler):
 #            self.response.out.write('<script language="javascript">top.location.href="' + url + '"</script>')
 #            return
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
  
         qsls = db.GqlQuery(
              "SELECT * FROM Contact Order By date DESC, time DESC LIMIT 50")
@@ -1536,6 +1560,7 @@ class MainPage(webapp.RequestHandler):
         nz_helps = db.GqlQuery(
             "SELECT * FROM HamHelp WHERE tclass = 'NZ'")
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 #        try:
@@ -1550,6 +1575,8 @@ class MainPage(webapp.RequestHandler):
             #self.response.out.write(template.render('fblogin.html', vars))
 #            return
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         
         template_values = {
             #'name': 'Hamilton Test',
@@ -1564,9 +1591,12 @@ class MainPage(webapp.RequestHandler):
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #        template_values['apikey'] = _FbApiKey
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         self.response.out.write(template.render('fbtechtestnew.html', template_values))
   
 
@@ -1623,6 +1653,7 @@ class Callsigns(webapp.RequestHandler):
 class MainPageQSO(webapp.RequestHandler):
     def post(self):
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         #self.request.GET = self.request.POST
 #        logging.debug('Entered fb qso mapper')
@@ -1643,6 +1674,8 @@ class MainPageQSO(webapp.RequestHandler):
 #            self.response.out.write('<script language="javascript">top.location.href="' + url + '"</script>')
 #            return
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         
 #        logging.debug('About to get qsl info')
         qsls = db.GqlQuery(
@@ -1655,6 +1688,7 @@ class MainPageQSO(webapp.RequestHandler):
             "SELECT * FROM HamHelp WHERE tclass = 'E'")
         nz_helps = db.GqlQuery(
             "SELECT * FROM HamHelp WHERE tclass = 'NZ'")
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -1670,6 +1704,8 @@ class MainPageQSO(webapp.RequestHandler):
             #self.response.out.write(template.render('fblogin.html', vars))
 #            return
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         
         template_values = {
             #'name': 'Hamilton Test',
@@ -1684,13 +1720,17 @@ class MainPageQSO(webapp.RequestHandler):
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         #template_values['apikey'] = _FbApiKey2
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         self.response.out.write(template.render('fbtechtestnewqso.html', template_values))
 
 class FBTester(webapp.RequestHandler):
     def get(self):
+<<<<<<< HEAD
 <<<<<<< HEAD
         t_helps = db.GqlQuery(
             "SELECT * FROM HamHelp WHERE tclass = 'T'")
@@ -1729,6 +1769,8 @@ class FBTester(webapp.RequestHandler):
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
         qsls = db.GqlQuery(
              "SELECT * FROM Contact Order By date DESC, time DESC LIMIT 50")
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         t_helps = db.GqlQuery(
             "SELECT * FROM HamHelp WHERE tclass = 'T'")
         g_helps = db.GqlQuery(
@@ -1741,30 +1783,29 @@ class FBTester(webapp.RequestHandler):
         
         template_values = {
             #'name': 'Hamilton Test',
-            'name': 'Hamilton',
+            #'name': 'Hamilton',
             #'uid': '27',
-            'uid': '01234567890',
-            't_helps': t_helps,
-            'g_helps': g_helps,
-            'e_helps': e_helps,
-            'nz_helps': nz_helps,
-            'test_land' : 'E',
+            #'uid': '01234567890',
+            #'t_helps': t_helps,
+            #'g_helps': g_helps,
+            #'e_helps': e_helps,
+            #'nz_helps': nz_helps,
+            #'test_land' : 'E',
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         template_values['apikey'] = 'fbjunk'
         self.response.out.write(template.render('ham_exam_simple.html', template_values))
 =======
         template_values['apikey'] = _FbApiKey
         self.response.out.write(template.render('fbtechtestnewloc.html', template_values))
+=======
+        template_values['apikey'] = 'fbjunk'
+        self.response.out.write(template.render('ham_exam_simple.html', template_values))
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
     def post(self):
   
-        ## instantiate the Facebook API wrapper with your FB App's keys
-#        fb = facebook.Facebook(_FbApiKey, _FbSecret)
-    
-        ## check that the user is logged into FB and has added the app
-        ## otherwise redirect to where the user can login and install
- 
         qsls = db.GqlQuery(
              "SELECT * FROM Contact Order By date DESC, time DESC LIMIT 50")
         t_helps = db.GqlQuery(
@@ -1789,13 +1830,19 @@ class FBTester(webapp.RequestHandler):
             'test_land' : 'E',
         }
 
+<<<<<<< HEAD
         template_values['apikey'] = _FbApiKey
         self.response.out.write(template.render('fbtechtestnewloc.html', template_values))
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+        template_values['apikey'] = 'fbjunk'
+        self.response.out.write(template.render('ham_exam_simple.html', template_values))
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
   
 class HelpIndex(webapp.RequestHandler):
     def get(self):
   
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         ## instantiate the Facebook API wrapper with your FB App's keys
@@ -1803,6 +1850,8 @@ class HelpIndex(webapp.RequestHandler):
     
         ## check that the user is logged into FB and has added the app
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         ## otherwise redirect to where the user can login and install
  
         qsls = db.GqlQuery(
@@ -1838,14 +1887,18 @@ class HelpIndex(webapp.RequestHandler):
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         template_values['apikey'] = _FbApiKey
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         self.response.out.write(template.render('helpindex.html', template_values))
   
 class FTest(webapp.RequestHandler):
     def get(self):
   
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         ## instantiate the Facebook API wrapper with your FB App's keys
@@ -1853,6 +1906,8 @@ class FTest(webapp.RequestHandler):
     
         ## check that the user is logged into FB and has added the app
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         ## otherwise redirect to where the user can login and install
  
         qsls = db.GqlQuery(
@@ -1880,9 +1935,12 @@ class FTest(webapp.RequestHandler):
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         template_values['apikey'] = _FbApiKey
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         self.response.out.write(template.render('fbtechtesttest.html', template_values))
   
 class FBTesterQSO(webapp.RequestHandler):
@@ -1900,6 +1958,7 @@ class FBTesterQSO(webapp.RequestHandler):
             
   
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             ## instantiate the Facebook API wrapper with your FB App's keys
     #        fb = facebook.Facebook(_FbApiKey, _FbSecret)
@@ -1908,6 +1967,8 @@ class FBTesterQSO(webapp.RequestHandler):
             ## otherwise redirect to where the user can login and install
  
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
             qsls = db.GqlQuery(
                  "SELECT * FROM Contact Order By date DESC, time DESC LIMIT 50")
             t_helps = db.GqlQuery(
@@ -1939,9 +2000,12 @@ class FBTesterQSO(webapp.RequestHandler):
                 template_values['contact'] = replay
                 template_values['key'] = contact
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 template_values['apikey'] = _FbApiKey
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
             self.response.out.write(template.render('fbqso_obj.html', template_values))
 
     def post(self):
@@ -1956,6 +2020,7 @@ class FBTesterQSO(webapp.RequestHandler):
 
         else:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             
             
@@ -1967,6 +2032,8 @@ class FBTesterQSO(webapp.RequestHandler):
             ## otherwise redirect to where the user can login and install
  
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
             qsls = db.GqlQuery(
                  "SELECT * FROM Contact Order By date DESC, time DESC LIMIT 50")
             t_helps = db.GqlQuery(
@@ -1998,15 +2065,19 @@ class FBTesterQSO(webapp.RequestHandler):
                 template_values['contact'] = replay
                 template_values['key'] = contact
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 template_values['apikey'] = _FbApiKey
             template_values['apikey'] = _FbApiKey
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
             self.response.out.write(template.render('fbqso_obj.html', template_values))
         
 class FGQSO(webapp.RequestHandler):
     def get(self):
   
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         ## instantiate the Facebook API wrapper with your FB App's keys
@@ -2016,6 +2087,8 @@ class FGQSO(webapp.RequestHandler):
         ## otherwise redirect to where the user can login and install
  
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         qsls = db.GqlQuery(
              "SELECT * FROM Contact Order By date DESC, time DESC LIMIT 50")
         t_helps = db.GqlQuery(
@@ -2041,14 +2114,18 @@ class FGQSO(webapp.RequestHandler):
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         template_values['apikey'] = _FbApiKey
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         self.response.out.write(template.render('fgqso.html', template_values))
         
 class GBack(webapp.RequestHandler):
     def get(self):
   
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         ## instantiate the Facebook API wrapper with your FB App's keys
@@ -2060,6 +2137,8 @@ class GBack(webapp.RequestHandler):
 
         
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         template_values = {
             #'name': 'Hamilton Test',
             'name': 'Hamilton',
@@ -2068,9 +2147,12 @@ class GBack(webapp.RequestHandler):
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         template_values['apikey'] = _FbApiKey
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
         self.response.out.write(template.render('gback.html', template_values))
         
 
@@ -2529,9 +2611,12 @@ def main():
                                           ('/techtest', TechTest),
                                           ('/techtest2', TechTest2),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                           #('/fbapps/techtest', FBMainHandler),
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
                                           ('/fbapps/techtest', FBTester),
                                           ('/fbapps/stechtest', FBTester),
                                           ('/fbapps/qsomapper', FBTesterQSO),
@@ -2541,10 +2626,13 @@ def main():
                                           ('/fbapps/fbtester', FBTester),
                                           ('/hamtest', FBTester),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                           #('/fbapps/techtest', FBTechTest),
                                           #('/fbapps/techtest', HomeHandler),
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
                                           ('/hamtestscore', AccHamTestScore),
                                           ('/cftech', FBTester),
                                           ('/cfnz', FBTester),
@@ -2563,17 +2651,23 @@ def main():
                                           ('/fillqso', FillQSO),
                                           ('/fillqsog', FillQSOg),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                           ('/fillfbf', FillFBF),
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
                                           ('/cflogbook', TabTest),
                                           ('/cflblu', CFLBLU),
                                           ('/tcflblu', TCFLBLU),
                                           ('/qslgadget', QSLGadget),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                           ('/fbcomm', AddFBComm),
 >>>>>>> 8a91a470468b42b655a1b59d799382fb2d6b078a
+=======
+>>>>>>> be62d7018fcf43796066a028f3493bc381d0d870
                                           ('/shm', ShortMap),
                                           ('/mapqso', LinkQSO),
                                           ('/newqso', FBTesterQSO),
