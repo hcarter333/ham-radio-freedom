@@ -19,7 +19,6 @@ from google.appengine.ext import db
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util, template
 #from google.appengine.api import app_identity
-from apiclient.discovery import build
 import pprint
 import urllib
 import urllib2
@@ -1155,16 +1154,6 @@ class ShortMap(webapp.RequestHandler):
         #credentials = AppAssertionCredentials(scope='https://www.googleapis.com/auth/urlshortener')
         #http = credentials.authorize(httplib2.Http(memcache))
                 
-#        service = build("urlshortener", "v1",
-#            developerKey="AIzaSyBuXwDMTj4XydjpwxLWXoG7eIfLcmCPLCk")
-#        service = build("urlshortener", "v1", http=http)
-#        url = service.url()
-
-        # Create a shortened URL by inserting the URL into the url collection.
-#        body = {"longUrl": map }
-#        resp = url.insert(body=body).execute()
-
-#        shortUrl = resp['id']
         shortUrl = 'teststuff'
         qtag = shortUrl.lstrip('http://goo.gl/')
         
