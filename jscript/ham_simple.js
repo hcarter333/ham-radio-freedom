@@ -1263,14 +1263,14 @@ function question_getter(button_value){
   }
   
 function set_figure( stNewQuestion ){
-    if(stNewQuestion.indexOf('T1') > -1){
-        document.getElementById('q_figure').innerHTML = '<img src="img/figt1.jpg">';
+    if(stNewQuestion.indexOf('T-1') > -1){
+        document.getElementById('q_figure').innerHTML = '<img src="img/figtn1.jpg">';
       }
-      else if(stNewQuestion.indexOf('T2') > -1){
-        document.getElementById('q_figure').innerHTML = '<img src="img/figt2.jpg">';
+      else if(stNewQuestion.indexOf('T-2') > -1){
+        document.getElementById('q_figure').innerHTML = '<img src="img/figtn2.jpg">';
       }
-      else if(stNewQuestion.indexOf('T3') > -1){
-        document.getElementById('q_figure').innerHTML = '<img src="img/figt3.jpg">';
+      else if(stNewQuestion.indexOf('T-3') > -1){
+        document.getElementById('q_figure').innerHTML = '<img src="img/figtn3.jpg">';
       }
       else if(stNewQuestion.indexOf('T4') > -1){
         document.getElementById('q_figure').innerHTML = '<img src="img/figt4.jpg">';
