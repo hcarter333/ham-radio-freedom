@@ -2083,7 +2083,7 @@ class LoginHandler(webapp.RequestHandler):
         
 
         self.response.out.write(
-          template.render('simple_login.html', values))
+          template.render('login.html', values))
         
     def post(self):
         user = self.request.get(
@@ -2106,7 +2106,7 @@ class LoginHandler(webapp.RequestHandler):
         
 
         self.response.out.write(
-          template.render('simple_login.html', values))
+          template.render('login.html', values))
 
 #        self.redirect('/')
 
