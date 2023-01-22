@@ -28,7 +28,6 @@ import re
 import logging
 import sys
 import os
-from urllib import FancyURLopener
 
 class User(db.Model):
     name = db.StringProperty(
@@ -181,8 +180,6 @@ class Contact(db.Model):
     distance = db.FloatProperty()
     band = db.StringProperty()
 
-class MyOpener(FancyURLopener):
-    version = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11'
 
 class CallsignLatLng(db.Model):
     callsign = db.StringProperty(
@@ -409,36 +406,6 @@ class CallTest(webapp.RequestHandler):
         
 
 
-class DXSLocation(webapp.RequestHandler):
-    def get(self):
-        callsign = self.request.get(
-            'callsign')
-        #sys.stderr.write(callsign)
-        #First try the datastore for this callsign
-        values = {}
-        calls = db.GqlQuery("SELECT * FROM CallsignLatLng WHERE callsign = '" + callsign + "'")
-        use_calls = db.GqlQuery("SELECT * FROM CallsignLatLng WHERE callsign = '" + callsign + "'")
-        
-        #values = {'names': calls}
-        if calls.count() > 0:
-            values = {'names': use_calls}
-            self.response.out.write(
-                template.render('mirrorloctable.html', values))
-        else:
-            #filehandle = urllib.urlopen('http://velkejkuk.cz/get2post/?get2post-url=http://www.qrz.com/callsign&callsign=' + callsign)
-            #filehandle = urllib.urlopen('http://copaseticflows.appspot.com/examhelp/calltest.html?callsign=' + callsign)
-            #store the new callsign lookup
-            new_miss = QSOMissedCall(callsign = self.request.get('callsign'))
-            new_miss.put()
-            #filehandle = urllib.urlopen('http://www.eigology.com/yubnub/get2post.php?yndesturl=http://www.eham.net/callbook/search&FORM_CALLSIGN=' + callsign)
-            #user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
-            #myopener = MyOpener()
-            params = urllib.urlencode({'FORM_CALLSIGN': self.request.get('callsign')})
-            filehandle = urllib.urlopen('http://www.eham.net/callbook/search?' + params)
-            #filehandle = myopener.open('http://www.eham.net/callbook/search?' + params)
-            values = { 'names': filehandle.readlines()}
-            self.response.out.write(
-                template.render('qsllogtable.html', values))
 
 class SATTrack(webapp.RequestHandler):
     def get(self):
@@ -2166,7 +2133,6 @@ def main():
                                           ('/dxsmirror', DXSMirror),
                                           ('/dxsget', DXSGet),
                                           ('/dxsgetqs', DXSGetQS),
-                                          ('/dxslocation', DXSLocation),
                                           ('/dxscall', DXSCall),
                                           ('/dxslogentry', DXSLogEntry),
                                           ('/dxsgetcalls', DXSGetCalls),
@@ -2188,7 +2154,6 @@ def main():
                                           ('/cfgen', FBTester),
                                           ('/cfextra', FBTester),
                                           ('/hbcusers', HBCUsers),
-                                          #('/delps', DelPS),
                                           ('/gentest', GenTest),
                                           ('/extratest', ExtraTest),
                                           ('/hamtesthelp', HamTestHelp),
