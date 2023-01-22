@@ -1578,8 +1578,8 @@ function log_scores(){
         
         req.open("POST", '/hamtestscore', true);
         req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        req.setRequestHeader("Content-length", score_params.length);
-        req.setRequestHeader("Connection", "close");
+        //req.setRequestHeader("Content-length", score_params.length);
+        //req.setRequestHeader("Connection", "close");
 
         
         req.onreadystatechange = log_scores_cb;

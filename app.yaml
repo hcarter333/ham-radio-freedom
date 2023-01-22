@@ -8,8 +8,6 @@ handlers:
   login: admin
 - url: /jscript
   static_dir: jscript
-- url: /geochrono/js
-  static_dir: geochrono/js
 - url: /img
   static_dir: img
 - url: /examhelp
@@ -27,6 +25,9 @@ handlers:
   script: main.py
   secure: always
 - url: /fbapps/stechtest
+  script: main.py
+  secure: always
+- url: /geochrono
   script: main.py
   secure: always
 
