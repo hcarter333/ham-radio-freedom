@@ -1436,14 +1436,14 @@ class FBTester(webapp.RequestHandler):
         
         template_values = {
             #'name': 'Hamilton Test',
-            #'name': 'Hamilton',
+            'name': 'Hamilton',
             #'uid': '27',
-            #'uid': '01234567890',
-            #'t_helps': t_helps,
-            #'g_helps': g_helps,
-            #'e_helps': e_helps,
-            #'nz_helps': nz_helps,
-            #'test_land' : 'E',
+            'uid': '01234567890',
+            't_helps': t_helps,
+            'g_helps': g_helps,
+            'e_helps': e_helps,
+            'nz_helps': nz_helps,
+            'test_land' : 'T',
         }
 
         template_values['apikey'] = 'fbjunk'
