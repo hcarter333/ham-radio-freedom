@@ -566,7 +566,7 @@ like these exams, please share them with your friends.<br><br>
 </div>
 
     var t_test_help = [];
-//  {% for help in t_helps %}t_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
+  {% for help in t_helps %}t_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
     var g_test_help = [];
 //  {% for help in g_helps %}g_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
     var e_test_help = [];
