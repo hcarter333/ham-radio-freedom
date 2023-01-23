@@ -1,21 +1,9 @@
-    var t_test_help = [];
-//  {% for help in t_helps %}t_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
-    var g_test_help = [];
-//  {% for help in g_helps %}g_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
-    var e_test_help = [];
-//  {% for help in e_helps %}e_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
-    var nz_test_help = [];
-//  {% for help in nz_helps %}nz_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
-    var cb_test_help = [];
-//  {% for help in cb_helps %}cb_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
-    var ca_test_help = [];
-//  {% for help in ca_helps %}ca_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
   
   var test_help;
   var test_type = 'T';
   
   var nz_header = 'New Zealand Amateur Radio Examination Practice (Question pool published March, 2010)';
-  var t_header = 'Technician Class Amateur Radio Practice Exam (Question pool published 2/1/2010)';
+  var t_header = 'Technician Class Amateur Radio Practice Exam (Question pool published 3/7/2022)';
   var g_header = 'General Class Amateur Radio Practice Exam (Question pool published 2/23/2007)';
   var gn_header = 'General Class Amateur Radio Practice Exam (Question pool effective 7/1/2011 - 6/30/2015)';
   var c1_header = 'Commercial License Element 1 Question pool';
