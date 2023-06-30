@@ -283,7 +283,7 @@ function init_groups(){
   var q_count = 0;
   var subel = '';
   var subelgroup = '';
-  qftest = questions[0].split('|');
+  //qftest = questions[0].split('|');
   //alert('ql ' + questions.length + ' two ' + qftest[2] + ' three ' + qftest[3]);
   
   for(var j = 0; j < questions.length - 1; j += 1){
