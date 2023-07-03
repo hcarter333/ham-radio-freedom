@@ -694,7 +694,7 @@ class HamTestHelp(webapp.RequestHandler):
                     qindex = 157,
                     helplink = '/examhelp/techcurrent.html'
                     )
-        new_help.put()
+        #new_help.put()
         
         hhs = db.GqlQuery(
             "SELECT * FROM HamHelp")
