@@ -697,7 +697,7 @@ class HamTestHelp(webapp.RequestHandler):
         #new_help.put()
         
         hhs = db.GqlQuery(
-            "SELECT * FROM HamHelp")
+            "SELECT * FROM HamHelp WHERE tclass = 'T' ORDER BY qindex asc")
 
         values = {
             'hhs': hhs
@@ -705,6 +705,7 @@ class HamTestHelp(webapp.RequestHandler):
         self.response.out.write(
           template.render('hhs.html', values))
         self.response.out.write('Test33')
+ 
 
 
 class QSLLogEntry(webapp.RequestHandler):
@@ -1235,6 +1236,8 @@ class AccHamTestScore(webapp.RequestHandler):
         qpqs = db.GqlQuery(
             pqs, utclass=fclass, uname=fname)
         qres_count = 0
+        #There's only one of these records, but since the result is a list, 
+        #the code iterates through it
         for qres in qpqs:
             tester = qres
             qres_count = qres_count + 1
