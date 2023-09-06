@@ -418,7 +418,7 @@ function test_initialize(){
   }
   else if(test_type == 'G'){
     test_help = g_test_help;
-    test_qs = g_test_qs;
+    test_qs = gen_new_test_qs;
     question_count = 35;
     full_question_count = 35;
     score_row_count = 10;
@@ -430,7 +430,7 @@ function test_initialize(){
   }
   else if(test_type == 'GN'){
 	    test_help = gn_test_help;
-	    test_qs = gn_test_qs;
+	    test_qs = gen_new_test_qs;
 	    question_count = 35;
 	    full_question_count = 35;
 	    score_row_count = 10;
