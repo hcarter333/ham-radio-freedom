@@ -4,8 +4,8 @@
   
   var nz_header = 'New Zealand Amateur Radio Examination Practice (Question pool published March, 2010)';
   var t_header = 'Technician Class Amateur Radio Practice Exam (Question pool published 3/7/2022)';
-  var g_header = 'General Class Amateur Radio Practice Exam (Question pool published 2/23/2007)';
-  var gn_header = 'General Class Amateur Radio Practice Exam (Question pool effective 7/1/2011 - 6/30/2015)';
+  var g_header = 'General Class Amateur Radio Practice Exam (Question pool published 7/1/2023)';
+  var gn_header = 'General Class Amateur Radio Practice Exam (Question pool effective 7/1/2023)';
   var c1_header = 'Commercial License Element 1 Question pool';
   var c2_header = 'Commercial License Element 3 Question pool';
   var c5_header = 'Commercial License Element 5 Question pool';
@@ -1369,11 +1369,11 @@ function fquestion_receiver(){
    }
    if(test_type == 'G'){
      document.getElementById('fquestion_table').innerHTML = 
-     'General Class Amateur Radio Practice Exam (Question pool published 2/23/2007)';
+     'General Class Amateur Radio Practice Exam (Question pool published 2/23/2023)';
    }
    if(test_type == 'GN'){
 	     document.getElementById('fquestion_table').innerHTML = 
-	     'General Class Amateur Radio Practice Exam (Question pool effective 7/1/2011 - 6/30/2015)';
+	     'General Class Amateur Radio Practice Exam (Question pool effective 7/1/2023)';
 	   }
    if(test_type == 'C1'){
 	     document.getElementById('fquestion_table').innerHTML = 
