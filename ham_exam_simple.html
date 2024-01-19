@@ -316,6 +316,15 @@ google_ad_height = 15;
       </div>
         <div id="tabContent2" class="tabContent" style="display:none; ">
             <br /><div>Login to see saved test scores</div>
+            <table style="border: 0px solid #666666; text-align:center"><tr>
+              <td colspan=2></td><br><br></td></tr><tr><td>%Questions Answered<br>
+               <br><input id="Unseen" type="button" value="New Test Unseen" 
+                 onclick="toggleTab(1,5); question_getter(this.value)"></td>
+              <td>%Questions Passed<br>
+              <br><input id="Unpassed" type="button" value="New Test Unpassed" 
+                onclick="toggleTab(1,5); question_getter(this.value)"></td>
+            </tr></table>
+                
         </div>
 
         <div id="tabContent4" class="tabContent" style="display:none; ">
