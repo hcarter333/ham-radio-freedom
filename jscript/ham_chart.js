@@ -1,4 +1,7 @@
 // JavaScript source code
+google.charts.load('current', {'packages':['corechart']});
+
+
 function get_pie_chart(unseenpassed, total, x, y){
     var piedata = [];
     var pie_url = [];
@@ -15,5 +18,31 @@ function get_pie_chart(unseenpassed, total, x, y){
     //pie_url.push('&amp;chtt= Question Pool Completion' + '">'); 
     //alert(pie_url.join(''));
     return pie_url.join('');  
+
+}
+
+
+function get_new_pie_chart(unseenpassed, total, x, y){
+    var piedata = [];
+    var pie_url = [];
+    piedata[0] = unseenpassed;
+    piedata[1] = total - unseenpassed;
+// Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Seen');
+      data.addColumn('number', 'Unseen');
+      data.addRows([
+        ['Seen', total - unseenpassed],
+        ['Unseen', unseenpassed]
+      ]);
+
+// Set chart options
+      var options = {'title':'Seen vs Unseen',
+                     'width':100,
+                     'height':130};
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('pie_unseen'));
+      chart.draw(data, options);// Set chart options
 
 }

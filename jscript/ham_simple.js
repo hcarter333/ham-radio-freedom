@@ -1817,8 +1817,7 @@ function show_test_results_resp(){
   document.getElementById('tabContent2').innerHTML = table_start + 
                             chart_url.join('') + 
                             '<br><br></td></tr><tr>'+
-                            '<td>%Questions Answered<br>'+
-                            get_pie_chart(gettotunseen(), total_questions, 130, 100) + 
+                            '<td id=unseen_pie>%Questions Answered<br>'+
                             '<br><input id="Unseen" type="button" value="New Test Unseen" onclick="toggleTab(1,5); question_getter(this.value)">' +
                             '</td>'+
                             '<td>%Questions Passed<br>'+
@@ -1901,6 +1900,9 @@ function show_test_results_resp(){
           alert('log_cb Reqeust failed ' + reqc.status + ' ' + reqc.responseText);
         }
     }
+
+   get_new_pie_chart(gettotunseen(), total_questions, 130, 100) + 
+
 }
 
   //Functions to process unpassed and unseen questions

@@ -317,7 +317,7 @@ google_ad_height = 15;
         <div id="tabContent2" class="tabContent" style="display:none; ">
             <br /><div>Login to see saved test scores</div>
             <table style="border: 0px solid #666666; text-align:center"><tr>
-              <td colspan=2></td><br><br></td></tr><tr><td>%Questions Answered<br>
+              <td colspan=2></td><br><br></td></tr><tr><td id=pie_unseen>%Questions Answered<br>
                <br><input id="Unseen" type="button" value="New Test Unseen" 
                  onclick="toggleTab(1,5); question_getter(this.value)"></td>
               <td>%Questions Passed<br>
@@ -588,7 +588,8 @@ like these exams, please share them with your friends.<br><br>
 //    var ca_test_help = [];
 //  {% for help in ca_helps %}ca_test_help[{{help.qindex}}] = '{{help.helplink}}'; {% endfor %}
 </script>
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
 <script type="text/javascript" src="jscript/login.js"></script>
 <script type="text/javascript" src="jscript/tqs.js"></script>
 <script type="text/javascript" src="jscript/ham_chart.js"></script>
